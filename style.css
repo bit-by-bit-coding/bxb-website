@@ -1,3 +1,9 @@
+/*TODO
+Wrap signup button on homepage
+Make testimonials wrap on mobile
+Fix brs on about us page
+Fix map sizing
+*/
 /* General */
 body {
   font-family: "Avenir", sans-serif;
@@ -50,11 +56,12 @@ button:focus {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 1%;
+  padding: 1% 2%;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 9999;
 }
 
 #topnav-right {
@@ -66,6 +73,15 @@ button:focus {
 
 #navlogo {
   height: 8vh;
+}
+
+#navlogo-button {
+  background: none;
+  border: none;
+}
+
+#navlogo-button:hover {
+  cursor: pointer;
 }
 
 .navbutton {
@@ -135,12 +151,11 @@ button:focus {
 }
 
 /* Banner */
-#banner {
-  text-align: center;
-}
-
-#biglogo {
-  width: 60%;
+#particles-js, #particles-js2 {
+  background: url("Logo Big.png") auto no-repeat center/contain;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 /* Footer */
@@ -155,7 +170,6 @@ button:focus {
 /* Homepage */
 #warning {
   color: #e77d00;
-  align: center;
 }
 
 #intro {
@@ -278,6 +292,15 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   padding: 1% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 475px;
+          flex: 1 1 475px;
+  max-width: 475px;
+  position: relative;
 }
 
 .details-header {

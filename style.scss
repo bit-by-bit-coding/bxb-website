@@ -1,3 +1,10 @@
+/*TODO
+Wrap signup button on homepage
+Make testimonials wrap on mobile
+Fix brs on about us page
+Fix map sizing
+*/
+
 $main: #2d97b7;
 $dark: #283576;
 $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
@@ -48,9 +55,10 @@ button:focus {
     display: flex;
     position: sticky;
     top: 0;
-    padding: 1%;
+    padding: 1% 2%;
     background-color: rgba(255, 255, 255, 0.9);
     align-items: center;
+    z-index: 9999;
 }
 
 #topnav-right {
@@ -61,6 +69,15 @@ button:focus {
 
 #navlogo {
     height: 8vh;
+}
+
+#navlogo-button {
+    background: none;
+    border: none;
+}
+
+#navlogo-button:hover {
+    cursor: pointer;
 }
 
 .navbutton {
@@ -95,9 +112,11 @@ button:focus {
 }
 
 /* Banner */
-#banner { text-align: center; }
-#biglogo {
-    width: 60%;
+#particles-js, #particles-js2 {
+    background: url("Logo Big.png") auto no-repeat center/contain;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 /* Footer */
@@ -112,7 +131,6 @@ button:focus {
 /* Homepage */
 #warning {
     color: #e77d00;
-    align: center;
 }
 
 #intro {
@@ -199,6 +217,10 @@ button:focus {
 .details-row {
     display: flex;
     padding: 1% 0;
+    flex-direction: column;
+    flex: 1 1 475px;
+    max-width: 475px;
+    position: relative;
 }
 
 .details-header {
