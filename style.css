@@ -4,7 +4,7 @@ Make testimonials wrap on mobile
 Fix brs on about us page
 Fix map sizing
 */
-/* General */
+/* General Formatting */
 body {
   font-family: "Avenir", sans-serif;
   color: #707070;
@@ -13,14 +13,22 @@ body {
   overflow: scroll;
 }
 
-#content {
-  margin: 1% 10% 5% 10%;
-}
-
 h2 {
   color: #2d97b7;
   font-family: "Avenir", sans-serif;
   font-weight: 700;
+  margin-bottom: 2%;
+}
+
+h3 {
+  font-family: "Avenir", sans-serif;
+  margin-bottom: 0.5%;
+}
+
+.subtitle {
+  color: #283576;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 strong {
@@ -42,10 +50,19 @@ button:focus {
           box-shadow: none;
 }
 
-.subtitle {
-  color: #283576;
-  font-size: 1.5em;
-  text-align: center;
+img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* General Spacing */
+.content {
+  margin: 1% 10% 5% 10%;
+}
+
+.section {
+  margin: 3% 0;
 }
 
 /* Navigation Bar */
@@ -160,11 +177,11 @@ button:focus {
 
 /* Footer */
 #footer {
-  height: 100px;
   background-color: #283576;
-  padding: 3%;
+  padding: 0.5vh 2vw;
   color: white;
-  text-align: center;
+  text-align: left;
+  font-size: 0.8em;
 }
 
 /* Homepage */
@@ -281,16 +298,18 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.details-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.details-item {
   padding: 1% 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -303,22 +322,23 @@ button:focus {
   position: relative;
 }
 
-.details-header {
-  font-weight: 700;
-  padding-right: 10%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.details {
-  padding: 2vh 3vw;
-  width: 75%;
-}
-
 #map {
   height: 100%;
   width: 100%;
+}
+
+/* Photos */
+.home-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-photos img {
+  width: 45%;
 }
 
 /* Testmonials */
@@ -330,19 +350,34 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
+  margin: 0 0;
 }
 
 .testimonial-item {
   padding: 2%;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /*width: 20%;*/
 }
 
-.author {
+.testimonial-item strong {
   color: #283576;
+}
+
+#zadie {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
 }
 
 /* FAQs */
@@ -350,15 +385,16 @@ button:focus {
   border: none;
   padding: 1.5% 1%;
   width: 100%;
+  background: none;
   text-align: left;
-  font-size: 1em;
+  font-size: medium;
   font-family: inherit;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .accordian:before {
-  content: "+";
+  content: "+\0009";
 }
 
 .active, .accordian:hover {
@@ -366,7 +402,7 @@ button:focus {
 }
 
 .active:before {
-  content: "\02212";
+  content: "\02212\0009";
 }
 
 .panel {
@@ -387,5 +423,44 @@ button:focus {
 
 td {
   padding: 1.5%;
+}
+
+/* About Us Page */
+.instructors-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.instructors-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 40%;
+}
+
+.instructors-item img {
+  height: 250px;
+  border-radius: 10px;
+  border-bottom: 3px solid #283576;
+}
+
+.instructors-item strong {
+  color: #283576;
+  margin-top: 3%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

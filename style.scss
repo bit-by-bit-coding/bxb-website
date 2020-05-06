@@ -11,7 +11,7 @@ $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
 $body-font: 'Avenir', sans-serif;
 $heading-font: 'Avenir', sans-serif;
 
-/* General */
+/* General Formatting */
 body {
     font-family: $body-font;
     color: rgb(112, 112, 112);
@@ -20,14 +20,22 @@ body {
     overflow: scroll;
 }
 
-#content {
-    margin: 1% 10% 5% 10%;
-}
-
 h2 {
     color: $main;
     font-family: $heading-font;
     font-weight: 700;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-family: $heading-font;
+    margin-bottom: 0.5%;
+}
+
+.subtitle {
+    color: $dark;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 strong { font-weight: 700; }
@@ -44,10 +52,17 @@ button:focus {
     box-shadow: none;
 }
 
-.subtitle {
-    color: $dark;
-    font-size: 1.5em;
-    text-align: center;
+img {
+    align-self: center;
+}
+
+/* General Spacing */
+.content {
+    margin: 1% 10% 5% 10%;
+}
+
+.section {
+    margin: 3% 0;
 }
 
 /* Navigation Bar */
@@ -121,11 +136,12 @@ button:focus {
 
 /* Footer */
 #footer {
-    height: 100px;
     background-color: $dark;
-    padding: 3%;
+    padding: 0.5vh 2vw;
     color: white;
-    text-align: center;
+
+    text-align: left;
+    font-size: 0.8em;
 }
 
 /* Homepage */
@@ -211,11 +227,12 @@ button:focus {
 /* Details*/
 .details-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row wrap;
+    align-content: center;
+    justify-content: space-between;
 }
 
-.details-row {
-    display: flex;
+.details-item {
     padding: 1% 0;
     flex-direction: column;
     flex: 1 1 475px;
@@ -223,38 +240,45 @@ button:focus {
     position: relative;
 }
 
-.details-header {
-    font-weight: 700;
-    padding-right: 10%;
-    align-self: center;
-}
-
-.details {
-    padding: 2vh 3vw;
-    width: 75%;
-}
-
 #map {
     height: 100%;
     width: 100%;
+}
+
+/* Photos */
+.home-photos {
+    display: flex;
+    justify-content: center;
+}
+
+.home-photos img {
+    width: 45%;
 }
 
 /* Testmonials */
 .testimonial-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0 0;
 }
 
 .testimonial-item {
     padding: 2%;
     text-align: center;
+    flex: 1 1 200px;
+    flex-wrap: wrap;
     /*width: 20%;*/
 }
 
-.author {
+.testimonial-item strong {
     color: $dark;
+}
+
+#zadie {
+    flex: 1 1 250px;
 }
 
 /* FAQs */
@@ -262,16 +286,17 @@ button:focus {
     border: none;
     padding: 1.5% 1%;
     width: 100%;
+    background: none;
 
     text-align: left;
-    font-size: 1em;
+    font-size: medium;
     font-family: inherit;
 
     transition: 0.3s;
 }
 
 .accordian:before {
-    content: "+";
+    content: "+\0009";
 }
 
 .active, .accordian:hover {
@@ -279,7 +304,7 @@ button:focus {
 }
 
 .active:before {
-    content: "\02212";
+    content: "\02212\0009";
 }
 
 .panel {
@@ -293,12 +318,38 @@ button:focus {
     transition: max-height 0.3s ease-out;
   }
 
-  /* Sign Up Page */
+/* Sign Up Page */
 
-  #signup-button {
+#signup-button {
     text-align: center;
-  }
+}
 
-  td {
+td {
       padding: 1.5%;
-  }
+}
+
+/* About Us Page */
+.instructors-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.instructors-item {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width: 40%;
+}
+
+.instructors-item img {
+    height: 250px;
+    border-radius: 10px;
+    border-bottom: 3px solid $dark;
+}
+
+.instructors-item strong {
+    color: $dark;
+    margin-top: 3%;
+    text-align: center;
+}
