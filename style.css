@@ -4,29 +4,34 @@ Make testimonials wrap on mobile
 Fix brs on about us page
 Fix map sizing
 */
+/* Official Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Experimental Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 /* General Formatting */
 body {
   font-family: "Avenir", sans-serif;
   color: #707070;
   line-height: 1.5em;
-  font-size: 1em;
+  font-size: 15px;
   overflow: scroll;
 }
 
 h2 {
-  color: #2d97b7;
-  font-family: "Avenir", sans-serif;
+  color: #13a6ba;
+  font-family: "Nunito", "Avenir", sans-serif;
   font-weight: 700;
   margin-bottom: 2%;
+  font-size: 30px;
 }
 
 h3 {
-  font-family: "Avenir", sans-serif;
+  font-family: "Nunito", "Avenir", sans-serif;
   margin-bottom: 0.5%;
 }
 
 .subtitle {
-  color: #283576;
+  color: #153b80;
   font-size: 1.5em;
   text-align: center;
 }
@@ -62,7 +67,7 @@ img {
 }
 
 .section {
-  margin: 3% 0;
+  margin: 5% 0 0 0;
 }
 
 /* Navigation Bar */
@@ -105,12 +110,12 @@ img {
   -webkit-animation-name: out;
           animation-name: out;
   border: none;
-  border-bottom: solid #2d97b7 1px;
+  border-bottom: solid #13a6ba 1px;
   margin: 0 0.8vw;
   background-color: inherit;
   height: 100%;
   text-transform: uppercase;
-  color: #2d97b7;
+  color: #13a6ba;
   font-size: 0.9em;
 }
 
@@ -168,16 +173,16 @@ img {
 }
 
 /* Banner */
-#particles-js, #particles-js2 {
-  background: url("Logo Big.png") auto no-repeat center/contain;
-  height: 100%;
+#particles-js {
+  background: url("BigLogo.png") no-repeat center/contain;
+  height: 60vh;
   width: 100%;
   margin: 0;
 }
 
 /* Footer */
 #footer {
-  background-color: #283576;
+  background-color: #153b80;
   padding: 0.5vh 2vw;
   color: white;
   text-align: left;
@@ -186,7 +191,7 @@ img {
 
 /* Homepage */
 #warning {
-  color: #e77d00;
+  color: #e8610c;
 }
 
 #intro {
@@ -200,23 +205,30 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-#introtext {
+#intro-text {
   margin: 0 2vw 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
 }
 
 .signup-button {
-  background-image: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+  background-image: linear-gradient(-45deg, #184dad 0%, #13a6ba 100%);
   cursor: pointer;
   color: white;
   font-size: 0.9em;
-  font-weight: 200;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
   border-radius: 10px;
-  margin: 0 2vw;
+  margin: 5vh 2vw;
   padding: 1.3%;
   width: 20%;
   -ms-flex-negative: 0;
@@ -300,13 +312,14 @@ img {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row wrap;
-          flex-direction: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -20px;
 }
 
 .details-item {
@@ -316,14 +329,14 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 475px;
-          flex: 1 1 475px;
-  max-width: 475px;
+      -ms-flex: 1 1 375px;
+          flex: 1 1 375px;
   position: relative;
+  margin: 0 20px;
 }
 
 #map {
-  height: 100%;
+  height: 80%;
   width: 100%;
 }
 
@@ -371,7 +384,7 @@ img {
 }
 
 .testimonial-item strong {
-  color: #283576;
+  color: #153b80;
 }
 
 #zadie {
@@ -398,7 +411,7 @@ img {
 }
 
 .active, .accordian:hover {
-  color: #2d97b7;
+  color: #13a6ba;
 }
 
 .active:before {
@@ -407,7 +420,7 @@ img {
 
 .panel {
   padding: 0 2%;
-  background: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+  background: linear-gradient(-45deg, #184dad 0%, #13a6ba 100%);
   color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -455,11 +468,11 @@ td {
 .instructors-item img {
   height: 250px;
   border-radius: 10px;
-  border-bottom: 3px solid #283576;
+  border-bottom: 3px solid #153b80;
 }
 
 .instructors-item strong {
-  color: #283576;
+  color: #153b80;
   margin-top: 3%;
   text-align: center;
 }
