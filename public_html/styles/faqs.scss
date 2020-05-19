@@ -1,0 +1,73 @@
+$main: #2d97b7;
+$dark: #283576;
+$gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+
+.section {
+  max-width: calc(100vw - 60px);
+  width: 1000px;
+  display: block;
+  margin: 50px auto 0;
+}
+
+.accordian {
+  font-size: 1.5em;
+  border: none;
+  border-bottom: 2px solid $dark;
+  box-sizing: border-box;
+  width: 100%;
+  background: none;
+  text-align: left;
+  font-family: inherit;
+  position: relative;
+  transition: 0.3s;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.accordian:after {
+  display: block;
+  position: absolute;
+  background: white;
+  border: 2px solid $dark;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 32px;
+  border-radius: 50%;
+  content: "+";
+  text-align: center;
+  left: 5px;
+  transform: translateY(-16px);
+}
+
+.active, .accordian:hover {
+  color: $main;
+}
+
+.active:after {
+  content: "-";
+}
+
+.panel {
+  padding: 0 20px;
+  border-radius: 10px;
+  height: 0px;
+  overflow: hidden;
+  //transform: scaleY(0);
+  transition: 0.3s ease-in-out;
+
+}
+
+.active + .panel{
+  //transform: scaleY(1);
+  height: auto;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 300px;
+  top: 50px;
+}
