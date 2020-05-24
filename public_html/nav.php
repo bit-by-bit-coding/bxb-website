@@ -22,7 +22,7 @@
                 <a href="about.php">
                     <button class="navbutton">About</button>
                 </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeapmj33WC0HLmJRsl2ICq3KTplADuCi2BM97jbV2GSQcP1TA/viewform?usp=sf_link">
+                <a href="volunteer.php">
                     <button class="navbutton">Volunteer</button>
                 </a>
             </div>
