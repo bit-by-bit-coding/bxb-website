@@ -13,9 +13,6 @@
                 <a href="index.php">
                     <button class="navbutton">Home</button>
                 </a>
-                <a href="signup.php">
-                    <button class="navbutton">Sign Up</button>
-                </a>
                 <a href="faqs.php">
                     <button class="navbutton">FAQ</button>
                 </a>
@@ -24,6 +21,9 @@
                 </a>
                 <a href="volunteer.php">
                     <button class="navbutton">Volunteer</button>
+                </a>
+                <a href="signup.php">
+                    <button class="navbutton">Sign Up</button>
                 </a>
             </div>
         </div>
