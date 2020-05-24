@@ -1,7 +1,7 @@
 # http to https
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://www.bitbybit.su.domains/$1 [R,L]
+RewriteRule ^(.*)$ https://www.bitbybitcoding.org/$1 [R,L]
 
 # remove .php
 RewriteCond %{REQUEST_FILENAME}.php -f
