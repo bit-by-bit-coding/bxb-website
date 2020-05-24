@@ -23,7 +23,7 @@
                     <button class="navbutton">Volunteer</button>
                 </a>
                 <a href="signup.php">
-                    <button class="navbutton">Sign Up</button>
+                    <button class="navbutton action-button" style="font-weight: 350;">Sign Up</button>
                 </a>
             </div>
         </div>
