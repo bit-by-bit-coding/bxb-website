@@ -59,6 +59,10 @@
                             Early bird (before June 1st): $35<br>
                             Regular: $50 (scholarships available)</p>
                     </div>
+                    <div>
+                        <a href="signup.php"><button class="action-button">Sign Up!</button></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeapmj33WC0HLmJRsl2ICq3KTplADuCi2BM97jbV2GSQcP1TA/viewform?usp=sf_link"><button class="action-button">Volunteer!</button></a>
+                    </div>
                 </div>
                 <div class="details-item">
                     <p><strong>Location: </strong> 4560 SW 110th Ave, Beaverton, OR, 97005</p>
