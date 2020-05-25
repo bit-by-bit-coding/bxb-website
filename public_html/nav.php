@@ -13,17 +13,17 @@
                 <a href="index.php">
                     <button class="navbutton">Home</button>
                 </a>
-                <a href="signup.php">
-                    <button class="navbutton">Sign Up</button>
-                </a>
                 <a href="faqs.php">
                     <button class="navbutton">FAQ</button>
                 </a>
                 <a href="about.php">
                     <button class="navbutton">About</button>
                 </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeapmj33WC0HLmJRsl2ICq3KTplADuCi2BM97jbV2GSQcP1TA/viewform?usp=sf_link">
+                <a href="volunteer.php">
                     <button class="navbutton">Volunteer</button>
+                </a>
+                <a href="signup.php">
+                    <button class="navbutton action-button" style="font-weight: 350;">Sign Up</button>
                 </a>
             </div>
         </div>

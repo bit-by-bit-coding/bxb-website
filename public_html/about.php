@@ -37,11 +37,7 @@
             <span class="instructors-item">
                     <img src="imgs/SelenaSquare.jpg"><br>
                     <strong>Selena Zhang</strong>
-                        <p>I’m Selena Zhang, and coding is my passion! Next year, I plan to study computer science at
-                            MIT.
-                            I’ve studied quantum computing and robotics under Prof. Perkowski at PSU, but I got my start
-                            with web development! I love teaching and learning from others, and I’ve devoted hundreds of
-                            hours to teaching after-school programs throughout high school.
+                        <p>I’m Selena Zhang; I'm an avid web developer and love to teach and learn from others! Next year, I plan to study computer science at MIT, but in eighth grade, I was the only girl in my computer science class, and I felt discouraged and alienated. I want other girls to have a different experience, so I’ve devoted hundreds of hours to teaching after-school programs throughout high school.
                         </p>
                 </span>
         </div>

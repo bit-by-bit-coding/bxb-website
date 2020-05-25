@@ -12,12 +12,10 @@
 <body>
 <?php include 'nav.php' ?>
 <div class="content">
-    <h2>// Coronavirus Policy</h2>
+    <h2>// Covid-19 Policy</h2>
     <p>
-Due to the Coronavirus, we are not certain whether or not our program will be in-person or online. We are holding off on
-collecting payment until we know more about Washington county’s plans to reopen, likely in June. If the program is
-online for health reasons, we will not be able to offer laptops, but it will be free and any payment accepted at that
-time will be fully refunded.
+Due to Covid-19, we are not certain whether or not our program will be in-person or online. We are holding off on
+collecting payment until we know more about Washington county’s plans to reopen, likely in June. If we have to move the program online, we will not be able to provide laptops, but we will provide around 2 hours of fun, interactive instruction on the same dates! Any payment accepted at that time will be fully refunded minus a credit card processing fee. We’ll keep you posted on developments.
     </p>
     <p>
 Register soon to reserve your spot and get a special early-bird price! Sign up <a href="https://bit.ly/bxbinterestform">here</a>
@@ -32,7 +30,7 @@ and we’ll hold a spot for your child until the payment deadline and notify you
         dispense any snacks.
     </li>
     <li><strong>Check-In: </strong> Campers will likely need to go through additional screening, such as temperature checks or other
-        COVID-19 related tests.
+        Covid-19 related tests.
     </li>
     <li><strong>Additional Precautions:</strong> All campers must wear face-coverings.
     </li>

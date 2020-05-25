@@ -37,7 +37,7 @@
 
         <button class="accordian">I have a 4th grader who really wants to sign up.</button>
         <div class="panel">
-            <p>Email <a href="mailto:info@bitbybit.su.domains">info@bitbybit.su.domains</a>.</p>
+            <p>Email <a href="mailto:info@bitbybitcoding.org">info@bitbybitcoding.org</a>.</p>
         </div>
 
         <button class="accordian">Do you teach (WordPress/Wix/Weebly/any other platform)?</button>
@@ -86,7 +86,7 @@
 
         <button class="accordian">What if I have more questions?</button>
         <div class="panel">
-            <p>No problem! Please email <a href="mailto:info@bitbybit.su.domains">info@bitbybit.su.domains</a>.</p>
+            <p>No problem! Please email <a href="mailto:info@bitbybitcoding.org">info@bitbybitcoding.org</a>.</p>
         </div>
     </div>
     </div>
