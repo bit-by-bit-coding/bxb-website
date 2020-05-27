@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+	<title>{{page.title}}</title>
+	{% include head.html %}
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+	<!--Nav Bar-->
+	{% include nav.html %}
+
+	<!--Banner-->
+	<div id="particles-js" class="banner">
+		<img id="bigLogo" src="imgs/Logo.svg" draggable="false">
+	</div>
+
+
+	<div class="content">
+		{{ content }}
+	</div>
+
+
+	<!--Footer-->
+	{% include footer.html %}
+
+
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	{% for script in page.scripts %}
+	<script src="scripts/{{script}}"></script>
+	{% endfor %}
+
+</body>
