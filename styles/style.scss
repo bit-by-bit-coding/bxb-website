@@ -81,6 +81,15 @@ button {
     }
 }
 
+#canvas{
+  height: 300px;
+  width: 100%;
+}
+
+#bigLogo{
+  will-change: opacity;
+  mix-blend-mode: multiply;
+}
 
 /* take this out */
 button:focus {
