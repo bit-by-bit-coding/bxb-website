@@ -2,6 +2,8 @@
 sass:
     sass_dir: _sass
 
+# baseurl can be used to automaticlaly prepend any links with, for example, a subdirectory
+baseurl: ""
 
 url: 
 contact:
