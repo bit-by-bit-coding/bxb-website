@@ -2,6 +2,16 @@
 sass:
     sass_dir: _sass
 
+
+url: 
+contact:
+    email: info@bitbybitcoding.org
+social:
+    facebook: https://facebook.com/HelloWorldCodeCamp/
+    instagram: https://instagram.com/_bitxbit_/
+
+
+
 include:
  - scripts
  - .htaccess
