@@ -1,0 +1,9 @@
+
+sass:
+    sass_dir: _sass
+
+include:
+ - scripts
+ - .htaccess
+ - imgs
+ - styles
