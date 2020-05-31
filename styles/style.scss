@@ -1,3 +1,6 @@
+---
+---
+
 /*TODO
 Wrap signup button on homepage
 Make testimonials wrap on mobile
@@ -66,6 +69,32 @@ button {
     animation-fill-mode: forwards;
 }
 
+button.action-button {
+  /* display: block; */
+  margin: 10px 5px;
+  text-align: center;
+  transition: 0.5s;
+  font-weight: 200;
+  background-image: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  /* max-width: 200px; */
+  /* width: 80%; */
+}
+button.action-button:hover {
+  opacity: 0.85;
+}
+
+button.action-button:not(.navbutton) {
+  font-size: 2em;
+}
+
+
 /* banner */
 .banner{
     height: 300px;
@@ -78,6 +107,15 @@ button {
     }
 }
 
+#canvas{
+  height: 300px;
+  width: 100%;
+}
+
+#bigLogo{
+  will-change: opacity;
+  mix-blend-mode: multiply;
+}
 
 /* take this out */
 button:focus {
@@ -104,7 +142,7 @@ img {
     top: 0;
     margin: 5px;
     margin: 0;
-    height: 50px;
+    height: 65px;
     background-color: rgba(255, 255, 255, 0.9);
     align-items: center;
     justify-content:   space-between;

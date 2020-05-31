@@ -1,3 +1,10 @@
+---
+---
+
+$main: #2d97b7;
+$dark: #283576;
+$gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+
 /* About Us Page */
 .instructors-container {
   width: 100%;
@@ -13,38 +20,37 @@
   max-width: 500px;
   flex: 1 400px;
   margin: 10px 20px;
-}
-.instructors-item p {
-  display: block;
-  text-align: center;
+
+  p{
+    display: block;
+    text-align: center;
+  }
 }
 
 .instructors-item img {
   height: 250px;
   border-radius: 10px;
-  border-bottom: 3px solid #283576;
+  border-bottom: 3px solid $dark;
 }
 
 .instructors-item strong {
-  color: #283576;
+  color: $dark;
   text-align: center;
   font-size: 1.5em;
   margin-top: 20px;
 }
 
-#canvas {
+#canvas{
   height: 300px;
   width: 100%;
 }
 
-.section {
+.section{
   margin: 0 auto;
   display: block;
 }
 
-#bigLogo {
+#bigLogo{
   will-change: opacity;
   mix-blend-mode: multiply;
 }
-
-/*# sourceMappingURL=about.css.map */
