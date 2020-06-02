@@ -227,6 +227,21 @@ img {
   position: relative;
   margin: 10px;
 }
+
+iframe.embeddedform {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    iframe.embeddedform {
+        display: block;
+    }
+    
+    .embedfallbackbutton {
+        display: none;
+    }
+}
+
 /* Footer */
 #footer {
     background-color: $dark;
@@ -540,4 +555,8 @@ img {
             }
         }
     }
+}
+
+.centertext {
+    text-align: center;
 }
