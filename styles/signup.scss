@@ -16,18 +16,16 @@ $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
   text-align: center;
   transition: .5s;
   font-weight: 200;
-  font-size: 1.8em;
+  background-image: $gradient;
+  cursor: pointer;
 
-    background-image: $gradient;
-    cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    border: none;
-    border-radius: 10px;
-    padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
   max-width: 200px;
     width: 80%;
 
