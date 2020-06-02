@@ -10,10 +10,10 @@ style: signup.css
 <div class="section">
     <div>
         <!-- Noscript content for added SEO -->
-        <noscript><a href=“https://helloworld.eventbrite.com” rel=“noopener noreferrer” target=“_blank”></noscript>
+        <noscript><a href="https://helloworld.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
         <!-- You can customize this button any way you like -->
-        <button id=“eventbrite-widget-modal-trigger-107638481596" type=“button”>Buy Tickets</button>
-        <noscript></a>Buy Tickets on Eventbrite</noscript>
+        <button id="eventbrite-widget-modal-trigger-107638481596" type="button" class="signup-button">Buy Tickets</button>
+        <noscript></a></noscript>
     </div>
     <div id="'sessionWrap">
         <div class="session"></div>
@@ -54,16 +54,16 @@ style: signup.css
 </div>
 
 
-<script src=“https://www.eventbrite.com/static/widgets/eb_widgets.js”></script>
-<script type=“text/javascript”>
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<script type="text/javascript">
         var exampleCallback = function() {
-            console.log(‘Order complete!’);
+            console.log('Order complete!');
         };
         window.EBWidgets.createWidget({
-            widgetType: ‘checkout’,
-            eventId: ‘107638481596’,
+            widgetType: 'checkout',
+            eventId: '107638481596',
             modal: true,
-            modalTriggerElementId: ‘eventbrite-widget-modal-trigger-107638481596’,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-107638481596',
             onOrderComplete: exampleCallback
         });
     </script>
