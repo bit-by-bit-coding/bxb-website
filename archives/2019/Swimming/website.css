@@ -1,0 +1,28 @@
+#b{
+   border:10px solid transparent; 
+    border-image: url("https://i.dlpng.com/static/png/1520170_preview_preview.png") 30;
+    background:lightblue;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+ button {
+     margin-bottom: 2px;
+position: sticky;
+ }
+ body img{
+     margin-left:30px;
+ }
+button:hover{
+     border-style:solid;
+     transition: 1s;
+     border-width:30px;
+     cursor: url("https://forums.tomshardware.com/data/avatars/m/1162/1162003.jpg"), auto;
+     transform: rotateZ(360deg);
+ }
+button:active{
+background:rgb(11, 168, 168);
+border-color:rgb(11, 168, 168);
+}
+
+   

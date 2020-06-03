@@ -1,0 +1,18 @@
+body{
+    background: cornflowerblue;
+    border-style: dotted;
+    border-width :15px;
+    border-color :#E85687;
+}
+p{
+    font-family:'Lexend Deca', sans-serif;
+}
+#Puppy{
+    margin-left: 35%;
+}
+img{
+    margin-left: 35%
+}
+button{
+  margin-bottom: 25%;
+}

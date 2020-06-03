@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<title>The Best Day 5 Website Ever!</title>
+
+<style>
+    div {
+        font-size: 5em;
+    }
+
+
+</style>
+
+<!-- Mirrored from tekcenter.ml/helloworldsites/Website.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 23:51:22 GMT -->
+<body lang="en">
+
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/CwRttSfnfcc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <img width="300" src="https://media1.tenor.com/images/28f74f2d6f33bc096d3eace11685cd19/tenor.gif?itemid=9886124" >
+        <img width="300" src="https://thumbs.gfycat.com/AnyVeneratedAsp-max-1mb.gif" >
+        <img width="300" src="https://i.makeagif.com/media/5-27-2015/n4JZGq.gif" >
+        <img width="300" src="https://media.tenor.com/images/1841cfd8e54c1a49edf4574733f27122/tenor.gif" >
+        <img width="300" src="https://i.pinimg.com/originals/63/41/10/6341108a2659496bd3693d2663eb5ddf.gif" >
+        <img width="300" src="https://gif-free.com/uploads/posts/2017-03/1490894860_cat-wiggle.gif">
+        <img width="300" src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif">
+
+
+
+
+        <div id="BlueDiv"> blue</div>
+            <input id="mysteryColor">
+        <script>
+                var points = 0;
+               var myanswer = prompt("What is the capital of Oregon?");
+               var correctanswer = "Salem";
+               if(myanswer==correctanswer){
+                   alert("You got it right!");
+                   points = points+1;
+           
+               }
+               alert("you have " + points + " points!");
+           
+               var points = points+1;
+               var myanswer = prompt("What is the capital of California?");
+               var correctanswer = "Sacramento";
+               if(myanswer==correctanswer){
+                   alert("Super!");
+                   points = points+1;
+               }
+               alert("you have " + points + " points!");
+           
+           var points = 0;
+           
+           function askQuestion(question, correctAnswer) {
+               var answer = prompt(question);
+               if (answer == correctAnswer) {
+                   alert("You got it right!");
+                   points = points + 1;
+               }
+                 alert("You have " + points + " points!");
+           
+           }
+           
+           askQuestion("What is dobby given to become a free elf?", "a sock");
+           
+           askQuestion("What is the capital of Spain?", "Madrid" );
+              
+               function createGreeting(name) {
+                   return "Hello there "+ name + "!";
+           }
+           var newGreeting = createGreeting("Jacqi");
+           
+           
+           function checkPassword(passwordEntered) {
+               if (passwordEntered == "MySuperSecretPassword") {
+                   return true;
+               } else {
+                   return false;
+               }
+           }
+           
+           var passwordCorrect = checkPassword("MyNotSuperSecretPassword");
+           if (passwordCorrect == true) {
+               alert("You're in!");
+           } else {
+               alert("Access Denied!!"); 
+           }
+           
+           
+           
+           var myFavoriteSongs = [ "girl like you", "like me better", "idk" ];
+           alert(myFavoriteSongs[1]);
+           
+           var myFavoriteAnimals = [ "horse(s)", "dogs",  "goat" ];
+           
+           var animalIndex = 0;
+           
+           for(animalIndex; animalIndex < 3; animalIndex = animalIndex + 1) {
+               alert(myFavoriteAnimals[animalIndex]);
+           }
+           
+           
+           var mystery = [8, 9, 10, 7];
+           mystery.splice(1, 2, "Sydney");
+           alert(mystery);
+           console.log("HI!!!!")
+           
+           var d = new Date ();
+           
+           alert("I'm Hungery!!");
+           alert("Give me FOOD!!");
+           
+           var myParagraph = document.getElementById('myParagraph');
+           console.log(myParagraph);
+           
+           
+           
+           
+           
+           
+               var myBlueDiv = document.getElementById("BlueDiv");
+               var text = myBlueDiv.innerHTML;
+               myBlueDiv.style.backgroundColor = text;
+           
+           myBlueDiv.onclick = function(){
+               var userInput = document.getElementById("mysteryColor");
+               var newColor = userInput.value;
+               myBlueDiv.style.backgroundColor = newColor;
+
+           }
+           
+
+
+
+
+
+           
+           </script>
+</body>
+
+

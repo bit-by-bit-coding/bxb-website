@@ -1,0 +1,47 @@
+#b {
+    background: #A1FBEB;
+    border-style: dashed;
+    border-color: #FAF3AF;
+    border-width: 25px;
+    border-radius: 60px;
+    cursor: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/lg/57/cheese-wedge_1f9c0.png"),auto;
+}
+img {
+margin-left: 60px;
+border-radius: 50px;
+bottom:100px;
+transform:rotateY(180deg)
+}
+iframe {
+    display: block;
+   margin-right: auto; 
+    margin-left: auto;
+    border-radius:180px;
+}
+button {
+    margin-left: 250px;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+button:hover{
+background-color: rgb(168, 92, 230)
+
+}
+/* #FFF74F    #A1FBEB */ google fonts
+p {
+   font-family: 'Cabin Sketch', cursive;
+}
+em {
+    font-family: 'Cabin Sketch', cursive;
+
+}
+.packers{
+    transition-duration: 3s;
+    border-style:double;
+    border-width:15px
+}
+.packers:hover{
+border-style: double;
+border-color: rgb(240, 182, 35);
+cursor:crosshair;
+}

@@ -1,0 +1,62 @@
+#bunny{
+     width:450px;
+     height: 235px;
+     background-color: transparent;
+     border-color: transparent;
+  /*The words above change the width, background color and border of the bunny button */
+}
+button:active #bunny{
+    width:95%;
+    height:95%;}
+#Bunny{
+    width:400px;
+}
+body{
+    background-image: url("https://cdn4.vectorstock.com/i/1000x1000/74/53/flat-design-carrot-seamless-pattern-background-vector-13877453.jpg");
+    border-style: groove;
+    border-color: rgb(255, 162, 178);
+}
+div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+#newsbox{
+    width:90%;
+    background-color: rgb(255, 162, 178);
+    text-align: center;
+    border-color: orangered;
+    border-style: dotted;
+    margin: auto;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+ul{
+    margin: auto;
+    text-align: center;
+    line-height: 55px;
+    list-style-type: none;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+p{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.Buy{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    
+}
+
+.Buy:hover {background-color: orangered
+}

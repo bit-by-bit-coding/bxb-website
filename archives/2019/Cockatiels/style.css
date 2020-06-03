@@ -1,0 +1,165 @@
+body {
+    background: #F6F6F6;
+    cursor: url(pointer.png),auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+   color:#474747;
+   text-align: center;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #D2D20A;
+    text-align: center
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+color: #000000;
+}
+img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000
+}
+strong {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+   
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+div {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 50px;
+    width: 40%;
+    text-align: center;
+}
+#feeding {
+    color: black;
+}
+#feeding:hover {
+    color: black
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(245, 221, 7);
+}
+
+
+
+
+
+
+/*speech bubble*/
+
+.oval-speech {
+    position:relative;
+    width:550px;
+    padding:50px 40px;
+    float: right;
+    text-align:center;
+    color:#000000;
+    background: #bdbdbd;
+    margin-bottom: 200px;
+    margin-top: 30px;
+    /* css3 */
+    background: #bdbdbd00;
+    
+    border-radius:250px / 120px;
+  }
+  
+  .oval-speech p {font-size:1.25em;}
+  
+  /* creates part of the curve */
+  .oval-speech:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:-30px;
+    right:50%;
+    height:30px;
+    border-right:60px solid #000000;
+    background: rgb(161, 161, 161, 0); /* need this for webkit - bug in handling of border-radius */
+  
+
+    border-bottom-right-radius:80px 50px;
+    /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+    
+    transform:translate(0, -2px);
+  }
+  
+  /* creates part of the curved pointy bit */
+  .oval-speech:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:-30px;
+    right:50%;
+    width:60px;
+    height:30px;
+    background:#F6F6F6;
+   
+    border-bottom-right-radius:40px 50px;
+    /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+    
+ 
+ 
+
+    transform:translate(-30px, -2px);
+  }
+  #animation {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    margin-top: 100px;
+}
+@keyframes move {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+  
+
+.Cockatiel:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:-30px;
+    right:29%;
+    width:70px;
+    height:30px;
+    background:#F6F6F6;
+   
+    border-bottom-left-radius:40px 50px;
+    /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+    
+ 
+ 
+
+    transform:translate(-30px, -2px);
+  }
+
+
+.Cockatiel::before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:-30px;
+    right:50%;
+    height:30px;
+    border-left:60px solid #000000;
+    background: rgb(161, 161, 161, 0); /* need this for webkit - bug in handling of border-radius */
+  
+
+    border-bottom-left-radius:80px 50px;
+    /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+    
+    transform:translate(100px, -2px);
+  }

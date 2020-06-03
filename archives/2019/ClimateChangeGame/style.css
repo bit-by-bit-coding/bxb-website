@@ -1,0 +1,57 @@
+/*Add your CSS here!*/
+
+/*give the body a background that is white and a border that is dotted*/
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(84, 148, 41);
+    border-style: double;
+    border-color: rgb(154, 223, 214);
+}
+.blueButton{
+    background-color: blanchedalmond;
+}
+#green-id{
+    background-color:rgb(223, 245, 80);
+}
+.specialButton{
+    background-color: teal;
+    border-color: black;
+    border-width: 0.5px;
+    border-spacing: 15px 15px;
+    color: rgb(43, 43, 43);
+    padding: 17px;
+    text-align:center;
+    text-decoration: unset;
+    display:left;
+    font-size: center;
+    margin: 15px; /*Makes the space in between buttons*/
+    cursor: center;
+}
+#earth {
+    float: right;
+}
+/* }
+.specialButton{
+background-color: cornflowerblue;
+border: 0ex;
+color: rgb(43, 43, 43);
+padding: 50px;
+text-align:center;
+text-decoration: unset;
+display:left;
+font-size: center;
+margin: center;
+cursor: center;
+}
+.specialButton{
+    background-color: cornflowerblue;
+border: 0ex;
+color: rgb(43, 43, 43);
+padding: 50px;
+text-align:center;
+text-decoration: unset;
+display:left;
+font-size: center;
+margin: center;
+cursor: center;
+} */

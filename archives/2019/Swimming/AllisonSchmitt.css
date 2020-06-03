@@ -1,0 +1,11 @@
+#body {
+    text-align: center;
+    background:aquamarine;
+    font-family: 'Indie Flower' , cursive;
+}
+#JavaScriptButton {
+    background:aqua;
+}
+#JavaScript-button:hover {
+    cursor: url("https://secure.webtoolhub.com/static/resources/icons/set12/c1b543637ea4.png"), auto;
+}

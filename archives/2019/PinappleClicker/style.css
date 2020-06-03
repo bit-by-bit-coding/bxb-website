@@ -1,0 +1,26 @@
+/*Add your CSS here!*/
+
+/*give the body a background that is white and a border that is dotted*/
+body {
+    background: rgb(70, 179, 164);
+    border-style: dotted;
+}
+
+#steve {
+    position: absolute;
+    bottom:320px;
+    right:70px;
+    border-style: solid;
+    border-width: 100px;
+    border-color: rgb(209, 209, 255);
+    border-radius: 20px;
+    background: rgb(209, 209, 255);
+}
+
+#JEFF {
+    
+}
+
+#pineapplename {
+    visibility: hidden;
+}
