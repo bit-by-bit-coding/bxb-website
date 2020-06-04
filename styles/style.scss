@@ -139,6 +139,9 @@ img {
     content: "// ";
 }
 
+.noslashes::before {
+    content: "";
+}
 
 /* Navigation Bar */
 #topnav {
