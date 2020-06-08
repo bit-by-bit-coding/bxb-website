@@ -1,0 +1,72 @@
+body {
+    background: #780CE8;
+    border:  10px solid #420DFF;
+    font-family: 'Lexend Exa', sans-serif;
+    cursor: url("https://www.facebook.com/images/emoji.php/v6/fed/2/16/2764.png"), auto;
+}
+
+#yesss, #shank {
+    width: 300px;
+}
+
+#princesses, #wifirouter {
+    width: 500px;
+}
+
+#videogame {
+    width: 400px;
+}
+
+#title {
+    color: white;
+    font-size: 30px;
+}
+
+#sins {
+    color: white;
+}
+
+img, iframe {
+    margin: auto;
+    display: block;
+}
+
+#cover {
+    width: 100%;
+}
+
+#heartimage {
+    width: 100px;
+}
+
+#heart:hover {
+    background-color: red;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    transition: 0.1s;
+}
+
+#heartimage:hover {
+    filter: brightness(0);
+    transition: 0.1s;
+}
+
+#heart:active {
+    background-color: rgb(255, 182, 72);
+    border-color: rgb(255, 182, 72);
+}
+
+nav {
+    display: inline-block;
+}
+
+#theearthisexploding {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: -1;
+}
