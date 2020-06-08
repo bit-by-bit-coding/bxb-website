@@ -1,0 +1,54 @@
+body {
+    background: #1AEBD2
+}
+p{
+    text-align: center; 
+    font-size: 50px;
+}
+div { 
+    font-family: 'Ma Shan Zheng', cursive;
+    cursor:url auto;
+    font-size: 25px;
+}
+img {
+    height :150px;
+    border-style: solid; 
+    border-color: #892AEB;
+}
+/*#0FFF16 #1AEBD2 #2A6EFF #892AEB #FF1C7B*/
+#dog {
+
+}
+#heading:hover {
+    font-size: 50px;
+} 
+p {
+    text-align: center;
+    font-size: 50px;  
+}
+#heading {
+    color: rgb(12, 160, 17);
+}
+button:hover {
+    color: rgb(11, 68, 11);
+}
+button {
+    transition: 5s;
+}
+nav button {
+    width: 150px;
+}
+#spinningbutton {
+animation-name: spin;
+animation-duration: 5s;
+}
+@keyframes spin {
+    from {
+        background: #FF1C7B;
+        transform: none;
+        
+    }
+    to {
+        transform: rotateZ(1turn);
+    }
+}
