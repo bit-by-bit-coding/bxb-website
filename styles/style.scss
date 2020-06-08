@@ -134,6 +134,14 @@ img {
     width: calc(100% - 60px);
 }
 
+.content h1::before,.content h2::before, .content h3::before,
+.content h4::before, .content h5::before, .content h6::before {
+    content: "// ";
+}
+
+.noslashes::before {
+    content: "";
+}
 
 /* Navigation Bar */
 #topnav {
