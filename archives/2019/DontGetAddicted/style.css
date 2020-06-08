@@ -1,0 +1,77 @@
+/*Add your CSS here!*/
+
+/*give the body a background that is white and a border that is dotted*/
+body {
+    background: rgb(39, 39, 119);
+    border-style: none;
+    border-color: pink;
+    }
+button {
+    background: url(https://i.kym-cdn.com/photos/images/newsfeed/000/128/096/Nyancatless20110725-22047-2vf3z5.gif);
+    border: outset;
+    Position: relative;
+    left: 10%;
+}
+
+#hedgehog1 {
+    border:dashed;
+    left:500px;
+    top: 200px;
+}
+
+
+#hedgehog2 {
+    position: relative;
+    left: 250px;
+    bottom: 50px; 
+}
+#blob{
+    background: rgb(228, 147, 228);
+    width: 200 px;
+    
+}
+mark{
+    text-align: center;
+    background: rgb(94, 78, 150);
+    position: relative;
+    left: 100px;
+}
+#playsign{
+    position: relative;
+    bottom: 1200px;
+    left: 1100px;
+}
+#rainbowFuel{
+    position: relative;
+    bottom: 1000px;
+    color: white;
+    left: 700px;
+    font-size: 20px;
+}
+#headphones{
+    position: relative;
+    bottom: 1095px;
+    right: 150px;
+    visibility: hidden;
+}
+#addheadphones{
+    position:relative;
+    bottom: 750px;
+    left: 1090px;
+    color: white;
+    font-size: 20px
+}
+#lifebeforeeyes{
+    color:white;
+    position: relative;
+    left: 430px;
+    bottom: 500px;
+    font-size: 20px;
+}
+#poo{
+    position:relative;
+    bottom:1300px;
+    left: 700px;
+    color:white;
+    font-size: 20px;
+}

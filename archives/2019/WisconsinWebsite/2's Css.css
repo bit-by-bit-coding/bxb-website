@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+    cursor: url("https://d1marr3m5x4iac.cloudfront.net/images/block/I0-001/000/598/661-6.gif_/wisconsin-badgers-61.gif"),auto;
+}
+button{
+    background-color: rgb(203, 184, 247);
+    animation: shake;
+    animation-duration: 0.02s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+ @keyframes shake{
+     from{
+         transform: translateX(5px);
+        }
+        to{
+            transform: translateX(10px);
+        }
+ }  
+

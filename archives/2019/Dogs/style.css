@@ -1,0 +1,52 @@
+#b{
+    background:#5B84EB;
+    border-style: dotted;
+    border-width :15px;
+    border-color :#E85687;
+    margin-left : -10%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#bob{
+    margin-left:450px;
+}
+ img{
+    border-style :solid;
+    border-width: 20px;
+    border-color: #7867F5;
+    border-radius: 100px;
+    margin-right: -10%;
+    /*
+#5B84EB
+#7867F5
+#9F5BDB
+#F068F7
+#E85687
+    */
+}
+button{
+    transition-duration: 2s;
+    margin-right: 50%; 
+    border-style: solid;
+    transition: 1s; 
+   
+}
+button:hover{
+    background: #9F5BDB;
+    cursor: pointer;
+    border-color: #9F5BDB;
+}
+button:active{
+   border-color: darkblue;
+}
+p{
+    margin-left: -10%;
+}
+iframe{
+    margin-left: -10%;
+}
+#PageTwo:hover{
+   transform: scale(1.1);
+}
+#BathingYourDog:hover{
+ transform: scale(1.1);
+}

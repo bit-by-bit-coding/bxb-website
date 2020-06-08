@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<title>
+    The Second Website I Have Ever Made
+</title>
+
+
+<!-- Mirrored from tekcenter.ml/helloworldsites/funwebsitethateveryoneloves.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 23:51:20 GMT -->
+<body>
+    <div id="blueThing">
+        yay text hello
+    </div>
+    <script>
+        var points = 0;
+        function askQuestion(question, correctAnswer) {
+            var answer = prompt(question);
+            if (answer == correctAnswer) {
+                alert("You got it right!");
+                points = points + 1;
+            }
+            alert("You have " + points + " points!");
+        }
+        askQuestion("What is Dobby given to become a free elf?", "a sock");
+
+
+        function checkPassword(passwordEntered) {
+            if (passwordEntered == "blobfish") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var passwordCorrect = checkPassword("blobfish");
+        if (passwordCorrect == true) {
+            alert("You're in.");
+        } else {
+            alert("Access denied.");
+        }
+
+        var students = ["Loving is Easy", "STUPID", "Everytime"];
+        alert(mySongs[1]);
+
+        var animals = ["Emu", "Blobfish", "Cat", "Fish", "Dog", "Owl", "Killer Whale", "Turtle", "Harp Seal", "Polar Bear"];
+
+        var animalIndex = 0;
+
+        for (animalIndex; animalIndex < 10; animalIndex = animalIndex + 1) {
+            alert(animals[animalIndex]);
+        }
+
+
+        var mystery = [8, 9, 10, 1, 7];
+        mystery.splice(1, 2, "Sydney");
+        alert(mystery);
+
+
+        var d = new Date();
+        d.getDate();
+
+        var ages = [8, 9, 12, 20, 13];
+        ages.pop();
+        ages.push(7);
+        for (var i = 0; i < ages.length; i = i + 1) {
+            console.log(age[i]);
+        }
+
+
+    </script>
+</body>
