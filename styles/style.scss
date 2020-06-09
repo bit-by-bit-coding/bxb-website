@@ -81,7 +81,6 @@ button.action-button {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border-radius: 10px;
   padding: 5px 20px;
   /* max-width: 200px; */
   /* width: 80%; */
@@ -148,8 +147,7 @@ img {
     display: flex;
     position: sticky;
     top: 0;
-    margin: 5px;
-    margin: 0;
+    margin: 0 2.5vw;
     height: 65px;
     background-color: rgba(255, 255, 255, 0.9);
     align-items: center;
@@ -197,8 +195,6 @@ img {
 
 .navbutton:hover {
     font-weight: bold;
-    border-bottom-color: #e77d00;
-    color: #e77d00;
 }
 
 #banner { text-align: center; }
@@ -568,18 +564,23 @@ iframe.embeddedform {
 button.tinybutton {
     font-size: 1rem;
     font-weight: 350;
+    border-radius: 7.5px;
 }
 
 button.smallbutton {
     font-size: 1.25rem;
+    border-radius: 10px;
 }
 
 button.mediumbutton {
     font-size: 1.5rem;
+    border-radius: 10px;
 }
 
 button.largebutton {
     font-size: 2rem;
+    border-radius: 10px;
+}
 
 .centertext {
     text-align: center;
