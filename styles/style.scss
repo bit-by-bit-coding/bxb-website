@@ -81,7 +81,6 @@ button.action-button {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border-radius: 10px;
   padding: 5px 20px;
   /* max-width: 200px; */
   /* width: 80%; */
@@ -565,18 +564,22 @@ iframe.embeddedform {
 button.tinybutton {
     font-size: 1rem;
     font-weight: 350;
+    border-radius: 7.5px;
 }
 
 button.smallbutton {
     font-size: 1.25rem;
+    border-radius: 10px;
 }
 
 button.mediumbutton {
     font-size: 1.5rem;
+    border-radius: 10px;
 }
 
 button.largebutton {
     font-size: 2rem;
+    border-radius: 10px;
 }
 
 .centertext {
