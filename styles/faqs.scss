@@ -49,23 +49,25 @@ section.faqs {
       display: none;
     }
 
-    // code to add the custom "open" indicator
-    :after {
-      display: block;
-      position: absolute;
-      background: white;
-      border: 2px solid $dark;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      font-size: 32px;
-      border-radius: 50%;
-      content: "+";
-      text-align: center;
-      left: 5px;
-      transform: translateY(-16px);
-    } 
+    
   }
+
+  // code to add the custom "open" indicator
+  summary:after {
+    display: block;
+    position: absolute;
+    background: white;
+    border: 2px solid $dark;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 32px;
+    border-radius: 50%;
+    content: "+";
+    text-align: center;
+    left: 5px;
+    transform: translateY(-16px);
+  } 
   
   details {
     border: none;
