@@ -12,21 +12,23 @@ style: signup.css
         <!-- Noscript content for added SEO -->
         <noscript><a href="https://helloworld.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
         <!-- You can customize this button any way you like -->
-        <button id="eventbrite-widget-modal-trigger-107638481596" type="button" class="signup-button largebutton">Buy Tickets</button>
+        <button id="eventbrite-widget-modal-trigger-107638481596" type="button" class="signup-button largebutton">Buy
+            Tickets</button>
         <noscript></a></noscript>
-        <span class="italics" >If you need a scholarship, email <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></span>
+        <span class="italics">If you need a scholarship, email <a
+                href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></span>
 
     </div>
     <div id="sessionWrap">
         <div class="session">
-        <h2>HTML/CSS Session</h2>
+            <h2>HTML/CSS Session</h2>
 
 
-        <p>This session moves slower and will provide a more gentle introduction. Girls will develop a deep
-            understanding of HTML and CSS and create their own customized webpage. Girls will also have the
-            option to try JavaScript or to learn how to add animation to their websites. August 3rd-7th.</p>
-        <p> <a href="http://jsfiddle.net/7mL9qze2/9/embedded/result/?username=Sydney">Click here</a> to see a sample
-            project for this session and the code behind it!</p>
+            <p>This session moves slower and will provide a more gentle introduction. Girls will develop a deep
+                understanding of HTML and CSS and create their own customized webpage. Girls will also have the
+                option to try JavaScript or to learn how to add animation to their websites. August 3rd-7th.</p>
+            <p> <a href="http://jsfiddle.net/7mL9qze2/9/embedded/result/?username=Sydney">Click here</a> to see a sample
+                project for this session and the code behind it!</p>
 
         </div>
 
@@ -58,14 +60,14 @@ style: signup.css
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 <script type="text/javascript">
-        var exampleCallback = function() {
-            console.log('Order complete!');
-        };
-        window.EBWidgets.createWidget({
-            widgetType: 'checkout',
-            eventId: '107638481596',
-            modal: true,
-            modalTriggerElementId: 'eventbrite-widget-modal-trigger-107638481596',
-            onOrderComplete: exampleCallback
-        });
-    </script>
+    var exampleCallback = function () {
+        console.log('Order complete!');
+    };
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '107638481596',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-107638481596',
+        onOrderComplete: exampleCallback
+    });
+</script>
