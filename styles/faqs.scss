@@ -12,6 +12,26 @@ $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
   margin: 50px auto 0;
 }
 
+//sources: https://stackoverflow.com/a/17301828
+//        https://codepen.io/morewry/pen/gbJvy
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }                 
+}
 
 section.faqs {
   summary {
@@ -68,6 +88,12 @@ section.faqs {
   details[open] {
     summary:after {
       content: "-";
+    }
+
+    :not(summary) {
+      animation-name: invisiblyGrowFontSize, fadeIn;
+      animation-duration: 500ms, 200ms;
+      animation-delay: 0ms, 500ms;
     }
   } 
 
