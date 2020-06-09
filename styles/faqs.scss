@@ -12,22 +12,42 @@ $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
   margin: 50px auto 0;
 }
 
+
 section.faqs {
-
-  // remove the default triangle to indicate whether the details is "open"
-  // we are using or own custom one instead
   summary {
-    list-style: none;
-    font-size: 1.2em;
-    color:rgb(46, 52, 54);
-  }
 
-  //temporary fix because chrome does not support the list-style thing
-  summary::-webkit-details-marker {
-    display: none;
+    font-size: 1.2em;
+    // keep the same default font color (slightly not black) that seems to have been the default button text color
+    color:rgb(46, 52, 54);
+
+    // remove the default triangle to indicate whether the details is "open"
+    // we are using or own custom one instead
+    list-style: none;
+
+    //temporary fix because chrome does not support the list-style thing
+    ::-webkit-details-marker {
+      display: none;
+    }
+
+    // code to add the custom "open" indicator
+    :after {
+      display: block;
+      position: absolute;
+      background: white;
+      border: 2px solid $dark;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 32px;
+      border-radius: 50%;
+      content: "+";
+      text-align: center;
+      left: 5px;
+      transform: translateY(-16px);
+    } 
   }
   
-  .accordian, details {
+  details {
     border: none;
     border-bottom: 2px solid $dark;
     box-sizing: border-box;
@@ -41,36 +61,16 @@ section.faqs {
     margin-bottom: 30px;
   }
   
-
-  .accordian:after, summary:after {
-    display: block;
-    position: absolute;
-    background: white;
-    border: 2px solid $dark;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 32px;
-    border-radius: 50%;
-    content: "+";
-    text-align: center;
-    left: 5px;
-    transform: translateY(-16px);
-  }
-
-  .active, .accordian:hover, summary:hover, details[open] summary {
+  summary:hover, details[open] summary {
     color: $main;
   }
 
-  .active:after, details[open] summary:after {
-    content: "-";
-  }
+  details[open] {
+    summary:after {
+      content: "-";
+    }
+  } 
 
-}
-
-.active + .panel{
-  //transform: scaleY(1);
-  height: auto;
 }
 
 canvas {
