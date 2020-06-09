@@ -204,7 +204,7 @@ img {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
     #bigLogo{
         max-width: 800px;
     }
@@ -218,25 +218,37 @@ img {
 /* Details*/
 .details-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; //mobile-first layout
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 -10px;
 }
 
 .details-item {
   padding: 1% 0;
-  flex: 1 1 475px;
+  flex-grow: 1;
+  flex-shrink: 1;
   position: relative;
   margin: 10px;
 }
 
 iframe.embeddedform {
     display: none;
+    // override the defailt width and height HTML attributes
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
+    .details-container{
+        flex-direction: row;
+    }
+
+    .details-item {
+        flex-basis: 300px;
+    }
+
     iframe.embeddedform {
         display: block;
     }
@@ -330,7 +342,7 @@ iframe.embeddedform {
 
 
 /* responsive */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 
     canvas, #canvas, div canvas{
         top: 0;
