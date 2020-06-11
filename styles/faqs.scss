@@ -1,9 +1,7 @@
 ---
 ---
 
-$main: #2d97b7;
-$dark: #283576;
-$gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+@import 'variables';
 
 .section {
   max-width: calc(100vw - 60px);
