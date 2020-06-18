@@ -9,15 +9,10 @@ style: signup.css
 <!--Sign Up-->
 <div class="section">
     <div class="centertext">
-        <!-- Noscript content for added SEO -->
-        <noscript><a href="https://helloworld.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
-        <!-- You can customize this button any way you like -->
-        <button id="eventbrite-widget-modal-trigger-107638481596" type="button" class="signup-button largebutton">Buy
-            Tickets</button>
-        <noscript></a></noscript>
-        <span class="italics">If you need a scholarship, email <a
-                href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></span>
-
+        <a class="notextdecoration" href="https://docs.google.com/forms/d/e/1FAIpQLSdrQrexGbs9i8aZ2p0bp4WVIepxj0AIfYkQd8pPRQIysR3ucw/viewform"><button type="button" class="signup-button largebutton">Sign Up</button></a>
+        <!-- <span class="italics">If you need a scholarship, email <a
+                        href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></span> -->
+        <span class="italics">Signup is free, but if you are financially able, you can help support our program with a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MDXJKC6NVZ3G&source=url">tax-deductable donation</a> ($30 suggested).</span>
     </div>
     <div id="sessionWrap">
         <div class="session">
@@ -56,18 +51,3 @@ style: signup.css
             of
             web development.</strong></div>
 </div>
-
-
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-<script type="text/javascript">
-    var exampleCallback = function () {
-        console.log('Order complete!');
-    };
-    window.EBWidgets.createWidget({
-        widgetType: 'checkout',
-        eventId: '107638481596',
-        modal: true,
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-107638481596',
-        onOrderComplete: exampleCallback
-    });
-</script>
