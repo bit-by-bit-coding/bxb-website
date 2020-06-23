@@ -42,12 +42,6 @@ td {
 
 .banner{
   isolation: isolate;
-
-  #bigLogo{
-    will-change: opacity;
-    mix-blend-mode: color-burn;
-  }
-
 }
 
 #sessionWrap{
