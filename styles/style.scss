@@ -187,10 +187,28 @@ img {
     text-transform: uppercase;
     color: $main;
     font-size: 0.9em;
+    border-radius: 5px;
+    position: relative;
 }
 
-.navbutton:hover {
-    background-color: #B7CADB;
+// animation from https://coronavirus.su.domains/
+.navbutton::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #B7CADB;
+    transform: scaleY(0);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    transform-origin: 50% 100%;
+    z-index: -1;
+    border-radius: 5px;
+    padding-left: 0px;
+    left: 0;
+}
+.navbutton:hover::before {
+    transform: scaleY(1);
 }
 
 #banner { text-align: center; }
