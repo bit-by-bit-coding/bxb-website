@@ -6,6 +6,8 @@ sass:
 baseurl: ""
 
 url: 
+donate:
+    page: https://secure.givelively.org/donate/bit-by-bit-coding
 contact:
     email: info@bitbybitcoding.org
 social:
