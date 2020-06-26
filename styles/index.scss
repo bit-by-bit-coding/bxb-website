@@ -15,13 +15,26 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   width: 100%;
 }
 
-.section{
+.top-photo {
+  padding: 0px 0px 0px 15px;
+  float: right;
+  position: relative;
+}
+
+.section-1{
+  width: 50%;
+  position: relative;
+}
+
+.section-2{
   width: 100%;
+  padding: 15px 0px 0px 0px;
 }
 
 .home-photos img {
   width: 400px;
   max-width: 800px;
+  max-height: 500px;
   flex: 1 1 400px;
 }
 
