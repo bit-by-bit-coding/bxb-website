@@ -17,20 +17,20 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
 
 .top-photo {
   padding: 0px 0px 0px 15px;
-  float: right;
-  position: relative;
+  position: absolute;
+  left: 47%;
   overflow: hidden;
-  width: 55%;
+  width: 45%;
 }
 
-.section-1{
-  width: 50%;
+.section{
   position: relative;
+  min-width: 300px;
 }
 
-.section-2{
-  width: 100%;
-  padding: 15px 0px 0px 0px;
+#home-details{
+  width: 45%;
+  position: relative;
 }
 
 .home-photos img {
