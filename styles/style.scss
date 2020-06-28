@@ -243,7 +243,8 @@ iframe.embeddedform {
 
 @media (min-width: 768px) {
     .details-container{
-        flex-direction: row;
+        display: flex;
+        flex-flow: row wrap;
     }
 
     .details-item {
@@ -357,6 +358,9 @@ iframe.embeddedform {
             display: initial;
         }
 
+        iframe.embeddedform {
+            display: none;
+        }
 
         $hamburger-menu-size: 60px;
         $hamburger-menu-border-radius: .12em;
