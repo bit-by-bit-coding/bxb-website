@@ -48,11 +48,16 @@ h2 {
     font-family: $heading-font;
     font-weight: 700;
     margin-bottom: 2%;
+    text-align: left;
 }
 
 h3 {
     font-family: $heading-font;
     margin-bottom: 0.5%;
+}
+
+p {
+    text-align: left;
 }
 
 .subtitle {
@@ -231,7 +236,7 @@ img {
 
 iframe.embeddedform {
     display: none;
-    // override the defailt width and height HTML attributes
+    // override the default width and height HTML attributes
     width: 100%;
     height: 100%;
 }
