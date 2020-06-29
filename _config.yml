@@ -22,3 +22,14 @@ include:
  - imgs
  - styles
  - .well-known
+
+url: "bitbybitcoding.org"
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path:            "archives/**/*"
+    values:
+      sitemap:         false
