@@ -48,16 +48,11 @@ h2 {
     font-family: $heading-font;
     font-weight: 700;
     margin-bottom: 2%;
-    text-align: left;
 }
 
 h3 {
     font-family: $heading-font;
     margin-bottom: 0.5%;
-}
-
-p {
-    text-align: left;
 }
 
 .subtitle {
@@ -243,8 +238,7 @@ iframe.embeddedform {
 
 @media (min-width: 768px) {
     .details-container{
-        display: flex;
-        flex-flow: row wrap;
+        flex-direction: row;
     }
 
     .details-item {
