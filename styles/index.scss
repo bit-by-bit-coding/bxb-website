@@ -13,17 +13,18 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 35%
 }
 
 .top-photo {
   width: 575px;
   height: 530px;
   overflow: hidden;
+  flex: 1 1 400px;
 }
 
 .details-flex{
   width: 575px;
+  flex: 1 1 400px;
 }
 
 .top-container{
