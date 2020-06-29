@@ -16,21 +16,15 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
 }
 
 .top-photo {
-  padding: 0px 0px 0px 15px;
-  position: absolute;
-  left: 47%;
-  overflow: hidden;
-  width: 45%;
+  margin: 10px;
 }
 
-.section{
-  position: relative;
-  min-width: 300px;
-}
-
-#home-details{
-  width: 45%;
-  position: relative;
+.top-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 15px 0px;
+  width: 100%;
 }
 
 .home-photos img {
