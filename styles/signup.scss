@@ -36,10 +36,6 @@ $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
   text-decoration: none;
 }
 
-td {
-  padding: 1.5%;
-}
-
 .banner{
   isolation: isolate;
 }
@@ -52,4 +48,9 @@ td {
     flex: 1 1 500px;
     margin: 0px 20px;
   }
+}
+
+#bigLogo{
+  will-change: opacity;
+  mix-blend-mode: multiply;
 }
