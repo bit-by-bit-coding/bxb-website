@@ -288,6 +288,20 @@ iframe.embeddedform {
     }
 }
 
+#footer-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-contact-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
 /* Homepage */
 #warning {
     color: #e77d00;
