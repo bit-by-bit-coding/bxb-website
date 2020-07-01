@@ -44,10 +44,10 @@ section.faqs {
     // we are using or own custom one instead
     list-style: none;   
   }
-    //temporary fix because chrome does not support the list-style thing
-    summary::-webkit-details-marker {
-      display: none;
-    }
+  //temporary fix because chrome does not support the list-style thing
+  summary::-webkit-details-marker {
+    display: none;
+  }
   // code to add the custom "open" indicator
   summary:after {
     display: block;
