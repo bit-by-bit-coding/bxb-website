@@ -19,18 +19,6 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   flex: 1 1 400px;
 }
 
-.details-flex{
-  width: 575px;
-  flex: 1 1 400px;
-}
-
-.top-container{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .home-photos img {
   height: 500px;
   flex: 1 1 400px;
@@ -38,6 +26,14 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
 
 .details-item{
   height: max-content;
+  flex: 1 1 400px;
+}
+
+.details-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 /* Testmonials */
