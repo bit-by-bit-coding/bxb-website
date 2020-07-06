@@ -291,16 +291,52 @@ iframe.embeddedform {
 #footer-contact {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
-#footer-contact-1 {
+#footer-connect {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    
+    a {
+        font-size: 13px;
+    }
+    
+    h2 {
+        color: #41ceda;
+        border-bottom: solid;
+        margin-bottom: 5px;
+        min-width: max-content;
+    }
 }
+
+#footer-buttons {
+    display: flex;
+    flex-direction: column;
+    
+    #donate {
+        margin: 0px;
+        margin-top: 10px;
+        
+        button {
+            background-color: #41ceda;
+            border: none;
+            border-radius: 10px;
+            height: 30px;
+            width: 98%;
+            color: white;  
+        }
+    }
+    
+    #socials{
+        margin: 0px;
+        display: flex;
+    }
+}
+
+
 
 /* Homepage */
 #warning {
