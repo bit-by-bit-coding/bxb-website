@@ -229,11 +229,18 @@ img {
   margin: 10px;
 }
 
-iframe.embeddedform {
-    display: none;
-    // override the defailt width and height HTML attributes
-    width: 100%;
-    height: 100%;
+.getinvolvedimgs {
+        width: 400px;
+        max-width: 800px;
+        flex: 1 1 400px;
+}
+
+#volunteerbackground {
+    display: flex;
+    background: #41CEDA;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #153570;
 }
 
 @media (min-width: 768px) {
@@ -245,13 +252,6 @@ iframe.embeddedform {
         flex-basis: 300px;
     }
 
-    iframe.embeddedform {
-        display: block;
-    }
-    
-    .embedfallbackbutton {
-        display: none;
-    }
 }
 
 /* Footer */
