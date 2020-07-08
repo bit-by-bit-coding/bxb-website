@@ -23,7 +23,6 @@ include:
  - styles
  - .well-known
 
-url: "bitbybitcoding.org"
 plugins:
   - jekyll-sitemap
 
