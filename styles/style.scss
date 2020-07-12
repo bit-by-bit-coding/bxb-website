@@ -258,6 +258,7 @@ iframe.embeddedform {
 #footer {
     background-color: $dark;
     padding: 0.5vh 2vw;
+    min-width: 540px;
     color: white;
     text-align: center;
     font-size: 0.8em;
@@ -291,23 +292,24 @@ iframe.embeddedform {
 #footer-contact {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+
+    p {
+        font-size: 13px;
+        margin: 0px;
+    }
 }
 
 #footer-connect {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    a {
-        font-size: 13px;
-    }
-    
+
     h2 {
         color: #41ceda;
         border-bottom: solid;
-        margin-bottom: 5px;
+        margin: 5px 0px 10px;
         min-width: max-content;
     }
 }
@@ -326,7 +328,13 @@ iframe.embeddedform {
             border-radius: 10px;
             height: 30px;
             width: 98%;
-            color: white;  
+            color: #283576;  
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        button:hover {
+            filter: brightness(85%);
         }
     }
     
@@ -336,6 +344,9 @@ iframe.embeddedform {
     }
 }
 
+#footer-info {
+    min-width: 150px;
+}
 
 
 /* Homepage */
