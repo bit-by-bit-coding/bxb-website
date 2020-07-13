@@ -15,23 +15,26 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   width: 100%;
 }
 
-.top-photo {
+.home-photos img{
+  max-height: 500px;
+  max-width: 50vw;
   flex: 1 1 400px;
 }
 
-.home-photos img {
-  height: 500px;
+.top-photo img{
+  max-width: 85vw;
   flex: 1 1 400px;
 }
 
 .details-item{
   height: max-content;
+  max-width: 85vw;
   flex: 1 1 400px;
 }
 
 .details-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
