@@ -210,6 +210,14 @@ img {
     }
 }
 
+#donatewidget {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%
+  }
 
 /* Details*/
 .details-container {
@@ -230,17 +238,7 @@ img {
 }
 
 .getinvolvedimgs {
-        width: 400px;
-        max-width: 800px;
-        flex: 1 1 400px;
-}
-
-#volunteerbackground {
-    display: flex;
-    background: #41CEDA;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #153570;
+        width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -351,7 +349,6 @@ img {
         .mobile {
             display: initial;
         }
-
 
         $hamburger-menu-size: 60px;
         $hamburger-menu-border-radius: .12em;
