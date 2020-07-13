@@ -1,0 +1,66 @@
+/* nunito-regular - latin */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 64px;
+}
+#home, #support {
+    background-image: linear-gradient(to bottom right, #2d959e, #153570);
+    color: #EEEEEE;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+}
+#container {
+    display: block;
+    margin: 0px auto;
+    width: 45%;
+    height: 400px;
+}
+#left, #right {
+    height: 400px;
+    width: 49%;
+    display: inline-block;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
+    text-align: left;
+}
+img {
+    float: right;
+}
+#home:hover, #support:hover {
+    background-image: linear-gradient(to bottom right, #153570, #000000);
+    cursor: pointer;
+}
+
+#footer{background-color:#283576;padding:0.5vh 2vw;color:white;text-align:center;font-size:0.8em}#footer .fa-stack{transition:color 0.3s}#footer .fa-stack:hover{color:#283576}#footer .fa-stack:hover .fa-inverse{color:#fff}#footer .fa-inverse{color:#283576;transition:color 0.3s}#footer div{margin:20px}#footer a{text-decoration:none;color:#fff;font-size:1.5em}
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+  }
+#footer a {
+    font-size: 19px;
+}
+.home-photos{display:flex;justify-content:center;flex-wrap:wrap;width:100%}.section{width:100%}.home-photos img{width:400px;max-width:800px;flex:1 1 400px}.details-item{height:max-content}.testimonial-container{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;list-style:none;margin:0 0}.testimonial-item{padding:10px;text-align:center;flex:1 1 200px;flex-wrap:wrap}.testimonial-item em:before{content:"“";color:#2d97b7;padding-right:10px;font-size:4em;font-family:"Nunito","Avenir",sans-serif;vertical-align:middle}.testimonial-item em:after{content:"”";color:#2d97b7;font-size:2em;font-family:"Nunito","Avenir",sans-serif;vertical-align:middle}.testimonial-item strong{color:#283576}#map{min-height:400px;height:100%;width:100%}
