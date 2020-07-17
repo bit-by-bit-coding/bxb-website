@@ -1,5 +1,30 @@
 ---
 ---
-.section{
-    font-size: 100px;
+
+/* Photos */
+.top-photo img{
+  max-width: 50vw;
+  flex: 1 1 400px;
+}
+
+/*Section 1*/
+.details-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.details-item{
+  height: max-content;
+  max-width: 85vw;
+  flex: 1 1 400px;
+}
+
+p{
+  font-size: 2.5em;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
 }
