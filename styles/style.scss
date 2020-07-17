@@ -258,7 +258,6 @@ iframe.embeddedform {
 #footer {
     background-color: $dark;
     padding: 0.5vh 2vw;
-    min-width: 540px;
     color: white;
     text-align: center;
     font-size: 0.8em;
@@ -291,11 +290,12 @@ iframe.embeddedform {
 
 #footer-contact {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    p {
+    p{
         font-size: 13px;
         margin: 0px;
     }
@@ -334,7 +334,10 @@ iframe.embeddedform {
         }
 
         button:hover {
-            filter: brightness(85%);
+            color: #41ceda;
+            background-color: $dark;
+            font-size: 85%;
+            filter: brightness(125%);
         }
     }
     
