@@ -288,6 +288,83 @@ iframe.embeddedform {
     }
 }
 
+#footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-size: 13px;
+        margin: 0px;
+    }
+}
+
+#footer-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+        color: #41ceda;
+        border-bottom: solid;
+        margin: 5px 0px 10px;
+        min-width: max-content;
+    }
+}
+
+#financial-info {
+    color: #41ceda;
+    border-left: none;
+    background: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid;
+}
+#financial-info:hover {
+    color:white;
+    scale: 1.1;
+}
+
+#footer-buttons {
+    display: flex;
+    flex-direction: column;
+
+    #donate {
+        margin: 0px;
+        margin-top: 10px;
+        
+        button {
+            background-color: #41ceda;
+            border: none;
+            border-radius: 10px;
+            height: 37px;
+            width: 98%;
+            color: #283576;  
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        button:hover {
+            color: #41ceda;
+            background-color: $dark;
+            font-size: 85%;
+            filter: brightness(125%);
+        }
+    }
+    
+    #socials{
+        margin: 0px;
+        display: flex;
+    }
+}
+
+.footer-info {
+    min-width: 150px;
+}
+
+
 /* Homepage */
 #warning {
     color: #e77d00;
