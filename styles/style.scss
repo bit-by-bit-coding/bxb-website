@@ -46,13 +46,12 @@ a{
 h2, h3 {
     color: $dark;
     font-family: $heading-font;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h2 {
     font-weight: 700;
     font-size: 2em;
-    margin-bottom: 2vh;
 }
 
 h3 {
@@ -324,6 +323,7 @@ iframe.embeddedform {
         border-bottom: solid;
         margin: 5px 0px 10px;
         min-width: max-content;
+        font-size: 1.5em;
     }
 }
 
@@ -379,10 +379,6 @@ iframe.embeddedform {
 
 
 /* Homepage */
-#warning {
-    color: #e77d00;
-}
-
 #intro {
     display: flex;
     justify-content: space-between;
