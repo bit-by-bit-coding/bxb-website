@@ -25,8 +25,18 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   flex: 1 1 400px;
 }
 
+/* Details */
+#home-details {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .details-item{
   height: max-content;
+}
+
+#test {
+  width: 400px;
 }
 
 /* Testmonials */
