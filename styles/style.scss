@@ -8,9 +8,9 @@ Fix brs on about us page
 Fix map sizing
 */
 
-$main: #2d97b7;
-$dark: #283576;
-$gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+$main: #31A0AB;
+$dark: #153570;
+$gradient: linear-gradient(-45deg, $dark 0%, $main 100%);
 $body-font: 'Roboto', 'Avenir', sans-serif;
 $heading-font: 'Nunito', 'Avenir', sans-serif;
 
@@ -72,16 +72,19 @@ button {
 button.action-button {
   /* display: block; */
   margin: 10px 5px;
-  text-align: center;
-  transition: 0.5s;
-  font-weight: 200;
-  background-image: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
-  cursor: pointer;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
   border: none;
   padding: 5px 20px;
+  
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-image: $gradient;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+
   /* max-width: 200px; */
   /* width: 80%; */
 }
