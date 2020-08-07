@@ -46,16 +46,10 @@ a{
 h2, h3 {
     color: $dark;
     font-family: $heading-font;
-    margin-bottom: 30px;
-}
-
-h2 {
     font-weight: 700;
     font-size: 2em;
-}
 
-h3 {
-    margin-bottom: 0.5%;
+    margin-bottom: 30px;
 }
 
 .subtitle {
@@ -73,20 +67,19 @@ button {
 }
 
 button.action-button {
-  border: none;
-  font-size: 15px;
-
   margin: 10px 5px;
   border: none;
   padding: 10px 40px;
   
+  color: $dark;
   font-weight: 500;
+  font-size: 15px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: $main;
-  color: $dark;
+  box-shadow: 2px 5px $dark;
   cursor: pointer;
   transition: 0.5s;
 

@@ -7,7 +7,7 @@ $gradient: linear-gradient(-45deg, $dark 0%, $main 100%);
 $heading-font: 'Nunito', 'Avenir', sans-serif;
 
 
-/* Photos */
+/* Bottom Two Photos */
 .home-photos {
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   width: 100%;
 }
 
-.section{
+.section {
   width: 100%;
 }
 
@@ -28,12 +28,14 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
 /* Details */
 #home-details {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .details-item{
   height: max-content;
+  flex: 1 1 400px;
 }
 
 #details-photo {
