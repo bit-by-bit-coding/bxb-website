@@ -29,6 +29,8 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
 #home-details {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .details-item{
