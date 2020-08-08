@@ -16,12 +16,11 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
 
 *{
     font-family: $body-font;
-    color: #636261;
 }
 
 /* General */
 body {
-    color: rgb(112, 112, 112);
+    color: #636261;
     line-height: 1.5em;
     font-size: 1em;
     padding: 0;
@@ -150,7 +149,7 @@ img {
     top: 0;
     margin: 0;
     padding: 0 2.5vw;
-    height: 65px;
+    height: 75px;
     background-color: rgba(255, 255, 255, 0.9);
     align-items: center;
     justify-content:   space-between;
