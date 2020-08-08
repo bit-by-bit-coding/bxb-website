@@ -30,16 +30,17 @@ $heading-font: 'Nunito', 'Avenir', sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: space-between;
 
-.details-item{
-  height: max-content;
-  flex: 1 1 400px;
+  .details-item{
+    height: max-content;
+    flex: 1 0 400px;
+    max-width: 600px;
+  }
 }
 
 #details-photo {
-  width: 400px;
+  width: 40%;
   margin-left: 20px;
 }
 
