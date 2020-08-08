@@ -2,10 +2,9 @@
 ---
 
 /*TODO
-Wrap signup button on homepage
-Make testimonials wrap on mobile
-Fix brs on about us page
-Fix map sizing
+Fix button hover animation in nav
+Fix signup button hover animations and active/visited
+Make homepage details photo responsive
 */
 
 $main: #41CEDA;
@@ -46,7 +45,7 @@ a{
 h2, h3 {
     color: $dark;
     font-family: $heading-font;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2em;
 
     margin-bottom: 30px;
@@ -155,7 +154,7 @@ img {
     justify-content:   space-between;
     z-index: 1;
 
-    a{
+    a {
         text-decoration: none;
     }
 }
@@ -286,11 +285,15 @@ iframe.embeddedform {
        transition: color 0.3s;
     }
 
-    div{
+    h2 {
+        font-weight: 700;
+    }
+    
+    div {
         margin: 20px;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: #fff;
         font-size: 1.5em;
