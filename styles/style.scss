@@ -182,7 +182,7 @@ img {
     text-transform: uppercase;
     color: $main;
     font-size: 0.9em;
-    border-radius: 5px;
+    
     position: relative;
 }
 
@@ -207,7 +207,8 @@ img {
 }
 
 .navbutton:hover{
-    color: whitesmoke
+    color: whitesmoke;
+    border-radius: 5px;
 }
 
 #banner { text-align: center; }
