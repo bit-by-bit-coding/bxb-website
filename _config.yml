@@ -19,6 +19,3 @@ include:
  - .htaccess
  - imgs
  - styles
-
-sass:
-    sass_dir: _sass
