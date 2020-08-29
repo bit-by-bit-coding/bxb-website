@@ -1,6 +1,6 @@
 ---
 ---
-
+@import 'variables';
 $main: #2d97b7;
 $dark: #283576;
 $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
@@ -103,4 +103,54 @@ canvas {
   z-index: -1;
   width: 100%;
   height: 300px;
+}
+
+
+
+//Image
+#side-image{
+    max-width: 35vw;
+}
+
+#bot{
+    max-width: 20vw;
+}
+
+//Flex Box
+.section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex: 1 1 10vw;
+}
+
+#space{
+    align-items: space-between;
+}
+
+//Button
+.signup-button {
+  font-family: 'Nunito';
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  transition: .5s;
+  font-weight: 200;
+  background-image: $gradient;
+  cursor: pointer;
+
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }
