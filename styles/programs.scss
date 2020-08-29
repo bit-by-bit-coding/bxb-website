@@ -1,0 +1,26 @@
+---
+---
+.details-item{
+    flex:1;
+    min-width:300px;
+}
+#after-school-program-box{
+    border-bottom-color:#e67b00;
+    border-left-color:#e67b00;
+}
+.titles{
+    font-size:48px;
+    font-family: 'Nunito';
+}
+.boxes{
+    //width: 611px;
+    height: 386px;
+    background-color: #e5e5e5;
+    border-bottom-style: solid;
+    border-bottom-width:5px;
+    border-left-style: solid;
+    border-left-width:5px;
+}
+.details-container{
+    display:flex;
+}
