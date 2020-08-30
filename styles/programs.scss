@@ -1,7 +1,20 @@
 ---
 ---
+.flex-wrap{
+    display: flex;
+    >*{
+      flex:1;
+      margin:10px;
+        &:first-child{
+            margin-left:0px;
+        }
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+    
+}
 .details-item{
-    flex:1;
     min-width:300px;
 }
 #after-school-program-box{
@@ -9,8 +22,9 @@
     border-left-color:#e67b00;
 }
 .titles{
-    font-size:48px;
+    font-size:3vw;
     font-family: 'Nunito';
+    color:#329EA7;
 }
 .boxes{
     //width: 611px;
@@ -21,6 +35,16 @@
     border-left-style: solid;
     border-left-width:5px;
 }
-.details-container{
-    display:flex;
+
+.buttons{
+    background-color:#329EA7;
+    color: #F3F3F3;
+    border-radius: 10px;
+    width:100%;
+    border-style:none;
+    font-size: 24px;
+    cursor: pointer;
+}
+#singleButton{
+    margin:10px 0;
 }
