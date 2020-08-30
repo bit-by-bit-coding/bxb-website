@@ -34,7 +34,12 @@
     .titles{
         font-size:30px;
     }
+
+.cover {
+    object-fit: cover;
+    width: 100%;
 }
+
 .boxes{
     //width: 611px;
     height: 386px;
