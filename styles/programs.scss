@@ -18,22 +18,13 @@
     min-width:300px;
 }
 #after-school-program-box{
-    border-bottom-color:#e67b00;
-    border-left-color:#e67b00;
+    border-bottom-color:#ff8900;
+    border-left-color:#ff8900;
 }
-#sumer-program-box{
+#summer-program-box{
     border-bottom-color:#41CEDA;
     border-left-color:#41CEDA;
 }
-.titles{
-    font-size:3vw;
-    font-family: 'Nunito';
-    color:#329EA7;
-}
-@media only screen and (max-width: 700px){
-    .titles{
-        font-size:30px;
-    }
 
 .cover {
     object-fit: cover;
@@ -43,11 +34,8 @@
 .boxes{
     //width: 611px;
     height: 386px;
-    background-color: #e5e5e5;
-    border-bottom-style: solid;
-    border-bottom-width:5px;
-    border-left-style: solid;
-    border-left-width:5px;
+    border-bottom: solid 5px;
+    border-left: solid 5px;
 }
 
 .buttons{
