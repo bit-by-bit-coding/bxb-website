@@ -26,6 +26,11 @@
     font-family: 'Nunito';
     color:#329EA7;
 }
+@media only screen and (max-width: 700px){
+    .titles{
+        font-size:30px;
+    }
+}
 .boxes{
     //width: 611px;
     height: 386px;
