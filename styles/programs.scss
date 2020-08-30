@@ -1,5 +1,7 @@
 ---
 ---
+$main: #2d97b7;
+
 .flex-wrap{
     display: flex;
     >*{
@@ -39,13 +41,14 @@
 }
 
 .buttons{
-    background-color:#329EA7;
+    background-color:$main;
     color: #F3F3F3;
     border-radius: 10px;
-    width:100%;
-    border-style:none;
-    font-size: 24px;
+    width: 100%;
+    border: none;
+    font-size: 1em;
     cursor: pointer;
+    padding: 5px 20px;
 }
 #singleButton{
     margin:10px 0;
