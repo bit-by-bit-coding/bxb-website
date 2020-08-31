@@ -49,6 +49,9 @@ $main: #2d97b7;
     font-size: 1em;
     cursor: pointer;
     padding: 5px 20px;
+    &:hover {
+        opacity: 0.85;
+      }
 }
 #singleButton{
     margin:10px 0;
