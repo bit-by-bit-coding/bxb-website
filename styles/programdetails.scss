@@ -127,8 +127,10 @@ canvas {
     flex: 1 1 10vw;
 }
 
+
 #space{
-    align-items: space-between;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 //Button
@@ -153,8 +155,13 @@ canvas {
   &:hover {
     opacity: 0.85;
   }
-}
 
+}
+#ff-signup-button {
+  position: relative;
+  left: 40%;
+  margin-top: 2%;
+}
 .buttons{
   background-color:$main;
   color: #F3F3F3;
@@ -165,28 +172,69 @@ canvas {
   cursor: pointer;
   padding: 5px 20px;
 }
+
 .big-flex {
   display: flex;
   >*{
     margin:10px;
   }
-  flex-wrap: wrap;
+  justify-content: center;
 }
 #hw-image{
   position: relative;
   top: 10px;
-  flex-grow: 1;
-  width: 30vmax;
+  align-self: flex-start;
+  width: 35%;
 }
 #hw-main-text{
-  min-width: 300px;
-  flex-grow: 1;
+  width:65%;
+
+}
+#ff-image{
+  position: relative;
+  top: 10px;
+  align-self: flex-start;
+  width: 35%;
+}
+#ff-main-text{
+  width:65%;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 750px) {
+  .big-flex {
+    flex-wrap: wrap;
+  }
+  #hw-image{
+    width:100%;
+  }
+  #hw-main-text {
+    width:100%;
+  }
+  #ff-image{
+    width:100%;
+  }
+  #ff-main-text {
+    width:100%;
+  }
 }
 .button-flex {
   display: flex;
   >*{
-    margin:6px;
+    margin: 8px;
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
   }
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+}
+.buttons:hover{
+  opacity: 90%;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #283576;
 }
