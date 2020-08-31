@@ -109,28 +109,26 @@ canvas {
 
 //Image
 #side-image{
-    max-width: 35vw;
+  max-width: 35vw;
 }
 
 #bot{
-    max-width: 20vw;
+  max-width: 15vw;
 }
 
 //Flex Box
-.section{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.ff-section{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .item{
-    flex: 1 1 10vw;
+  flex: 1 1 10vw;
 }
 
-
 #space{
-    justify-content: center;
-    align-items: flex-start;
+  justify-content: space-between;
 }
 
 //Button
@@ -158,8 +156,6 @@ canvas {
 
 }
 #ff-signup-button {
-  position: relative;
-  left: 40%;
   margin-top: 2%;
 }
 .buttons{
@@ -184,7 +180,7 @@ canvas {
   position: relative;
   top: 10px;
   align-self: flex-start;
-  width: 35%;
+  max-width: 35vw;
 }
 #hw-main-text{
   width:65%;
@@ -194,7 +190,7 @@ canvas {
   position: relative;
   top: 10px;
   align-self: flex-start;
-  width: 35%;
+  width: 40vw;
 }
 #ff-main-text{
   width:65%;
@@ -229,7 +225,7 @@ canvas {
     }
   }
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: baseline;
 }
 .buttons:hover{
