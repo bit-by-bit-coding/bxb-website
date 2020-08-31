@@ -1,6 +1,6 @@
 ---
 ---
-@import 'variables';
+
 $main: #2d97b7;
 $dark: #283576;
 $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
@@ -153,4 +153,40 @@ canvas {
   &:hover {
     opacity: 0.85;
   }
+}
+
+.buttons{
+  background-color:$main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+.big-flex {
+  display: flex;
+  >*{
+    margin:10px;
+  }
+  flex-wrap: wrap;
+}
+#hw-image{
+  position: relative;
+  top: 10px;
+  flex-grow: 1;
+  width: 30vmax;
+}
+#hw-main-text{
+  min-width: 300px;
+  flex-grow: 1;
+}
+.button-flex {
+  display: flex;
+  >*{
+    margin:6px;
+  }
+  flex-wrap: wrap;
+  align-items: center;
 }
