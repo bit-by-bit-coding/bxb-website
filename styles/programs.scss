@@ -1,6 +1,6 @@
 ---
 ---
-$main: #2d97b7;
+@import 'variables';
 
 .flex-wrap{
     display: flex;
@@ -16,9 +16,7 @@ $main: #2d97b7;
     }
     
 }
-.details-item{
-    min-width:300px;
-}
+
 #after-school-program-box{
     border-bottom-color:#ff8900;
     border-left-color:#ff8900;
@@ -28,16 +26,12 @@ $main: #2d97b7;
     border-left-color:#41CEDA;
 }
 
-.cover {
-    object-fit: cover;
-    width: 100%;
-}
-
 .boxes{
-    //width: 611px;
     height: 386px;
     border-bottom: solid 5px;
     border-left: solid 5px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .buttons{
@@ -51,7 +45,7 @@ $main: #2d97b7;
     padding: 5px 20px;
     &:hover {
         opacity: 0.85;
-      }
+    }
 }
 #singleButton{
     margin:10px 0;
