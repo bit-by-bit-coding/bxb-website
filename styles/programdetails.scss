@@ -1,11 +1,83 @@
 ---
 ---
+@import 'variables';
 
-$main: #2d97b7;
-$dark: #283576;
-$gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+#bot{
+  max-width: 15vw;
+  padding-left: 15px;
+}
 
-//FAQ sections:
+.item{
+  flex: 1 1 10vw;
+}
+
+.buttons{
+  background-color:$main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.button-flex {
+  display: flex;
+  >*{
+    margin: 8px;
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+}
+.buttons:hover{
+    opacity: 0.85;
+}
+
+
+.big-flex {
+  display: flex;
+  >*{
+    margin:10px;
+  }
+  justify-content: center;
+}
+#hw-image{
+  position: relative;
+  top: 10px;
+  align-self: flex-start;
+  max-width: 35vw;
+}
+#hw-main-text{
+  width:65%;
+  align-self: flex-start;
+}
+#ff-image{
+  object-fit: cover;
+  height: 100%;
+  width: 40vw;
+}
+
+@media (max-width: 750px) {
+  .big-flex {
+    flex-wrap: wrap;
+  }
+  #hw-image{
+    width:100%;
+  }
+  #hw-main-text {
+    width:100%;
+  }
+  #ff-image{
+    width:100%;
+  }
+}
+
+//FAQ section:
 .section {
   max-width: calc(100vw - 60px);
   width: 1000px;
@@ -103,134 +175,4 @@ canvas {
   z-index: -1;
   width: 100%;
   height: 300px;
-}
-
-
-
-//Image
-#side-image{
-  max-width: 35vw;
-}
-
-#bot{
-  max-width: 15vw;
-}
-
-//Flex Box
-.ff-section{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.item{
-  flex: 1 1 10vw;
-}
-
-#space{
-  justify-content: space-between;
-}
-
-//Button
-.signup-button {
-  font-family: 'Nunito';
-  display: block;
-  margin: 10px 0;
-  text-align: center;
-  transition: .5s;
-  font-weight: 200;
-  background-image: $gradient;
-  cursor: pointer;
-
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  border: none;
-  border-radius: 10px;
-  padding: 5px 20px;
-
-  &:hover {
-    opacity: 0.85;
-  }
-
-}
-#ff-signup-button {
-  margin-top: 2%;
-}
-.buttons{
-  background-color:$main;
-  color: #F3F3F3;
-  border-radius: 10px;
-  width: 100%;
-  border: none;
-  font-size: 1em;
-  cursor: pointer;
-  padding: 5px 20px;
-}
-
-.big-flex {
-  display: flex;
-  >*{
-    margin:10px;
-  }
-  justify-content: center;
-}
-#hw-image{
-  position: relative;
-  top: 10px;
-  align-self: flex-start;
-  max-width: 35vw;
-}
-#hw-main-text{
-  width:65%;
-  align-self: flex-start;
-}
-#ff-image{
-  position: relative;
-  top: 10px;
-  align-self: flex-start;
-  width: 40vw;
-}
-#ff-main-text{
-  width:65%;
-  align-self: flex-start;
-}
-@media only screen and (max-width: 750px) {
-  .big-flex {
-    flex-wrap: wrap;
-  }
-  #hw-image{
-    width:100%;
-  }
-  #hw-main-text {
-    width:100%;
-  }
-  #ff-image{
-    width:100%;
-  }
-  #ff-main-text {
-    width:100%;
-  }
-}
-.button-flex {
-  display: flex;
-  >*{
-    margin: 8px;
-    &:first-child{
-      margin-left: 0px;
-    }
-    &:last-child{
-      margin-right: 0px;
-    }
-  }
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
-}
-.buttons:hover{
-  opacity: 90%;
-  border-width: 2px;
-  border-style: inset;
-  border-color: #283576;
 }
