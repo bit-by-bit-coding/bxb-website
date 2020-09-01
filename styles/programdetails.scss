@@ -20,69 +20,31 @@
   font-size: 1em;
   cursor: pointer;
   padding: 5px 20px;
+  margin-top: 10px;
 }
 
-.button-flex {
-  display: flex;
-  >*{
-    margin: 8px;
-    &:first-child{
-      margin-left: 0px;
-    }
-    &:last-child{
-      margin-right: 0px;
-    }
-  }
-}
 .buttons:hover{
     opacity: 0.85;
 }
 
-
-.big-flex {
-  display: flex;
-  >*{
-    margin:10px;
-  }
-  justify-content: center;
-}
-#hw-image{
-  position: relative;
-  top: 10px;
-  align-self: flex-start;
-  max-width: 35vw;
-}
-#hw-main-text{
-  width:65%;
-  align-self: flex-start;
-}
-#ff-image{
+#top-image{
   object-fit: cover;
   height: 100%;
   width: 40vw;
 }
 
 @media (max-width: 750px) {
-  .big-flex {
-    flex-wrap: wrap;
-  }
-  #hw-image{
+  #top-image{
     width:100%;
   }
-  #hw-main-text {
-    width:100%;
-  }
-  #ff-image{
-    width:100%;
+  #bot{
+    display:none;
   }
 }
 
 //FAQ section:
 .section {
-  max-width: calc(100vw - 60px);
-  width: 1000px;
-  display: block;
-  margin: 50px auto 0;
+  width: 100%;
 }
 //sources: https://stackoverflow.com/a/17301828
 //        https://codepen.io/morewry/pen/gbJvy
