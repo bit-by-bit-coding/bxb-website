@@ -45,7 +45,7 @@ style: index.css
                         Online: FREE (suggested donation: $30)</p>
                 </div>
                 <div>
-                    <a href="{{ 'signup.html' | relative_url }}"><button class="action-button largebutton">Sign Up</button></a>
+                    <a href="{{ 'signup.html' | relative_url | remove: '.html' }}"><button class="action-button largebutton">Sign Up</button></a>
                 </div>
             </div>
             <!-- <div class="details-item">
