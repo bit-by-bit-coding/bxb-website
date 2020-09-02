@@ -1,6 +1,6 @@
 <nav id="topnav">
-    <a href="{{ 'corporate.html' | relative_url }}">
-        <img src="imgs/Logo.svg" id="navlogo">
+    <a href="{{ 'index.html' | relative_url | remove: '.html' }}">
+        <img src="imgs/attachedlogo.png" id="navlogo">
     </a>
     <input class="checkbox-toggle mobile" type="checkbox"/>
 
@@ -10,23 +10,20 @@
     <nav id="topnav-right">
         <div>
             <div>
-                <a href="{{ 'corporate.html' | relative_url }}">
+                <a href="{{ '/' | relative_url | remove: '.html' }}">
                     <button class="navbutton">Home</button>
                 </a>
-                <a href="{{ 'faqs.html' | relative_url }}">
-                    <button class="navbutton">FAQ</button>
+                <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Programs</button>
                 </a>
-                <a href="{{ 'about.html' | relative_url }}">
+                <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
                     <button class="navbutton">About</button>
                 </a>
-                <a href="{{ 'volunteer.html' | relative_url }}">
+                <a href="{{ 'volunteer.html' | relative_url | remove: '.html' }}">
                     <button class="navbutton">Volunteer</button>
                 </a>
-                <a target="_blank" href="{{site.donate.page}}">
+                <a href="{{ 'donate.html' | relative_url | remove: '.html' }}">
                     <button class="navbutton">Donate</button>
-                </a>
-                <a href="{{ 'signup.html' | relative_url }}">
-                    <button class="navbutton action-button tinybutton">Sign Up</button>
                 </a>
             </div>
         </div>

@@ -1,15 +1,56 @@
 ---
 ---
-
 @import 'variables';
 
-.section {
-  max-width: calc(100vw - 60px);
-  width: 1000px;
-  display: block;
-  margin: 50px auto 0;
+#bigLogo{
+  will-change: opacity;
+  mix-blend-mode: multiply;
 }
 
+#bot{
+  max-height: 20vw;
+  padding-left: 60px;
+}
+
+.item{
+  flex: 1 1 10vw;
+}
+
+.buttons{
+  background-color:$main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.buttons:hover{
+    opacity: 0.85;
+}
+
+#top-image{
+  object-fit: cover;
+  height: 100%;
+  width: 40vw;
+}
+
+@media (max-width: 750px) {
+  #top-image{
+    width:100%;
+  }
+  #bot{
+    display:none;
+  }
+}
+
+//FAQ section:
+.section {
+  width: 100%;
+}
 //sources: https://stackoverflow.com/a/17301828
 //        https://codepen.io/morewry/pen/gbJvy
 @keyframes invisiblyGrowFontSize {

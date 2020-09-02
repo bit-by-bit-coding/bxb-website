@@ -503,7 +503,7 @@ RadixSort.prototype.sort = function(y, left, right) {
 };
 
 
-function SlowSort() {
+/*function SlowSort() {
   SortingVisualization.apply(this, arguments);
 }
 
@@ -589,7 +589,7 @@ document.addEventListener('DOMContentLoaded', function() {
     "Merge sort": MergeSort,
     "Heap sort": HeapSort,
     "Radix sort": RadixSort,
-    "Slow sort": SlowSort,
+    //"Slow sort": SlowSort,
     //"Bogo sort": BogoSort //wayyy too painful to watch :(
   }
 
