@@ -1,0 +1,31 @@
+---
+---
+@import 'variables';
+
+#bigLogo {
+    will-change: opacity;
+    /* DO NOT CHANGE WITHOUT PERMISSION!*/
+    mix-blend-mode: multiply;
+}
+
+#donatewidget {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%
+}
+
+@media only screen and (max-width: 768px) {
+    .details-container {
+        flex-wrap: wrap;
+    }
+    #donatewidget {
+    margin-top: 100px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%
+    }
+}
+
