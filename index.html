@@ -101,7 +101,7 @@ style: index.css
 </div>-->
 
 <!-- CH ADD STUFF -->
-<div class="section no-padding">
+<div class="section no-margin">
     <div class="details-item">
         <h2> Mission </h2>
         <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
@@ -124,7 +124,11 @@ style: index.css
             <img src="imgs/FFbot.png">
         </div>
         <div class="details-item">
-            <h3>Form and Function</h3>
+            <h3>
+                <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
+                    Form and Function
+                </a>
+            </h3>
             <p>Form and Function gives middle schoolers the power crack the “code” of web development! Our free
                 weekly
                 after-school program helps you transform the web into a canvas for your ideas. Interactive projects,
@@ -132,12 +136,17 @@ style: index.css
                 and individual help will teach you how to use HTML, CSS, and JavaScript to create your own unique
                 website.
             </p>
-            <a href="{{ 'signup.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign up!</a>
+            <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign
+                up!</a>
         </div>
 
         <div class="details-container">
             <div class="details-item">
-                <h3>Uncommon Sense</h3>
+                <h3>
+                    <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
+                        Uncommon Sense
+                    </a>
+                </h3>
                 <p>Uncommon Sense is a weekly after-school program for curious high schoolers interested in learning
                     ways to
                     form hypotheses about the world and make decisions that effectively accomplish their goals..
@@ -146,7 +155,7 @@ style: index.css
                     meet and learn new concepts ranging from cognitive science to statistics and practice applying these
                     concepts through engaging puzzles, games, and more!
                 </p>
-                <a href="{{ 'signup.html' | relative_url | remove: '.html' }}"> Click here to learn more and sign
+                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and sign
                     up!</a>
             </div>
             <div class="details-item">
@@ -158,7 +167,11 @@ style: index.css
     <h2> Summer Programs </h3>
         <div class="details-container">
             <div class="details-item">
-                <h3>Hello World</h3>
+                <h3>
+                    <a href="{{ 'signup.html' | relative_url | remove: '.html' }}">
+                        Hello World
+                    </a>
+                </h3>
                 <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
                     down-and-dirty
                     with real code. Every camper will learn the principles of front-end web development and the heart of
@@ -168,7 +181,8 @@ style: index.css
                     with
                     code for the rest of her life!
                 </p>
-                <a href="{{ 'signup.html' | relative_url }}"> Click here to learn more and sign up!</a>
+                <a href="{{ 'signup.html' | relative_url | remove: '.html' }}"> Click here to learn more and sign
+                    up!</a>
             </div>
         </div>
         <!-- <div class= "details-item">

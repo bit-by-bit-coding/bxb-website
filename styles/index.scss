@@ -2,14 +2,16 @@
 ---
 @import 'variables';
 
-img{
+.section img{
   height: 300px;
 }
 
-
-
-.no-pading{
+.no-margin{
   padding: 0;
+  .details-item{
+    margin: 0;
+
+  }
 }
 
 /* Testmonials */
@@ -52,35 +54,4 @@ em{
 
 .testimonial-item strong {
   color: $dark;
-}
-
-#map {
-  min-height: 400px;
-  height: 100%;
-  width: 100%;
-}
-
-//CH ADD
-/*img{
-  height: 300px;
-}*/
-
-#AfterSchool{
-  padding: 0 0 0 30px; //counterclockwise starting from the top
-  color:  #283576;
-}
-
-#Summer{
-  padding: 30px 0 0 30px; //counterclockwise starting from the top
-  color:  #283576;
-}
-
-#Programs{
-  color: coral; 
-}
-
-#PDes{ 
-  min-width: 300px;
-  max-width: 500px;
-  margin: 0 50px;
 }
