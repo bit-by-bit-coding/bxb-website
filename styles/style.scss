@@ -161,16 +161,12 @@ img {
     border: none;
 }
 
-#navlogo-button:hover {
-    cursor: pointer;
-}
-
 .navbutton {
     transition: 0.5s ease-in-out;
     border: none;
     border-bottom: solid $main 1px;
     margin: 0 0.8vw;
-
+    cursor: pointer;
     background-color: inherit;
     height: 100%;
 
