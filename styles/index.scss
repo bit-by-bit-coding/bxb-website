@@ -1,28 +1,17 @@
 ---
 ---
-
 @import 'variables';
 
-/* Photos */
-.home-photos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+.section img{
+  height: 300px;
 }
 
-.section{
-  width: 100%;
-}
+.no-margin{
+  padding: 0;
+  .details-item{
+    margin: 0;
 
-.home-photos img {
-  width: 400px;
-  max-width: 800px;
-  flex: 1 1 400px;
-}
-
-.details-item{
-  height: max-content;
+  }
 }
 
 /* Testmonials */
@@ -65,10 +54,4 @@ em{
 
 .testimonial-item strong {
   color: $dark;
-}
-
-#map {
-  min-height: 400px;
-  height: 100%;
-  width: 100%;
 }
