@@ -1,20 +1,19 @@
 ---
 ---
 img{
-    height: 150px;
+    height: 300px;
 }
 
 .details-item{
     flex: 1 1 100px;
 }
 
-#bot{
-    width: 2000px;
+#Bot{
+    padding: 0 0 0 50px;
 }
 
 .details-container{
     align-items: center; 
-    justify-content: center;
 }
 
 #AfterSchool{
@@ -28,7 +27,7 @@ img{
 }
 
 #Programs{
-    color: lightsalmon; 
+    color: coral; 
 }
 
 #PDes{ 
@@ -38,16 +37,8 @@ img{
 }
 
 #IMG{
-    height: 100%;
+    width: 30vw;
+    padding-top: 30px;
+    height:100%;
     justify-content: flex-start;
-}
-
-#IMG2{
-    height: 100%;
-    justify-content: flex-start;
-}
-
-#IMG3{
-    height: 100%;
-    justify-content: space-evenly;
 }
