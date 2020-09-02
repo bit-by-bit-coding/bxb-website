@@ -2,9 +2,14 @@
 ---
 @import 'variables';
 
+#bigLogo{
+  will-change: opacity;
+  mix-blend-mode: multiply;
+}
+
 #bot{
-  max-width: 15vw;
-  padding-left: 15px;
+  max-height: 20vw;
+  padding-left: 60px;
 }
 
 .item{
