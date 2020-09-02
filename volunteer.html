@@ -1,45 +1,54 @@
 ---
 layout: default
-title: "Volunteer: Hello World"
+title: "Volunteer: Bit By Bit"
 scripts:
 - "utils.js"
 - "sort.js"
 style: volunteer.css
 ---
-<div class="details-container">
+
+<div class="details-container section">
     <div class="details-item">
-
-        <!--Meet the Instructors-->
-        <div class="section">
-            <h2>Hello World Volunteer Details</h2>
-
-            <p><strong>What:</strong> Hello World, a summer camp that teaches middle school girls the basics of web
-                development.</p>
-
-            <p><strong>Who:</strong> You! We’re looking for volunteers who know (or are willing to learn) the basics of
-                HTML,
-                CSS, and JavaScript. <strong>Programming experience is appreciated but NOT required!</strong> We provide free
-                    training for coding instructors, and we have plenty of non-coding-related opportunities in graphic design, social media/brand management, outreach, finance, law, and more.</p>
-
-            <p><strong>When:</strong> 2:00-4:00pm PST on Aug. 3-7 and Aug. 10-14. <strong>You don’t have to come every day;
-                    just days
-                    that work for you!</strong></p>
-
-            <p><strong>Benefits:</strong> Gain loads of volunteer hours, join a community of
-                programmers (and friends), and empower girls to
-                code. We’ll teach you invaluable coding and leadership skills for free, and you can gain a position on your resume while you’re at it.
-            </p>
-
-            <p>
-                Contact us at <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a> or fill out the form for more info.
-            </p>
-        </div>
-    </div>
-    <div class="details-item centertext">
-        <iframe class="embeddedform" src="https://docs.google.com/forms/d/e/1FAIpQLSeapmj33WC0HLmJRsl2ICq3KTplADuCi2BM97jbV2GSQcP1TA/viewform?embedded=true" width="640" height="1443" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeapmj33WC0HLmJRsl2ICq3KTplADuCi2BM97jbV2GSQcP1TA/viewform?usp=sf_link" class="signup-wrap embedfallbackbutton">
-            <button class="action-button">Volunteer</button>
-        </a>
-
+        <h2>Volunteer</h2> <br>
+        <section class="volunteerblurb">
+            <details>
+                <summary>Bit by Bit Central</summary>
+                <p><strong>What:</strong> The brains behind marketing, fundraising, and more!
+                </p>
+                <p><strong>Who:</strong> Anybody that wants to contribute to our mission and be the support behind our programs. There are several teams within BxB Central with a wide range of responsibilities, so no matter what your skill set is, we will have a task for you!
+                </p>
+                <p><strong>When:</strong> Unlike the programs, there is no set time and we are much more flexible with meetings and work.
+                </p>
+                <p><strong>Benefits:</strong> Join a community of supportive, dedicated volunteers while earning volunteer hours and gaining experience in whichever team you decide to join. Our mission is to diversify the programming community, but we also want to provide you with invaluable leadership skills!
+                </p>
+            
+            </details>
+            <details>
+                <summary>Form and Function</summary>
+                <p><strong>What:</strong> Form and Function, an online afterschool program that teaches middle schoolers how to code an interactive website in HTML, CSS, and JavaScript. Bit by bit, students will learn to code!
+                </p>
+                <p><strong>Who:</strong> You! We’re looking for volunteers who know the basics of HTML, CSS, and JavaScript. A little programming experience is required but we are happy to teach more! We provide free training for coding instructors. Volunteers teach, write curriculum, and have fun.
+                </p>
+                <p><strong>When:</strong> The program will happen once a week for one hour, but the specific times and days of the week are TBD.
+                </p>
+                <p><strong>Benefits:</strong> Gain loads of volunteer hours, join a group of programmers (and friends), and introduce middle schoolers to the power of code. We’ll teach you coding, communication, and instructional skills so you can gain invaluable experience in these fields!
+                </p>
+            
+            </details>
+            <details>
+                <summary>Uncommon Sense</summary>
+                <p><strong>What:</strong> Do you want to learn about the world? Question your beliefs? Help teach others to do the same? Volunteer for Uncommon Sense, a critical thinking program for high schoolers.
+                </p>
+                <p><strong>Who:</strong> Anyone with experience with rationality, cognitive science, probability theory, decision theory, etc. Or anyone willing to learn about these subjects. You should be intrinsically motivated to seek the truth, unafraid to be proven wrong, and skeptical of your beliefs.
+                    Naturally, don’t volunteer if you would counterfactually spend your time on something that generated more utility.
+                </p>
+                <p><strong>When:</strong> The program will happen once a week for one hour, but the specific times and days of the week are TBD.</p>
+                <p><strong>Benefits:</strong> Sharpen your thinking skills, learn about rationality, and help build the next generation of critical thinkers ready to improve the world!
+                </p>
+            
+            </details>
+        </section>
+        <p>If you’re interested in helping, read more about the <a href="{{ 'volunteerinfo.html#formfunction' | relative_url | remove: '.html' }}">volunteer positions</a> and then fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdeQS-f01BjjV78_TtXTntbJXLUjKtZBRu-zllyHffF6ytnMQ/viewform">the volunteer application form</a>. If you have any questions, contact us at {{site.contact.email}}!
+        </p>
     </div>
 </div>

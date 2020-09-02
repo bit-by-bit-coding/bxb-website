@@ -1,6 +1,6 @@
 <nav id="topnav">
-    <a href="{{ 'index.html' | relative_url }}">
-        <img src="imgs/Logo.svg" id="navlogo">
+    <a href="{{ 'index.html' | relative_url | remove: '.html' }}">
+        <img src="imgs/attachedlogo.png" id="navlogo">
     </a>
     <input class="checkbox-toggle mobile" type="checkbox"/>
 
@@ -10,17 +10,20 @@
     <nav id="topnav-right">
         <div>
             <div>
-                <a href="{{ 'index.html' | relative_url }}">
+                <a href="{{ '/' | relative_url | remove: '.html' }}">
                     <button class="navbutton">Home</button>
                 </a>
                 <a href="{{ 'programs.html' | relative_url }}">
                     <button class="navbutton">Programs</button>
                 </a>
-                <a href="{{ 'about.html' | relative_url }}">
+                <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
                     <button class="navbutton">About</button>
                 </a>
-                <a href="{{ 'getinvolved.html' | relative_url }}">
-                    <button class="navbutton">Get Involved</button>
+                <a href="{{ 'volunteer.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Volunteer</button>
+                </a>
+                <a href="{{ 'donate.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Donate</button>
                 </a>
             </div>
         </div>
