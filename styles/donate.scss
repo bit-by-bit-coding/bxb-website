@@ -29,3 +29,13 @@
     }
 }
 
+@media only screen and (max-width: 320px) {
+    #donatewidget {
+        display: none;
+    }
+}
+@media (min-width: 321px) {
+    #fallbackbutton {
+        display: none;
+    }
+}
