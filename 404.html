@@ -3,11 +3,16 @@ layout: default
 title: "404 Page"
 style: 404.css
 ---
-<!--<link rel="stylesheet" type="text/css" href="404.css">-->
-
 <h1>Goodbye World?</h1>
-<div id="container">
-    <div id="left"><img src="sadrobot.png" height=400 /></div>
-    <div id="right"><p>Oops! The page you are trying to reach could not be found. If you think this is an error on our end, please <a href="mailto:bitbybitcoding.org">let us know via email</a> and we can look into the problem.</p>
-    <p>You might be able to find what you were looking for by going to our <a href="index.html">homepage</a> or by clicking one of the navigation links at the top of the page.</p></div>
+
+<div class="details-container">
+    <img class="details-item" src="sadrobot.png" alt="A sad Bit by Bot stares at a 404 page.">
+
+    <div class="details-item">
+        <p>Oops! The page you are trying to reach could not be found. If you think this is an error on our end, please
+            <a href="mailto:{{site.contact.email}}">let us know via email</a> and we can look into the problem.</p>
+        <p>You might be able to find what you were looking for by going to our <a
+                href="{{ 'index.html' | relative_url | remove: '.html' }}">homepage</a> or by clicking one of the
+            navigation links at the top of the page.</p>
+    </div>
 </div>
