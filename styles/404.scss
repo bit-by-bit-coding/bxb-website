@@ -1,11 +1,29 @@
 ---
 ---
-.content h1{
+.details-container{
+    align-items: center;
+}
+
+#goodbye {
+    font-size: 60px;
+}
+
+.content h2{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1em;
+}
+
+img {
+    float: right;
 }
 
 img.details-item{
     width: 300px;
+}
+
+p{
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
 }
