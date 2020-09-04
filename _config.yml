@@ -25,10 +25,3 @@ include:
 
 plugins:
   - jekyll-sitemap
-
-defaults:
-  -
-    scope:
-      path:            "archives/**/*"
-    values:
-      sitemap:         false

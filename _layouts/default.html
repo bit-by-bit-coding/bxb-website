@@ -4,11 +4,13 @@ layout: base
 <!--Nav Bar-->
 {% include nav.html %}
 
-<!--Banner-->
-<div id="particles-js" class="banner">
-	<canvas id="canvas" height="300"></canvas>
-	<img id="bigLogo" src="imgs/Logo.svg" draggable="false">
-</div>
+<head>
+	<title>{{page.title}}</title>
+	{% include head.html %}
+	
+	{% if page.style %}
+	<link rel="stylesheet" href="styles/{{page.style}}">
+	{% endif %}
 
 
 <div class="content">
@@ -16,8 +18,11 @@ layout: base
 </div>
 
 
-<!--Footer-->
-{% include footer.html %}
+	<!--Banner-->
+	<div id="particles-js" class="banner">
+		<canvas id="canvas" height="300"></canvas>
+		<img id="bigLogo" src="imgs/bxblogo.png" draggable="false">
+	</div>
 
 <!--Javascript includes-->
 {% include script.html %}

@@ -1,0 +1,145 @@
+---
+---
+@import 'variables';
+
+#bigLogo{
+  will-change: opacity;
+  mix-blend-mode: multiply;
+}
+
+#bot{
+  max-height: 20vw;
+  padding-left: 60px;
+}
+
+.item{
+  flex: 1 1 10vw;
+}
+
+.buttons{
+  background-color:$main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.buttons:hover{
+    opacity: 0.85;
+}
+
+#top-image{
+  object-fit: cover;
+  height: 100%;
+  width: 40vw;
+}
+
+@media (max-width: 750px) {
+  #top-image{
+    width:100%;
+  }
+  #bot{
+    display:none;
+  }
+}
+
+//FAQ section:
+.section {
+  width: 100%;
+}
+//sources: https://stackoverflow.com/a/17301828
+//        https://codepen.io/morewry/pen/gbJvy
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }                 
+}
+
+section.faqs {
+  summary {
+
+    font-size: 1.2em;
+    // keep the same default font color (slightly not black) that seems to have been the default button text color
+    color:rgb(46, 52, 54);
+
+    // remove the default triangle to indicate whether the details is "open"
+    // we are using or own custom one instead
+    list-style: none;   
+  }
+  //temporary fix because chrome does not support the list-style thing
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  // code to add the custom "open" indicator
+  summary:after {
+    display: block;
+    position: absolute;
+    background: white;
+    border: 2px solid $dark;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 32px;
+    border-radius: 50%;
+    content: "+";
+    text-align: center;
+    left: 5px;
+    transform: translateY(-16px);
+  } 
+  
+  details {
+    border: none;
+    border-bottom: 2px solid $dark;
+    box-sizing: border-box;
+    width: 100%;
+    background: none;
+    text-align: left;
+    font-family: inherit;
+    position: relative;
+    transition: 0.3s;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  
+  summary:hover, details[open] summary {
+    color: $main;
+  }
+
+  details[open] {
+    summary:after {
+      content: "-";
+    }
+
+    :not(summary) {
+      animation-name: invisiblyGrowFontSize, fadeIn;
+      animation-duration: 500ms, 200ms;
+      animation-delay: 0ms, 500ms;
+    }
+  } 
+
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 300px;
+}
