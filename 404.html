@@ -1,0 +1,18 @@
+---
+layout: default
+title: "404 Page"
+style: 404.css
+---
+
+<h2 id="goodbye">Goodbye World?</h2>
+<div class="details-container">
+    <img class="details-item" src="imgs/sadrobot.png" alt="A sad Bit by Bot stares at a 404 page.">
+
+    <div class="details-item">
+        <p>Oops! The page you are trying to reach could not be found. If you think this is an error on our end, please
+            <a href="mailto:{{site.contact.email}}">let us know via email</a> and we can look into the problem.</p>
+        <p>You might be able to find what you were looking for by going to our <a
+                href="{{ 'index.html' | relative_url | remove: '.html' }}">homepage</a> or by clicking one of the
+            navigation links at the top of the page.</p>
+    </div>
+</div>

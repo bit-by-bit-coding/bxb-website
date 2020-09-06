@@ -2,7 +2,7 @@
 sass:
     sass_dir: _sass
 
-# baseurl can be used to automaticlaly prepend any links with, for example, a subdirectory
+# baseurl can be used to automatically prepend any links with, for example, a subdirectory
 baseurl: ""
 
 url: 
@@ -13,6 +13,8 @@ contact:
 social:
     facebook: https://facebook.com/HelloWorldCodeCamp/
     instagram: https://instagram.com/_bitxbit_/
+financials:
+    budget: https://docs.google.com/spreadsheets/d/1eL4uR_xVK_c1v2oHe6p-3zlQ1R7OJ-hQOWASLtNdWoY/edit?usp=sharing
 
 
 
@@ -25,10 +27,3 @@ include:
 
 plugins:
   - jekyll-sitemap
-
-defaults:
-  -
-    scope:
-      path:            "archives/**/*"
-    values:
-      sitemap:         false

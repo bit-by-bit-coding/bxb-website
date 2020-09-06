@@ -1,9 +1,7 @@
 ---
 ---
 
-$main: #2d97b7;
-$dark: #283576;
-$gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+@import 'variables';
 
 /* About Us Page */
 .instructors-container {
@@ -40,10 +38,10 @@ $gradient: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
   margin-top: 20px;
 }
 
-#canvas{
-  height: 300px;
-  width: 100%;
-}
+// #canvas{
+//   height: 300px;
+//   width: 100%;
+// }
 
 .section{
   margin: 0 auto;
