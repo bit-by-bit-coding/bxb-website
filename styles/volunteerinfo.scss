@@ -7,3 +7,13 @@
     will-change: opacity;
     mix-blend-mode: multiply;
 }
+
+h3{
+    color: $dark;
+}
+
+.content h3::before, .content h4::before{
+    content: "";
+}
+
+
