@@ -16,6 +16,11 @@
 
   }
 }
+@media screen and (max-width: 768px) {
+	.bot {
+		display:none;
+	}
+}
 #myCarousel {
 	width: 80vw;
 	background: $dark;
