@@ -1,44 +1,52 @@
----
----
+--- 
+--- 
 @import 'variables';
+
 #parallax {
 	background-image: url("something.png");
 	width: 100%;
 	padding-left: 0;
-	margin:0;
+	margin: 0;
 	height: 400px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-  }
-.section img{
-  height: 200px;
-  padding-left: 75px;
 }
+
+.section img {
+	height: 200px;
+	padding-left: 75px;
+}
+
 #righttext {
 	flex-grow: 10;
 }
-.no-margin{
-  padding: 0;
-  .details-item{
-    margin: 0;
 
-  }
+.no-margin {
+	padding: 0;
+
+	.details-item {
+		margin: 0;
+
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.bot {
-		display:none;
+		display: none;
 	}
+
 	#myImgCarousel {
 		display: none;
 	}
+
 	.bigimgs {
 		height: 100%;
 		width: auto;
 	}
 }
+
 // #myCarousel {
 // 	width: 80vw;
 // 	background: $dark;
@@ -48,9 +56,9 @@
 
 .testimonial-item strong {
 	color: $dark;
-  }
+}
 
-  /* Testmonials */
+/* Testmonials */
 .testimonial-container {
 	display: flex;
 	flex-direction: row;
@@ -58,4 +66,31 @@
 	flex-wrap: wrap;
 	list-style: none;
 	margin: 0 0;
-  }
+}
+
+.testimonial-item {
+	padding: 10px;
+	text-align: center;
+	flex: 1 1 200px;
+	flex-wrap: wrap;
+}
+
+/*width: 20%;*/
+em {
+	&:before {
+		content: "“";
+		color: $main;
+		padding-right: 10px;
+		font-size: 4em;
+		font-family: $heading-font;
+		vertical-align: middle;
+	}
+
+	&:after {
+		content: "”";
+		color: $main;
+		font-size: 2em;
+		font-family: $heading-font;
+		vertical-align: middle;
+	}
+}
