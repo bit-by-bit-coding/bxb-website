@@ -28,3 +28,22 @@ h3{
     align-items: baseline;
 }
 
+.flexbutton {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionbutton {
+    display: block;
+    background-color: $main;
+    color: #F3F3F3;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin: 10px;
+    &:hover {
+        opacity: 0.85;
+    }
+}
