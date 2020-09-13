@@ -1,57 +1,96 @@
----
----
+--- 
+--- 
 @import 'variables';
 
-.section img{
-  height: 300px;
+#parallax {
+	background-image: url("something.png");
+	width: 100%;
+	padding-left: 0;
+	margin: 0;
+	height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.no-margin{
-  padding: 0;
-  .details-item{
-    margin: 0;
+.section img {
+	height: 200px;
+	padding-left: 75px;
+}
 
-  }
+#righttext {
+	flex-grow: 10;
+}
+
+.no-margin {
+	padding: 0;
+
+	.details-item {
+		margin: 0;
+
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.bot {
+		display: none;
+	}
+
+	#myImgCarousel {
+		display: none;
+	}
+
+	.bigimgs {
+		height: 100%;
+		width: auto;
+	}
+}
+
+// #myCarousel {
+// 	width: 80vw;
+// 	background: $dark;
+// 	height: 200px;
+// 	border: 2px solid $dark;
+// }
+
+.testimonial-item strong {
+	color: $dark;
 }
 
 /* Testmonials */
 .testimonial-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0 0;
 }
-
-
 
 .testimonial-item {
-  padding: 10px;
-  text-align: center;
-  flex: 1 1 200px;
-  flex-wrap: wrap;
-  /*width: 20%;*/
-em{
-  &:before{
-    content: "“";
-    color: $main;
-    padding-right:10px;
-    font-size: 4em;
-    font-family: $heading-font;
-    vertical-align: middle;
-  }
-  &:after{
-    content: "”";
-    color: $main;
-    font-size: 2em;
-    font-family: $heading-font;
-    vertical-align: middle;
-  }
+	padding: 10px;
+	text-align: center;
+	flex: 1 1 200px;
+	flex-wrap: wrap;
 }
 
-}
+/*width: 20%;*/
+em {
+	&:before {
+		content: "“";
+		color: $main;
+		padding-right: 10px;
+		font-size: 4em;
+		font-family: $heading-font;
+		vertical-align: middle;
+	}
 
-.testimonial-item strong {
-  color: $dark;
+	&:after {
+		content: "”";
+		color: $main;
+		font-size: 2em;
+		font-family: $heading-font;
+		vertical-align: middle;
+	}
 }

@@ -47,7 +47,12 @@
 		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 	{% if page.scripts %}
 	{% for script in page.scripts %}
-	<script src="scripts/{{script}}"></script>
+	<script src="
+		{% unless script contains "://" %}
+			scripts/
+		{% endunless %}
+		{{script}}
+	"{{path}}"></script>
 	{% endfor %}
 	{% endif %}
 
