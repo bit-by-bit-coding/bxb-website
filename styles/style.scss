@@ -39,6 +39,12 @@ a{
     margin: 0 auto;
 }
 
+h1 {
+    color: $dark;
+    font-family: $heading-font;
+    font-weight: 750;
+}
+
 h2 {
     color: $main;
     font-family: $heading-font;
