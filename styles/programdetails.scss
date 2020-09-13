@@ -1,24 +1,56 @@
 ---
 ---
-@import 'variables';
 
-#bigLogo{
+@import "variables";
+
+.title-text{
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+}
+
+/// staggard bars ///
+.info-banner {
+  color: #fff;
+  margin: 20px -40px;
+  padding: 10px;
+  background: $main;
+  font-size: 2em;
+  line-height: 1em;
+  
+  @media screen and (min-width: 992px){
+    margin: 20px -110px;
+    max-width: calc(50vw + 600px);
+  }
+
+  &:nth-child(even) {
+    margin-left: auto;
+  }
+  &:nth-child(odd){
+    text-align: right;
+    margin-right: auto;
+  }
+}
+
+/// images ///
+
+#bigLogo {
   will-change: opacity;
   mix-blend-mode: multiply;
 }
 
-#bot{
+#bot {
   max-height: 20vw;
   padding-left: 60px;
 }
 
-.item{
+.item {
   flex: 1 1 10vw;
 }
 
-.buttons{
-  background-color:$main;
-  color: #F3F3F3;
+.buttons {
+  background-color: $main;
+  color: #f3f3f3;
   border-radius: 10px;
   width: 100%;
   border: none;
@@ -28,22 +60,22 @@
   margin-top: 10px;
 }
 
-.buttons:hover{
-    opacity: 0.85;
+.buttons:hover {
+  opacity: 0.85;
 }
 
-#top-image{
+#top-image {
   object-fit: cover;
   height: 100%;
   width: 40vw;
 }
 
 @media (max-width: 750px) {
-  #top-image{
-    width:100%;
+  #top-image {
+    width: 100%;
   }
-  #bot{
-    display:none;
+  #bot {
+    display: none;
   }
 }
 
@@ -69,19 +101,18 @@
   }
   100% {
     opacity: 1;
-  }                 
+  }
 }
 
 section.faqs {
   summary {
-
     font-size: 1.2em;
     // keep the same default font color (slightly not black) that seems to have been the default button text color
-    color:rgb(46, 52, 54);
+    color: rgb(46, 52, 54);
 
     // remove the default triangle to indicate whether the details is "open"
     // we are using or own custom one instead
-    list-style: none;   
+    list-style: none;
   }
   //temporary fix because chrome does not support the list-style thing
   summary::-webkit-details-marker {
@@ -102,8 +133,8 @@ section.faqs {
     text-align: center;
     left: 5px;
     transform: translateY(-16px);
-  } 
-  
+  }
+
   details {
     border: none;
     border-bottom: 2px solid $dark;
@@ -117,8 +148,9 @@ section.faqs {
     padding-left: 50px;
     margin-bottom: 30px;
   }
-  
-  summary:hover, details[open] summary {
+
+  summary:hover,
+  details[open] summary {
     color: $main;
   }
 
@@ -132,8 +164,7 @@ section.faqs {
       animation-duration: 500ms, 200ms;
       animation-delay: 0ms, 500ms;
     }
-  } 
-
+  }
 }
 
 canvas {
