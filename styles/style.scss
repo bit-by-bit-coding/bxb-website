@@ -313,6 +313,11 @@ img {
         margin: 5px 0px 10px;
         min-width: max-content;
     }
+
+    a{
+        font-size: 13px;
+        margin: 0px;
+    }
 }
 
 #financial-info {
@@ -359,6 +364,23 @@ img {
         margin: 0px;
         display: flex;
     }
+}
+
+.maillist{
+    width: 275px;
+    max-height: 100px;
+    margin: 20px 0;
+
+    p{
+        padding: 10px 0 5px 0;
+    }
+}
+
+#mailing-list{
+    max-width: 275px;
+    height: 70px;
+    background:#283576;
+    padding: 0;
 }
 
 .footer-info {
