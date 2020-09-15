@@ -2,8 +2,12 @@
     <div id="footer-contact">
         <div id="footer-connect">
             <h2>Connect with us:</h2>
-            <p>{{site.contact.email}}</p>
+            <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>
             <p>Portland, OR</p>
+        </div>
+        <div class="maillist">
+            <p>Sign up for our mailing list here</p>
+            <iframe id="mailing-list" src="https://bitbybitcoding.substack.com/embed" frameborder="0" scrolling="no"></iframe>
         </div>
         <div id="footer-buttons">
             <div id="socials">
@@ -19,10 +23,10 @@
                         <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
-                <a href="mailto:{{site.contact.email}}" target="_blank">
+                <a href="{{site.social.linkedin}}" target="_blank">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
             </div>
