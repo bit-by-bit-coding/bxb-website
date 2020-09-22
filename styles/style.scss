@@ -131,7 +131,8 @@ img {
     content: "// ";
 }
 
-.noslashes::before {
+h1.noslashes::before, h2.noslashes::before, h3.noslashes::before, 
+h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     content: "";
 }
 
