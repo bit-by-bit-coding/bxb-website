@@ -28,7 +28,11 @@
 .instructors-item img {
   height: 250px;
   border-radius: 10px;
-  border-bottom: 3px solid $dark;
+}
+
+#coordinator{
+  border-left: 7px solid #FF8900;
+  border-bottom: 7px solid #FF8900;
 }
 
 .instructors-item strong {
