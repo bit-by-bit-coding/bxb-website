@@ -1,0 +1,17 @@
+---
+---
+
+@import 'variables';
+
+h3{
+    color: $dark;
+}
+
+.content h3::before{
+    content: "";
+}
+
+.details-item{
+    flex: 1 1 400px;
+    padding: 0;
+}
