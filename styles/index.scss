@@ -2,25 +2,8 @@
 --- 
 @import 'variables';
 
-#parallax {
-	background-image: url("something.png");
-	width: 100%;
-	padding-left: 0;
-	margin: 0;
-	height: 400px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .section img {
-	height: 200px;
-	padding-left: 75px;
-}
-
-#righttext {
-	flex-grow: 10;
+	height: 300px;
 }
 
 .no-margin {
@@ -32,17 +15,26 @@
 	}
 }
 
-@media screen and (max-width: 767px) {
-	.bot {
-		display: none;
-	}
+#lightbulb {
+	width: 200px;
+	height: auto;
+}
 
-	#myImgCarousel {
-		display: none;
-	}
+.flexcontain {
+	display: flex;
+}
 
-	.bigimgs {
-		height: 100%;
-		width: auto;
+.boximg {
+	object-fit: cover;
+	width: 100%;
+	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	#lightbulb {
+		width: 50px;
+	}
+	.section img {
+		height: 200px;
 	}
 }
