@@ -6,29 +6,50 @@ scripts:
 - "app.js"
 style: index.css
 ---
-<!--Image banner w/ parallax effect-->
-
-<div id="parallax"></div>
-
 <div class="section no-margin">
-    <div class="details-item">
-        <h2> Mission </h2>
-        <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
-            technology, thinking, and leadership to improve the world, bit by bit.
-        </p>
-    </div>
-    <div class="details-item">
-        <h2> Activity</h2>
-        <p>We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
-            youths, to code, lead, and improve their understanding of the world.
-        </p>
+    <h2> Mission </h2>
+    <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
+        technology, thinking, and leadership to improve the world, bit by bit.
+    </p>
+    <h2> Activity</h2>
+    <p>We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
+        youths, to code, lead, and improve their understanding of the world.
+    </p>
+</div>
+
+
+<div class="section">
+    <h2>High School Programs</h2>
+    <div class="flexcontain">
+        <div class="item">
+            <h3 class="noslashes">
+                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
+                    Uncommon Sense
+                </a>
+            </h3>
+            <p>Uncommon Sense is a free weekly program launched in partnership with <a
+                    href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
+                highschoolers interested in learning ways to
+                form hypotheses about the world and make decisions that effectively accomplish their goals.
+                Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
+                psychology,
+                game theory, prediction markets, and so much more!
+            </p>
+            <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and
+                sign
+                up!</a>
+        </div>
+        <div class="item">
+            <img id="lightbulb" src="imgs/ealogo.png">
+        </div>
     </div>
 </div>
 
 <div class="section">
-    <h2> After-School Programs</h2>
+    <h2>Middle School Programs</h2>
     <div class="details-container">
-        <div class="details-item" id="righttext">
+        <div class="details-item">
+            <img class="boximg" src="imgs/something.png">
             <h3 class="noslashes">
                 <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
                     Form and Function
@@ -43,132 +64,29 @@ style: index.css
             </p>
             <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign
                 up!</a>
-
-        </div>
-
-        <div class="details-item">
-            <img class="bot" src="imgs/FFbot.png">
-        </div>
-
-        <div class="details-container">
-
-            <div class="details-item">
-                <img class="bot" src="imgs/thinkingbot.png">
-            </div>
-            <div class="details-item" id="righttext">
-                <h3 class="noslashes">
-                    <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                        Uncommon Sense
-                    </a>
-                </h3>
-                <p>Uncommon Sense is a free weekly program launched in partnership with <a
-                    href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
-                highschoolers interested in learning ways to
-                form hypotheses about the world and make decisions that effectively accomplish their goals.
-                Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
-                psychology,
-                game theory, prediction markets, and so much more!
-                </p>
-                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and
-                    sign
-                    up!</a>
-            </div>
-        </div>
-    </div>
-
-    <h2> Summer Programs </h3>
-        <div class="details-container">
-            <div class="details-item">
-                <h3 class="noslashes">
-                    <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                        Hello World
-                    </a>
-                </h3>
-                <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
-                    down-and-dirty
-                    with real code. Every camper will learn the principles of front-end web development and the
-                    heart of
-                    CSS,
-                    HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and passion to continue
-                    tinkering
-                    with
-                    code for the rest of her life!
-                </p>
-                <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
-            </div>
-        </div>
-        <!-- <div class= "details-item">
-    <img src="imgs/SelenaSquare.jpg">
-</div> -->
-
-        <!--- <div class="details.item">
-        <img id="IMG" src="imgs/trio.jpg">
-    </div>
-      <div class="details.item">
-            <img id="IMG" src="imgs/trio.jpg">
-        </div>
-        <div class="details.item" id="IMG">
-            <img id="IMG" src="imgs/trio.jpg">
-        </div> -->
-
-</div>
-
-
-<!--Photos
-<div class="section">
-    <div class="home-photos">
-        <img src="imgs/Row.jpg">
-        <img src="imgs/BunnyEars.jpg">
-    </div>
-</div>-->
-
-<!-- <div class="section">
-    <h2> After-School Programs</h2>
-    <div class="details-container">
-
-        <div class="details-item">
-            <img src="imgs/FFbot.png">
         </div>
         <div class="details-item">
-            <h3>
-                <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
-                    Form and Function
+            <img class="boximg" src="imgs/Trio.jpg">
+            <h3 class="noslashes">
+                <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
+                    Hello World
                 </a>
             </h3>
-            <p>Form and Function gives middle schoolers the power crack the “code” of web development! Our free
-                weekly
-                after-school program helps you transform the web into a canvas for your ideas. Interactive projects,
-                demos,
-                and individual help will teach you how to use HTML, CSS, and JavaScript to create your own unique
-                website.
+            <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
+                down-and-dirty
+                with real code. Every camper will learn the principles of front-end web development and the
+                heart of
+                CSS,
+                HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and passion to continue
+                tinkering
+                with
+                code for the rest of her life!
             </p>
-            <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign
-                up!</a>
+            <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
         </div>
+    </div>
 
-        <div class="details-container">
-            <div class="details-item">
-                <h3>
-                    <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                        Uncommon Sense
-                    </a>
-                </h3>
-                <p>Uncommon Sense is a free weekly program launched in partnership with <a
-                        href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
-                    highschoolers interested in learning ways to
-                    form hypotheses about the world and make decisions that effectively accomplish their goals.
-                    Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
-                    psychology,
-                    game theory, prediction markets, and so much more!
-                </p>
-                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and sign
-                    up!</a>
-            </div>
-            <div class="details-item">
-                <img id="Bot" src="imgs/thinkingbot.png">
-            </div>
-        </div>
-</div>-->
+</div>
 
 <!--Details-
 <div class="section">
