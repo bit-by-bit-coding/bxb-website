@@ -44,12 +44,13 @@
 
 #team-item{
   flex: 1 275px;
-  
-  p{
-    font-size: 1.1em;
-    color: $dark;
-    margin-top: 1px;
-  }
+}
+
+.title{
+  font-size: 1.1em;
+  color: $dark;
+  margin-top: 1px;
+  margin-bottom: 5px;
 }
 
 #team-lead-1{
