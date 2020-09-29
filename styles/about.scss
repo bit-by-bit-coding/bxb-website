@@ -30,11 +30,6 @@
   border-radius: 10px;
 }
 
-#coordinator{
-  border-left: 7px solid #FF8900;
-  border-bottom: 7px solid #FF8900;
-}
-
 .instructors-item strong {
   color: $dark;
   text-align: center;
@@ -42,15 +37,20 @@
   margin-top: 20px;
 }
 
-#team-item{
-  flex: 1 275px;
-}
-
 .title{
   font-size: 1.1em;
   color: $dark;
   margin-top: 1px;
   margin-bottom: 5px;
+}
+
+#coordinator{
+  border-left: 7px solid #FF8900;
+  border-bottom: 7px solid #FF8900;
+}
+
+#team-item{
+  flex: 1 275px;
 }
 
 #team-lead-1{
