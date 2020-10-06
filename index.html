@@ -21,10 +21,29 @@ style: index.css
         </p>
     </div>
 </div>
-
-<div class="section">
-    <h2>Middle School Programs</h2>
-    <div class="details-container">
+<div class="section no-margin">
+    <div class="details-item">
+        <h2>High School Programs</h3>
+            <h3 class="noslashes">
+                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
+                    Uncommon Sense
+                </a>
+            </h3>
+            <p>Uncommon Sense is a free weekly program launched in partnership with <a
+                    href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
+                highschoolers interested in learning ways to
+                form hypotheses about the world and make decisions that effectively accomplish their goals.
+                Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
+                psychology,
+                game theory, prediction markets, and so much more!
+            </p>
+            <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and
+                sign
+                up!</a>
+    </div>
+    <div class="details-item">
+        <h2>Middle School Programs</h2>
+    <div class="details-container nomargin">
         <div class="details-item" id="righttext">
             <h3 class="noslashes">
                 <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
@@ -69,37 +88,21 @@ style: index.css
                     code for the rest of her life!
                 </p>
                 <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
-                
+
             </div>
+    </div>
+
+</div>
+<div class="section">
+    
         </div>
     </div>
 
-    <h2>High School Programs</h3>
-        <div class="details-container">
-            <div class="details-item">
-                <h3 class="noslashes">
-                    <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                        Uncommon Sense
-                    </a>
-                </h3>
-                <p>Uncommon Sense is a free weekly program launched in partnership with <a
-                    href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
-                highschoolers interested in learning ways to
-                form hypotheses about the world and make decisions that effectively accomplish their goals.
-                Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
-                psychology,
-                game theory, prediction markets, and so much more!
-                </p>
-                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and
-                    sign
-                    up!</a>
-            </div>
-        </div>
-        <!-- <div class= "details-item">
+    <!-- <div class= "details-item">
     <img src="imgs/SelenaSquare.jpg">
 </div> -->
 
-        <!--- <div class="details.item">
+    <!--- <div class="details.item">
         <img id="IMG" src="imgs/trio.jpg">
     </div>
       <div class="details.item">
