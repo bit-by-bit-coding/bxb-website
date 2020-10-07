@@ -2,18 +2,6 @@
 --- 
 @import 'variables';
 
-#parallax {
-	background-image: url("something.png");
-	width: 100%;
-	padding-left: 0;
-	margin: 0;
-	height: 400px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .section img {
 	height: 200px;
 	padding-left: 75px;
@@ -34,10 +22,6 @@
 
 @media screen and (max-width: 767px) {
 	.bot {
-		display: none;
-	}
-
-	#myImgCarousel {
 		display: none;
 	}
 
