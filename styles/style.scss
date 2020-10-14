@@ -137,7 +137,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 /* Navigation Bar */
-#topnav {
+#topnav, nav ul {
     display: flex;
     position: sticky;
     top: 0;
@@ -149,9 +149,61 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     justify-content:   space-between;
     z-index: 1;
 
-    a{
+    a {
         text-decoration: none;
     }
+    ul, li {
+        list-style: none;
+        padding: 0;
+    } 
+}
+
+.dropdown-content {
+    display: none;
+    background: none;
+    position: absolute;
+    top: 45px;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdownbutton {
+    border: none;
+    margin: 0.1vw;
+    cursor: pointer;
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 0.9em;
+    position: relative;
+    &:hover {
+        opacity: 0.75;
+        transition-duration: 0.3s;
+    }
+}
+
+// animation from https://coronavirus.su.domains/
+.dropdown::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45px;
+    background: $main;
+    transform: scaleY(0);
+    width: 30%;
+    height: calc(100% + 10px);
+    transition: 0.5s ease-in-out;
+    transform-origin: 100% 0%;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.dropdown:hover::before {
+    transform: scaleY(1);
 }
 
 #navlogo {
