@@ -10,51 +10,23 @@
     <nav id="topnav-right">
         <div>
             <div>
-                <ul>
-                    <li>
-                        <a href="{{ '/' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">Home</button>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton topbutton">Programs &#9660;</button>
-                        </a>
-                        <ul class="dropdown-content">
-                            <li>
-                                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                                    <button class="dropdownbutton">Uncommon Sense</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">
-                                    <button class="dropdownbutton">Form and Function</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                                    <button class="dropdownbutton">Hello World</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">About</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ 'volunteer.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">Volunteer</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ 'donate.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">Donate</button>
-                        </a>
-                    </li>
-                </ul>
+                <a href="{{ '/' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Home</button>
+                </a>
+                <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Programs</button>
+                </a>
+                <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">About</button>
+                </a>
+                <a href="{{ 'volunteer.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Volunteer</button>
+                </a>
+                <a href="{{ 'donate.html' | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Donate</button>
+                </a>
             </div>
         </div>
+
     </nav>
 </nav>
