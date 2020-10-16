@@ -257,7 +257,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 .navbutton:hover{
-    color: whitesmoke;
+    color: white;
     border-radius: 5px;
 }
 
@@ -362,7 +362,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 
     h2 {
         color: #41ceda;
-        border-bottom: solid;
         margin: 5px 0px 10px;
         min-width: max-content;
     }
@@ -370,20 +369,17 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     a{
         font-size: 13px;
         margin: 0px;
+        text-decoration: underline;
     }
 }
 
-#financial-info {
-    color: #41ceda;
-    border-left: none;
-    background: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: solid;
-}
-#financial-info:hover {
+#footer a.small-link {
+    font-size: 13px;
+    text-decoration: underline;
     color:white;
-    transform: scale(1.1);
+    &:hover {
+        color: #41ceda;
+    }
 }
 
 #footer-buttons {
@@ -400,36 +396,33 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             border-radius: 10px;
             height: 37px;
             width: 98%;
-            color: #283576;  
+            color: white;  
             font-weight: bold;
             font-size: 15px;
-        }
-
-        button:hover {
-            color: #41ceda;
-            background-color: $dark;
-            font-size: 85%;
-            filter: brightness(125%);
+            &:hover {
+                background: $dark;
+                cursor: pointer;
+            }
         }
     }
     
-    #socials{
+    #socials {
         margin: 0px;
         display: flex;
     }
 }
 
-.maillist{
+.maillist {
     width: 275px;
     max-height: 100px;
     margin: 20px 0;
 
-    p{
+    p {
         padding: 10px 0 5px 0;
     }
 }
 
-#mailing-list{
+#mailing-list {
     max-width: 275px;
     height: 70px;
     background:#283576;
