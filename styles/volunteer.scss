@@ -8,10 +8,17 @@ List
 (adapted from https://codepen.io/chriscoyier/pen/xjapNK)
 */
 
-.details-item {
-    min-width: 30vw;
+#topbuttons .details-container{
+    margin-right: 20px;
+    flex-wrap: nowrap;
 }
 
+.buttons{
+    background-color:$main;
+    color: #F3F3F3;
+    border-radius: 10px;
+    width: 20vw;
+    border: none;
     font-size: 1em;
     cursor: pointer;
     padding: 5px 10px;
