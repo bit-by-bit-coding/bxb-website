@@ -7,6 +7,11 @@
 List
 (adapted from https://codepen.io/chriscoyier/pen/xjapNK)
 */
+
+.details-item {
+    min-width: 30vw;
+}
+
 .steps {
     clear: both;
     list-style: none;
