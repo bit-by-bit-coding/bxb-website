@@ -1,10 +1,10 @@
---- 
-layout: default 
-title: "Programs: Bit by Bit" 
-scripts: 
-- "particles.js" 
-- "app.js" 
-style: programs.css 
+---
+layout: default
+title: "Programs: Bit by Bit"
+scripts:
+- "particles.js"
+- "app.js"
+style: programs.css
 redirect_from: signup.html
 ---
 <!-- you can make a new css file if you think you need to-->
@@ -14,12 +14,18 @@ redirect_from: signup.html
         <h2> After-School Programs</h2>
         <img src="imgs/Devin.jpg" id="after-school-program-box" class="boxes"></img>
         <div class="flex-wrap">
-            <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">
-                <button class="buttons">Form and Function</button>
-            </a>
-            <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                <button class="buttons">Uncommon Sense</button>
-            </a>
+            <div>
+                <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">
+                    <button class="buttons">Form and Function</button>
+                </a>
+                <p>A free, online program teaching middle schoolers to crack the “code” of web development.</p>
+            </div>
+            <div>
+                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
+                    <button class="buttons">Uncommon Sense</button>
+                </a>
+                <p>An experimental seminar for high schoolers to explore and debate advanced concepts in cognitive science and rationality.</p>
+            </div>
         </div>
     </div>
     <div class="details-item">
@@ -28,5 +34,6 @@ redirect_from: signup.html
         <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
             <button class="buttons" id="singleButton">Hello World</button>
         </a>
+        <p>A one-week camp for middle school girls to learn to build their own websites, getting down-and-dirty with real code.</p>
     </div>
 </div>
