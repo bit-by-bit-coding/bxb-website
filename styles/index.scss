@@ -2,6 +2,10 @@
 --- 
 @import 'variables';
 
+.bot {
+	margin-top: 20px;
+}
+
 .section img {
 	height: 200px;
 	padding-left: 75px;
@@ -20,13 +24,22 @@
 	}
 }
 
+#pumpkin {
+	width: 200px;
+	height: auto;
+}
+
+@media screen and (min-width: 992px) {
+	#pumpkin {
+		width: 150px;
+	}
+}
+
 @media screen and (max-width: 767px) {
-	.bot {
+	.computerbot {
 		display: none;
 	}
-
-	.bigimgs {
-		height: 100%;
-		width: auto;
+	#pumpkin {
+	padding: 0;
 	}
 }
