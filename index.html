@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bit By Bit
+title: Bit by Bit
 scripts:
 - "particles.js"
 - "app.js"
@@ -8,17 +8,24 @@ style: index.css
 ---
 
 <div class="section no-margin">
-    <div class="details-item">
-        <h2> Mission </h2>
-        <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
-            technology, thinking, and leadership to improve the world, bit by bit.
-        </p>
+    <div class="details-container">
+        <div class="details-item" id="righttext">
+            <h2> Mission </h2>
+            <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
+                technology, thinking, and leadership to improve the world, bit by bit.
+            </p>
+            <h2> Activity</h2>
+            <p>We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
+                youths, to code, lead, and improve their understanding of the world.
+            </p>
+        </div>
+        <div class="details-item">
+            <img class="bot" id="pumpkin" src="imgs/pumpkinbot.png">
+        </div>
     </div>
+
     <div class="details-item">
-        <h2> Activity</h2>
-        <p>We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
-            youths, to code, lead, and improve their understanding of the world.
-        </p>
+
     </div>
 </div>
 <div class="section no-margin">
@@ -43,58 +50,58 @@ style: index.css
     </div>
     <div class="details-item">
         <h2>Middle School Programs</h2>
-    <div class="details-container nomargin">
-        <div class="details-item" id="righttext">
-            <h3 class="noslashes">
-                <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
-                    Form and Function
-                </a>
-            </h3>
-            <p>Form and Function gives middle schoolers the power to crack the “code” of web development! Our free
-                weekly
-                after-school program helps you transform the web into a canvas for your ideas. Interactive projects,
-                demos,
-                and individual help will teach you how to use HTML, CSS, and JavaScript to create your own unique
-                website.
-            </p>
-            <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign
-                up!</a>
-
-        </div>
-
-        <div class="details-item">
-            <img class="bot" src="imgs/FFbot.png">
-        </div>
-
-        <div class="details-container">
-
-            <div class="details-item">
-                <img class="bot" src="imgs/thinkingbot.png">
-            </div>
+        <div class="details-container nomargin">
             <div class="details-item" id="righttext">
                 <h3 class="noslashes">
-                    <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                        Hello World
+                    <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
+                        Form and Function
                     </a>
                 </h3>
-                <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
-                    down-and-dirty
-                    with real code. Every camper will learn the principles of front-end web development and the
-                    heart of
-                    CSS,
-                    HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and passion to continue
-                    tinkering
-                    with
-                    code for the rest of her life!
+                <p>Form and Function gives middle schoolers the power to crack the “code” of web development! Our free
+                    weekly
+                    after-school program helps you transform the web into a canvas for your ideas. Interactive projects,
+                    demos,
+                    and individual help will teach you how to use HTML, CSS, and JavaScript to create your own unique
+                    website.
                 </p>
-                <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
+                <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign
+                    up!</a>
 
             </div>
-    </div>
 
-</div>
-<div class="section">
-    
+            <div class="details-item computerbot">
+                <img class="bot" src="imgs/FFbot.png">
+            </div>
+
+            <div class="details-container">
+
+                <div class="details-item">
+                    <img class="bot" src="imgs/thinkingbot.png">
+                </div>
+                <div class="details-item" id="righttext">
+                    <h3 class="noslashes">
+                        <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
+                            Hello World
+                        </a>
+                    </h3>
+                    <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
+                        down-and-dirty
+                        with real code. Every camper will learn the principles of front-end web development and the
+                        heart of
+                        CSS,
+                        HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and passion to continue
+                        tinkering
+                        with
+                        code for the rest of her life!
+                    </p>
+                    <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+
         </div>
     </div>
 
