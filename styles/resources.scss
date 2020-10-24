@@ -19,10 +19,36 @@
 #bot {
   width: 200px;
 }
+#pumpkin {
+	width: 200px;
+	height: auto;
+}
+#thinkingbot {
+	width: 200px;
+	height: auto;
+}
+
 
 .flexcontain {
   display: flex;
 }
+.buttons {
+  background-color: $main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+
+  &:hover {
+      opacity: 0.85;
+  }
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
   .flexcontain {
