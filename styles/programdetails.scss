@@ -188,11 +188,13 @@ canvas {
 .testimonial-item {
 	padding: 10px;
 	text-align: center;
-	flex: 1 1 200px;
+	flex: 1 1 400px;
 	flex-wrap: wrap;
 }
-.testimonial-item strong {
-	color: $dark;
+
+.author {
+  color: $dark;
+  font-size: 1.2em;
 }
 
 /*width: 20%;*/
