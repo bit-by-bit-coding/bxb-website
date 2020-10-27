@@ -7,144 +7,86 @@
 List
 (adapted from https://codepen.io/chriscoyier/pen/xjapNK)
 */
-.steps {
-    clear: both;
-    list-style: none;
-    padding-left: 40px;
 
-    li {
-        margin: 2em 0;
-        padding-top: 1em;
-        display: block;
-        position: relative;
-        counter-increment: inst;
-    }
+#topbuttons .details-container{
+    margin-right: 20px;
+    flex-wrap: nowrap;
 }
 
-.steps li::before {
-    content: counter(inst);
-
-    background:$dark;
-    color: #fff;
-
+.buttons{
+    background-color:$main;
+    color: #F3F3F3;
+    border-radius: 10px;
+    width: 20vw;
+    min-width: 100px;
+    border: none;
     font-size: 1em;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 1px 1px $main;
-
-    border-radius: 0 0.675em 0.675em 0;
-    font-size: 1.5em;
-    text-align: center;
-    line-height: 1.4em;
-
-    padding-top: 0;
-    padding-left: 2em;
-    left: -3em;
-    top: -0.65em;
-    height: 1.35em;
-    width: 1.35em;
-    position: absolute;
-
-    transition: all 0.2s ease-in-out;
-
-    z-index: -1;
-}
-@media (min-width: 600px) {
-    .steps li:before {
-        border-radius: 50%;
-        font-size: 2.5em;
-        height: 1.35em;
-        padding-left: 0;
-        padding-top: 0;
-        top: -30px;
-        left: -50px;
-        right: 10px;
-        width: 1.35em;
-        z-index: -1;
+    cursor: pointer;
+    padding: 5px 10px;
+    &:hover {
+        opacity: 0.85;
     }
 }
+
+// .steps {
+//     clear: both;
+//     list-style: none;
+//     padding-left: 40px;
+
+//     li {
+//         margin: 2em 0;
+//         padding-top: 1em;
+//         padding-bottom: 1px;
+//         display: block;
+//         position: relative;
+//         counter-increment: inst;
+//     }
+// }
+
+// .steps li::before {
+//     content: counter(inst);
+
+//     background:$dark;
+//     color: #fff;
+
+//     font-size: 1em;
+//     font-weight: 700;
+//     font-style: italic;
+//     text-shadow: 1px 1px $main;
+
+//     border-radius: 0 0.675em 0.675em 0;
+//     font-size: 1.5em;
+//     text-align: center;
+//     line-height: 1.4em;
+
+//     padding-top: 0;
+//     padding-left: 2em;
+//     left: -3em;
+//     top: -0.65em;
+//     height: 1.35em;
+//     width: 1.35em;
+//     position: absolute;
+
+//     transition: all 0.2s ease-in-out;
+
+//     z-index: -1;
+// }
+// @media (min-width: 600px) {
+//     .steps li:before {
+//         border-radius: 50%;
+//         font-size: 2.5em;
+//         height: 1.35em;
+//         padding-left: 0;
+//         padding-top: 0;
+//         top: -30px;
+//         left: -50px;
+//         right: 10px;
+//         width: 1.35em;
+//         z-index: -1;
+//     }
+// }
 
 #bigLogo {
     will-change: opacity;
     mix-blend-mode: multiply;
-}
-
-//sources: faq page code
-//        https://stackoverflow.com/a/17301828
-//        https://codepen.io/morewry/pen/gbJvy
-
-@keyframes invisiblyGrowFontSize {
-    0% {
-        font-size: 0;
-        opacity: 0;
-    }
-    100% {
-        font-size: 1em;
-        opacity: 0;
-    }
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-section.volunteerblurb {
-    summary {
-        font-size: 1.2em;
-        // keep the same default font color (slightly not black) that seems to have been the default button text color
-        color: rgb(46, 52, 54);
-        // remove the default triangle to indicate whether the details is "open"
-        // we are using or own custom one instead
-        list-style: none;
-    }
-    //temporary fix because chrome does not support the list-style thing
-    summary::-webkit-details-marker {
-        display: none;
-    }
-    // code to add the custom "open" indicator
-    summary:after {
-        display: block;
-        border: 2px solid $dark;
-        position: absolute;
-        background: white;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 32px;
-        border-radius: 50%;
-        content: "+";
-        text-align: center;
-        left: 5px;
-        transform: translateY(-16px);
-    }
-
-    details {
-        border: none;
-        box-sizing: border-box;
-        width: 100%;
-        background: none;
-        text-align: left;
-        font-family: inherit;
-        position: relative;
-        border-bottom: 2px solid $dark;
-        transition: 0.3s;
-        padding-left: 50px;
-        margin-bottom: 30px;
-    }
-
-    details[open] {
-        summary:after {
-            content: "-";
-        }
-
-        :not(summary) {
-            animation-name: invisiblyGrowFontSize, fadeIn;
-            animation-duration: 500ms, 200ms;
-            animation-delay: 0ms, 500ms;
-        }
-    }
 }
