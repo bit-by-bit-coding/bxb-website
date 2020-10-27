@@ -5,9 +5,10 @@
 
 /* Resources Page */
 
-.details-item {
-  flex-basis: 100px;
+#resource {
+  flex-grow: 10;
 }
+
 #resourceslink{
   text-decoration: none;
 }
@@ -24,7 +25,7 @@
 
 .bot {
 	width: 200px;
-	height: auto;
+  height: auto;
 }
 
 /* Details*/
