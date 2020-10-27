@@ -7,29 +7,49 @@ scripts:
 style: resources.css
 ---
 
-
-
-
 <div class="resources-container">
-    <a href="{{ 'ffresources.html' | relative_url | remove: '.html' }}" id = "resourceslink">
-    <div class="resources-column" >
-        <h2> Form and Function resources</h2>        
-        <p>description of Form and Function  resources 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
-    </a>
-    <a href="{{ 'usresources.html' | relative_url | remove: '.html' }}" id = "resourceslink">
-        <div class="resources-column">
-            <h2> Uncommon Sense resources </h2>
-            <p>description of Uncommon Sense resources
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-             <div  id="resources-column">
-                <img class="bot" src="imgs/computer2.png">
-             </div>
+    <a href="{{ 'ffresources.html' | relative_url | remove: '.html' }}" id="resourceslink">
+        <div class="resources-container">
+
+            <div class="resources-column link-column">
+                <div class="details-container">
+                    <div class="details-item">
+                        <h2 class="noslashes heading-link">Form and Function Resources</h2>
+                        <p>Want to level up your website, create an advanced game, or play with interactive demos? Dive
+                            into
+                            HTML,
+                            CSS and JavaScript!</p>
+                    </div>
+                    <div class="details-item">
+                        <img class="bot" src="imgs/computer2.png">
+
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </a>
-
+        <div class="resources-column">
+            <h2> Uncommon Sense Resources </h2>
+            <p>Explore rationality, cognitive biases, decision making, and more!</p>
+            <ul>
+                <li>
+                    <a href="https://www.rationality.org/resources/rationality-checklist">CFAR</a>
+                </li>
+                <li>
+                    <a href="https://www.lesswrong.com/">LessWrong</a>
+                </li>
+                <li>
+                    <a href="https://slatestarcodex.com/">Slate Star Codex</a>
+                </li>
+                <li>
+                    <a href="https://www.overcomingbias.com/">Overcoming Bias</a>
+                </li>
+                <li>
+                    <a href="https://www.lesswrong.com/hpmor">Harry Potter and the Methods of Rationality</a>
+                </li>
+            </ul>
+        </div>
 </div>
-
