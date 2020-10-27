@@ -4,6 +4,10 @@
 @import 'variables';
 
 /* Resources Page */
+.details-container {
+  justify-content: space-between;
+  align-items: center;
+}
 
 #resource {
   flex-grow: 10;
