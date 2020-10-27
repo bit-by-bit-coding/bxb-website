@@ -1,13 +1,6 @@
 ---
 ---
 
-/*TODO
-Wrap signup button on homepage
-Make testimonials wrap on mobile
-Fix brs on about us page
-Fix map sizing
-*/
-
 @import 'variables';
 
 *{
@@ -16,7 +9,6 @@ Fix map sizing
 
 /* General */
 body {
-    color: rgb(112, 112, 112);
     line-height: 1.5em;
     font-size: 1em;
     padding: 0;
@@ -54,9 +46,9 @@ h2 {
 }
 
 h3 {
+    color: $dark;
     font-family: $heading-font;
     margin-bottom: 0.5%;
-    color: $dark;
 }
 
 .subtitle {
@@ -79,7 +71,7 @@ button.action-button {
   text-align: center;
   transition: 0.5s;
   font-weight: 200;
-  background-image: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
+  background-image: $gradient;
   cursor: pointer;
   color: white;
   text-transform: uppercase;
@@ -178,7 +170,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     height: 100%;
     width: 100%;
     text-align: left;
-    color: whitesmoke;
+    color: #fff;
     font-size: 0.9em;
     position: relative;
     &:hover {
@@ -362,7 +354,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     align-items: flex-start;
 
     h2 {
-        color: #41ceda;
+        color: $main;
         margin: 5px 0px 10px;
         min-width: max-content;
     }
@@ -379,7 +371,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     text-decoration: underline;
     color:white;
     &:hover {
-        color: #41ceda;
+        color: $main;
     }
 }
 
@@ -392,7 +384,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
         margin-top: 10px;
         
         button {
-            background-color: #41ceda;
+            background-color: $main;
             border: none;
             border-radius: 10px;
             height: 37px;
@@ -426,7 +418,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 #mailing-list {
     max-width: 275px;
     height: 70px;
-    background:#283576;
+    background: $dark;
     padding: 0;
 }
 
@@ -508,9 +500,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
         $hamburger-menu-line-height: 2px;
         $hover-line-height: $hamburger-menu-line-height;
 
-        $content-bg-color: rgba(255, 255, 255, 0.9);
+        $content-bg-color: #fff;
 
-        $main-color: #FEFEFE;
+        $main-color: #fff;
         //$hover-color: darken($main-color,10%);
         $anim-duration: .4s;
 
