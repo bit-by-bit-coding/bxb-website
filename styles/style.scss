@@ -9,6 +9,7 @@
 
 /* General */
 body {
+    color: #4A4746;
     line-height: 1.5em;
     font-size: 1em;
     padding: 0;
@@ -256,9 +257,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 
 #banner { text-align: center; }
 #bigLogo {
-    width: 60vw;
+    width: calc( 25vw + 100px );
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 
 @media screen and (min-width: 992px) {
