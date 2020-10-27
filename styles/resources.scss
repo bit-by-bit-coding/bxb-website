@@ -5,8 +5,11 @@
 
 /* Resources Page */
 .details-container {
-  justify-content: space-between;
   align-items: center;
+}
+
+.details-item {
+  flex-basis: 100px;
 }
 
 #resource {
@@ -30,11 +33,14 @@
 .bot {
 	width: 200px;
   height: auto;
-  margin-left: 10px;
 }
 
 #bot-item {
   flex-basis: 200px;
+}
+
+#pumpkin {
+  margin-left: 10px;
 }
 
 /* Details*/
