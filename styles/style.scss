@@ -235,7 +235,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     content: "";
     display: block;
     position: absolute;
-    background: #2d97b7;
+    background: $main;
     transform: scaleY(0);
     width: 100%;
     height: 100%;
