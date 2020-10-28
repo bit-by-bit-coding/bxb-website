@@ -15,8 +15,8 @@
 .instructors-item {
   display: inline-flex;
   flex-flow: column;
-  max-width: 500px;
   flex: 1 350px;
+  max-width: 500px;
   margin: 10px 20px;
 
   p{
@@ -24,7 +24,6 @@
     text-align: center;
   }
 }
-  
 
 .instructors-item img {
   height: 250px;
@@ -48,10 +47,6 @@
 .orange-border{
   border-left: 7px solid $accentorange;
   border-bottom: 7px solid $accentorange;
-}
-
-#team-item{
-  flex: 1 300px;
 }
 
 .light-border{
