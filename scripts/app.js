@@ -15,8 +15,8 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-var main = "#2d97b7";
-var dark = "#283576";
+var main = "#1BB1DE";
+var dark = "#153570";
 
 particlesJS('particles-js',
   
