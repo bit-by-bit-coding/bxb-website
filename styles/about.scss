@@ -46,8 +46,8 @@
 }
 
 #coordinator{
-  border-left: 7px solid #FF8900;
-  border-bottom: 7px solid #FF8900;
+  border-left: 7px solid $accentorange;
+  border-bottom: 7px solid $accentorange;
 }
 
 #team-item{
@@ -55,13 +55,13 @@
 }
 
 #team-lead-1{
-  border-left: 7px solid #41CEDA;
-  border-bottom: 7px solid #41CEDA;
+  border-left: 7px solid $lightblue;
+  border-bottom: 7px solid $lightblue;
 }
 
 #team-lead-2{
-  border-left: 7px solid #25849C;
-  border-bottom: 7px solid #25849C;
+  border-left: 7px solid $dark;
+  border-bottom: 7px solid $dark;
 }
 
 // #canvas{
