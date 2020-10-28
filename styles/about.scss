@@ -4,10 +4,38 @@
 @import 'variables';
 
 /* About Us Page */
+.instructors-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  
+.instructors-item {
+  display: inline-flex;
+  flex-flow: column;
+  max-width: 500px;
+  flex: 1 400px;
+  margin: 10px 20px;
 
+  p{
+    display: block;
+    text-align: center;
+  }
+}
+.instructors-item img {
+  height: 250px;
+  border-radius: 10px;
+  border-bottom: 3px solid $dark;
+}
 
+.instructors-item strong {
+  color: $dark;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
 
 .section{
   margin: 0 auto;
