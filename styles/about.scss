@@ -15,7 +15,7 @@
 .instructors-item {
   display: inline-flex;
   flex-flow: column;
-  flex: 1 350px;
+  flex: 1 400px;
   max-width: 500px;
   margin: 10px 20px;
 
@@ -42,6 +42,10 @@
   color: $dark;
   margin-top: 1px;
   margin-bottom: 5px;
+}
+
+#lead {
+  flex: 1 350px;
 }
 
 .orange-border{
