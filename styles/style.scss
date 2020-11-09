@@ -257,14 +257,14 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 
 #banner { text-align: center; }
 #bigLogo {
-    width: calc( 30vw + 100px );
+    width: calc( 15vw + 50px );
     display: block;
     margin: 25px auto;
 }
 #logoText {
-    width: calc( 30vw + 100px );
     display: block;
     margin: 20vh auto;
+    color: $main;
 }
 
 @media screen and (min-width: 992px) {
