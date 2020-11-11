@@ -49,18 +49,18 @@
 }
 
 .light-border{
-  border-left: 7px solid #B4E6F6;
-  border-bottom: 7px solid #B4E6F6;
+  border-left: 7px solid $lightblue;
+  border-bottom: 7px solid $lightblue;
 }
 
 .blue-border{
-  border-left: 7px solid #50C6E9;
-  border-bottom: 7px solid #50C6E9;
+  border-left: 7px solid $main;
+  border-bottom: 7px solid $main;
 }
 
 .dark-border{
-  border-left: 7px solid #147E9F;
-  border-bottom: 7px solid #147E9F;
+  border-left: 7px solid $dark;
+  border-bottom: 7px solid $dark;
 }
 
 
