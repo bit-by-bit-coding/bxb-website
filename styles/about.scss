@@ -3,6 +3,26 @@
 
 @import 'variables';
 
+#topbuttons .details-container{
+  margin-right: 20px;
+  flex-wrap: nowrap;
+}
+
+.buttons{
+  background-color:$main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 20vw;
+  min-width: 130px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 10px;
+  &:hover {
+      opacity: 0.85;
+  }
+}
+
 /* About Us Page */
 .instructors-container {
   width: 100%;
@@ -15,8 +35,8 @@
 .instructors-item {
   display: inline-flex;
   flex-flow: column;
-  max-width: 500px;
   flex: 1 400px;
+  max-width: 500px;
   margin: 10px 20px;
 
   p{
@@ -24,10 +44,10 @@
     text-align: center;
   }
 }
+
 .instructors-item img {
   height: 250px;
-  border-radius: 10px;
-  border-bottom: 3px solid $dark;
+  border-radius: 12px;
 }
 
 .instructors-item strong {
@@ -36,6 +56,38 @@
   font-size: 1.5em;
   margin-top: 20px;
 }
+
+.title{
+  font-size: 1.1em;
+  color: $dark;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+#lead {
+  flex: 1 300px;
+}
+
+.light-border{
+  border-left: 7px solid $lightblue;
+  border-bottom: 7px solid $lightblue;
+}
+
+.blue-border{
+  border-left: 7px solid $main;
+  border-bottom: 7px solid $main;
+}
+
+.dark-border{
+  border-left: 7px solid $dark;
+  border-bottom: 7px solid $dark;
+}
+
+
+// #canvas{
+//   height: 300px;
+//   width: 100%;
+// }
 
 .section{
   margin: 0 auto;
@@ -60,7 +112,8 @@
     flex-direction: column;
   }
   #bot{
-    margin-left: 20%;
+    display: block;
+    margin: auto;
   }
   #speechbubble {
     margin: 10px 0;
