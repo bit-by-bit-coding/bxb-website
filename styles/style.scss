@@ -264,7 +264,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 #logoText {
     display: block;
-    margin: 20vh auto;
+    margin: auto 25px;
+    font-size: 4.5em;
+    font-weight: 700;
     color: $main;
 }
 
@@ -492,6 +494,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     }
     .banner{
         height: 40vh;
+    }
+    #logoText {
+        font-size: 2em;
     }
     #topnav {
         #navlogo {
