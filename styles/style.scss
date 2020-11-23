@@ -255,7 +255,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     border-radius: 5px;
 }
 
-#banner { text-align: center; }
+.banner {
+    justify-content: center; 
+}
 #bigLogo {
     width: calc( 15vw + 50px );
     display: block;
