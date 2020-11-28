@@ -72,13 +72,23 @@
   }
 }
 
+.room-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+
 @media (min-width: 768px) {
-    .resources-container{
-        flex-direction: row;
-    }
-    .resources-column {
-      width: 35vw;
-    }
+  .resources-container{
+      flex-direction: row;
+  }
+  .resources-column {
+    width: 35vw;
+  }
+  .room-item {
+    flex: 1 1 35vw;
+  }
 }
 
 .note {
