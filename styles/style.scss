@@ -188,12 +188,17 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     top: 45px;
     background: $main;
     transform: scaleY(0);
-    width: 30%;
+    width: 21%;
     height: calc(100% + 10px);
     transition: 0.5s ease-in-out;
     transform-origin: 100% 0%;
     z-index: -1;
     border-radius: 5px;
+}
+
+#about-dropdown::before{
+    width: 15%;
+    height: 80%;
 }
 
 .dropdown:hover::before {
@@ -497,6 +502,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     }
     #logoText {
         font-size: 2em;
+    }
+    #about-button{
+        font-size: 1.35em;
     }
     #topnav {
         #navlogo {
