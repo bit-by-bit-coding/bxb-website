@@ -196,6 +196,11 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     border-radius: 5px;
 }
 
+#about-dropdown::before{
+    width: 15%;
+    height: 80%;
+}
+
 .dropdown:hover::before {
     transform: scaleY(1);
 }
