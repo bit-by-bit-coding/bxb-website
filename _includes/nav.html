@@ -38,10 +38,20 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">About</button>
-                        </a>
+                    <li class="dropdown">
+                        <button class="navbutton">About &#9660;</button>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
+                                    <button class="dropdownbutton">About Us</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
+                                    <button class="dropdownbutton">Our Team</button>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                       <a href="{{ 'resources.html' | relative_url | remove: '.html' }}">
