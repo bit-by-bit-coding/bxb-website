@@ -663,7 +663,19 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             outline: 1px solid transparent;
             @extend .flex-center;
 
-            
+            #programs-dropdown::before{
+                position: absolute;
+                top: 95px;
+                left: 15%;
+                width: 70%;
+            }
+            #programs-content{
+                background: none;
+                position: absolute;
+                top: 95px;
+                left: 15.5%;
+                width: 70%;
+            }
             
             > div {
                 width: 200vw;
