@@ -665,17 +665,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             li.dropdown::before {
                 display: none;
             }
-
-            ul#about-content {
-                content: "";
-                display: flex;
-                flex-direction: column;
-                background: $main;
-                position: static;
-                width: 65%;
-                margin: auto;
-                border-radius: 5px;
-            }
             
             > div {
                 width: 200vw;
