@@ -16,11 +16,11 @@
                             <button class="navbutton">Home</button>
                         </a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown" id="programs-dropdown">
                         <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
                             <button class="navbutton topbutton">Programs &#9660;</button>
                         </a>
-                        <ul class="dropdown-content">
+                        <ul class="dropdown-content" id="programs-content">
                             <li>
                                 <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
                                     <button class="dropdownbutton">Uncommon Sense</button>
@@ -40,7 +40,7 @@
                     </li>
                     <li class="dropdown" id="about-dropdown">
                         <button class="navbutton" id="about-button">About &#9660;</button>
-                        <ul class="dropdown-content">
+                        <ul class="dropdown-content" id="about-content">
                             <li>
                                 <a href="{{ 'aboutus.html' | relative_url | remove: '.html' }}">
                                     <button class="dropdownbutton">About Us</button>
