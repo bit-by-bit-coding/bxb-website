@@ -31,11 +31,19 @@ a{
     display: inline-block;
     margin: 0 auto;
 }
-
+#uncommonsense {
+    p, strong, summary, details, a, span {
+        font-family: 'Lora', serif;
+   
+    }
+    button {
+        background: $dark;
+    }
+}
 h1 {
     color: $dark;
     font-family: $heading-font;
-    font-weight: 750;
+    font-weight: 700;
     line-height: 1;
 }
 
