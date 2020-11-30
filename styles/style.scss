@@ -663,12 +663,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             outline: 1px solid transparent;
             @extend .flex-center;
 
-            ul.dropdown-content {
-                display: none;
-            }
-            li.dropdown::before {
-                display: none;
-            }
+            
             
             > div {
                 width: 200vw;
