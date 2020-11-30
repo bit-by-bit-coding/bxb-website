@@ -158,7 +158,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     top: 45px;
 }
 
-.dropdown:hover > .dropdown-content {
+.dropdown:hover,.dropdown.selected > .dropdown-content {
     display: block;
 }
 
