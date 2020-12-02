@@ -17,31 +17,33 @@
                         </a>
                     </li>
                     <div class="dropdown-container">
-                        <li class="dropdown" id="programs-dropdown">
-                            <button class="navbutton no-a-button">Programs &#9660;</button>
-                            <!--<a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
-                                <button class="navbutton topbutton">Programs &#9660;</button>
-                            </a>-->
-                            <ul class="dropdown-content" id="programs-content">
-                                <li>
-                                    <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                                        <button class="dropdownbutton">Uncommon Sense</button>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">
-                                        <button class="dropdownbutton">Form and Function</button>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                                        <button class="dropdownbutton">Hello World</button>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                        <div class="checking">
+                            <li class="dropdown" id="programs-dropdown">
+                                <button class="navbutton no-a-button">Programs &#9660;</button>
+                                <!--<a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
+                                    <button class="navbutton topbutton">Programs &#9660;</button>
+                                </a>-->
+                                <ul class="dropdown-content" id="programs-content">
+                                    <li>
+                                        <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
+                                            <button class="dropdownbutton">Uncommon Sense</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">
+                                            <button class="dropdownbutton">Form and Function</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
+                                            <button class="dropdownbutton">Hello World</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
                     </div>
-                    <div class="dropdown-container">
+                    <div class="dropdown-container" id="about-container">
                         <li class="dropdown" id="about-dropdown">
                             <button class="navbutton no-a-button" id="about-button">About &#9660;</button>
                             <ul class="dropdown-content" id="about-content">
