@@ -703,10 +703,11 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             }
             #about-content {
                 background: none;
-                position: absolute;
-                top: 140px;
-                left: 31%;
-                width: 50%;
+                position: static;
+                margin-left: 22%;
+                margin-top: 5px;
+                width: 60%;
+                height: 50%;
             }
             
             > div {
