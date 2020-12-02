@@ -159,8 +159,17 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     top: 45px;
 }
 
-.dropdown:hover > .dropdown-content {
+/*.dropdown:hover > .dropdown-content {
     display: block;
+}*/
+
+.selected{
+    .dropdown::before{
+        transform: scaleY(1);
+    }
+    .dropdown-content {
+        display: block;
+    }
 }
 
 .dropdownbutton {
@@ -201,9 +210,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     height: 80%;
 }
 
-.dropdown:hover::before {
+/*.dropdown:hover::before {
     transform: scaleY(1);
-}
+}*/
 
 #navlogo {
     height: 50px;
@@ -662,15 +671,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             
             .no-a-button{
                 font-size: 1.3em;
-            }
-
-            .selected{
-                .dropdown::before{
-                    transform: scaleY(1);
-                }
-                .dropdown-content {
-                    display: block;
-                }
             }
 
             #programs-dropdown::before{
