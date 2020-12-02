@@ -676,8 +676,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             #programs-dropdown::before{
                 position: absolute;
                 top: 95px;
-                left: 15%;
-                width: 70%;
+                left: 5%;
+                width: 90%;
+                height: 120%;
             }
             #programs-content{
                 background: none;
