@@ -131,6 +131,10 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 /* Navigation Bar */
+#topnav{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 #topnav, nav ul {
     display: flex;
     position: sticky;
@@ -138,7 +142,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     margin: 0;
     padding: 0 2.5vw;
     height: 65px;
-    background-color: rgba(255, 255, 255, 0.9);
     align-items: center;
     justify-content:   space-between;
     z-index: 1;
