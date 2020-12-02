@@ -698,6 +698,13 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
                 }
             }
 
+            .checked{
+                #about-dropdown::before{
+                    top: 210px !important;
+                    transition: none;
+                }
+            }
+
             #about-dropdown::before {
                 position: absolute;
                 top: 140px;
