@@ -708,6 +708,11 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
                 margin-top: 5px;
                 width: 60%;
                 height: 50%;
+
+                .dropdownbutton{
+                    font-size: 1.2em;
+                    margin: 2px 0;
+                }
             }
             
             > div {
