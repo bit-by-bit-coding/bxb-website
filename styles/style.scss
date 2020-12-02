@@ -32,8 +32,8 @@ a{
     margin: 0 auto;
 }
 #uncommonsense {
-    p, strong, summary, details, a, span {
-        font-family: 'Lora', serif;
+    * {
+        font-family: 'Duru Sans', sans-serif;
    
     }
     button {
