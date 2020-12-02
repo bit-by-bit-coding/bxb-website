@@ -258,6 +258,11 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 .banner {
     justify-content: center; 
 }
+#logoContainer {
+    display: flex;
+    margin: auto;
+    height: 25vw;
+}
 #bigLogo {
     width: calc( 10vw + 50px );
     display: block;
@@ -301,6 +306,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 @media (min-width: 768px) {
+    #logoContainer {
+        height: 200px;
+    }
     .details-container{
         flex-direction: row;
     }
