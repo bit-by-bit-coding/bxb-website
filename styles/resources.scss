@@ -79,15 +79,35 @@
   justify-content: flex-start;
 }
 
-@media (min-width: 768px) {
+.room-item {
+  width: 50vw;
+  flex: 1 1 35vw;
+  margin: 0 20px;
+
+  strong{
+    margin-top: 100px;
+  }
+  ul{
+    margin: 5px 0;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.top{
+  min-width: 250px;
+}
+
+@media (min-width: 875px) {
   .resources-container{
-      flex-direction: row;
+    flex-direction: row;
   }
   .resources-column {
     width: 35vw;
   }
   .room-item {
-    flex: 1 1 35vw;
+    flex: 1 1 15vw;
   }
 }
 
