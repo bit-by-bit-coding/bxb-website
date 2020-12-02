@@ -1,1 +1,1 @@
-$(".dropdown").click(e=>$(e.target).toggleClass("selected"));
+$(".dropdown-container").click(e=>$(e.currentTarget).toggleClass("selected"));
