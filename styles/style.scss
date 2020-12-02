@@ -682,10 +682,11 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             }
             #programs-content{
                 background: none;
-                position: absolute;
+                position: static;
+                margin-left: 5%;
+                margin-top: 5px;
                 top: 95px;
-                left: 15.5%;
-                width: 70%;
+                width: 100%;
             }
 
             #about-dropdown::before {
