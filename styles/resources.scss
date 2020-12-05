@@ -25,9 +25,13 @@
   display: block;
 }
 
-#bigLogo{
+#bigLogo, #logoText {
   will-change: opacity;
   mix-blend-mode: multiply;
+}
+
+#logoContainer {
+  background-color: #fff;
 }
 
 .bot {

@@ -1,41 +1,85 @@
 ---
 layout: default
 title: "About Us: Bit by Bit"
+banner-title: "About Us"
 scripts:
 - "utils.js"
 - "sort.js"
 style: about.css
 ---
-<!--Meet the Instructors-->
-<h2>Meet the Coordinators</h2><br>
+<h1>About Us</h1>
+<div class="section" id="topbuttons">
+    <div class="details-container">
+        <div class="details-item">
+            <a href="#leadership">
+                <button class="buttons">Our Leadership</button>
+            </a>
+        </div>
+        <div class="details-item">
+            <a href="#organization">
+                <button class="buttons">Our Organization</button>
+            </a>
+        </div>
+        <div class="details-item">
+            <a href="#services">
+                <button class="buttons">Our Services</button>
+            </a>
+        </div>
+        <div class="details-item">
+            <a href="#mascot">
+                <button class="buttons">Our Mascot</button>
+            </a>
+        </div>
+    </div>
+</div>
 
-<div class="section">
+<!--Meet the Instructors-->
+<div class="section" id="leadership">
+    <h2>Meet our Coordinators</h2>
+    <p>
+        Our coordinators organize, plan, and lead the three branches of Bit by Bit to make them the best
+        they can possibly be.
+    </p>
     <div class="instructors-container">
         <span class="instructors-item">
-            <img src="imgs/SydneySquare.jpg"><br>
+            <img class="light-border" src="imgs/SydneySquare_New.jpg"><br>
             <strong>Sydney Von Arx</strong>
+            <p class="title">Uncommon Sense Coordinator</p>
             <p>
                 I am Sydney Von Arx, and I love to code, learn about weird ideas, and maximize utility! I’m a computer
                 science major at Stanford. I also help run
                 <a href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> and work with the
                 <a
-                    href="https://cisac.fsi.stanford.edu/stanford-existential-risks-initiative/content/stanford-existential-risks-initiative">Stanford
-                    Existential Risks Initiative</a>.
+                    href="https://cisac.fsi.stanford.edu/stanford-existential-risks-initiative/content/stanford-existential-risks-initiative">
+                    Stanford Existential Risks Initiative
+                </a>.
             </p>
         </span>
         <span class="instructors-item">
-            <img src="imgs/DevinSquare.jpg"><br>
+            <img class="light-border" src="imgs/DevinSquare_Flip.jpg"><br>
             <strong>Devin Von Arx</strong>
-            <p>
-                I have always enjoyed computers. After many years of coding, I joined Bit by Bit in 2019 as a volunteer.
+            <p class="title">Form and Function Coordinator</p>
+            <p>I have always enjoyed computers. After many years of coding, I joined Bit by Bit in 2019 as a volunteer.
                 Since then, I have helped run all three of our coding programs (middle school, high school, and summer).
                 I currently coordinate the Form and Function after-school coding program.
                 I want to help people see the beauty behind the binary in coding.
             </p>
         </span>
         <span class="instructors-item">
-            <img src="imgs/luciaSquare.jpg"><br>
+            <img class="light-border" src="imgs/CheyenneSquare.jpg"><br>
+            <strong>Cheyenne Huggins</strong>
+            <p class="title">Hello World Coordinator</p>
+            <p>
+                Learning about the world has been a passion of mine as I always wanted to understand the world around 
+                me. Coding has broadened my horizons bringing me many amazing opportunities such as volunteering with 
+                Bit by Bit, which I joined in the summer of 2020. Now, I coordinate our summer program, Hello World, 
+                to teach others about the wondrous world of coding.
+            </p>
+        </span>
+        <span class="instructors-item">
+            <img class="light-border" src="imgs/LuciaSquare_Flip.jpg"><br>
             <strong>Lucia Zhang</strong>
+            <p class="title">BxB Central Coordinator</p>
             <p>Hi! Compared to many people I know, I started coding pretty late due to an irrational fear of coding, but
                 it has become one of my most intriguing hobbies.
                 I joined Bit by Bit in 2020, working extensively to develop our Hello World summer camp.
@@ -53,24 +97,69 @@ style: about.css
             </p>
         </span>-->
     </div>
-</div>
-<div class="section">
-    <h2>Meet our Cofounders</h2><br>
+
+    <h2>Meet our Team Leads</h2>
+    <p>
+        Our Team Leads each run a smaller section within BxB Central. They are the brains behind many of our
+        organization's operations, training new volunteers, organizing their teams, and constantly improving
+        what they do.
+    </p>
     <div class="instructors-container">
-        <span class="instructors-item">
-            <img src="imgs/SelenaSquare.jpg"><br>
-            <strong>Selena Zhang</strong>
+        <span class="instructors-item" id="lead">
+            <img class="blue-border" src="./imgs/SophiaSquare.jpg">
+            <strong>Sophia Wang</strong>
+            <p class="title">
+                Website Team Lead
+            </p>
         </span>
-        <span class="instructors-item">
-            <img src="imgs/SydneySquare.jpg"><br>
-            <strong>Sydney Von Arx</strong>
+        <span class="instructors-item" id="lead">
+            <img class="blue-border" src="./imgs/EllieSquare.jpg">
+            <strong>Ellie Tanimura</strong>
+            <p class="title">
+                Fundraising Lead
+            </p>
+        </span>
+        <span class="instructors-item" id="lead">
+            <img class="blue-border" src="./imgs/JamieSquare.jpg">
+            <strong>Jamie Liu</strong>
+            <p class="title">
+                Marketing Team Lead
+            </p>
+        </span>
+        <span class="instructors-item" id="lead">
+            <img class="blue-border" src="./imgs/NiraSquare.jpg">
+            <strong>Nira Patel</strong>
+            <p class="title">
+                Human Resources Lead
+            </p>
+        </span>
+        <span class="instructors-item" id="lead">
+            <img class="blue-border" src="./imgs/PraveerSquare.png">
+            <strong>Praveer Sharan</strong>
+            <p class="title">
+                Software Engineering Team Lead
+            </p>
         </span>
     </div>
 </div>
 <div class="section">
+    <h2>Meet our Cofounders</h2><br>
+    <div class="instructors-container">
+        <span class="instructors-item" id="lead">
+            <img class="dark-border" src="imgs/SelenaSquare.jpg"><br>
+            <strong>Selena Zhang</strong>
+        </span>
+        <span class="instructors-item" id="lead">
+            <img class="dark-border" src="imgs/SydneySquare_Old.jpg"><br>
+            <strong>Sydney Von Arx</strong>
+        </span>
+    </div>
+</div>
+<div class="section" id="organization">
     <h2>Our Organization</h2>
     <p>
-        Bit by Bit is a student-led nonprofit located in Portland that started running programs in 2018 and incorporated in 2019.
+        Bit by Bit is a student-led nonprofit located in Portland that started running programs in 2018 and incorporated
+        in 2019.
         Our mission is to diversify the community of ponderers and creators by equipping the next generation
         with the tools of technology, thinking, and leadership to improve the world, bit by bit.
 
@@ -78,18 +167,19 @@ style: about.css
         incorporated in 2019. Our mission is to expand and diversify the programming community by equipping the next
         generation of programmers with the tools they need to master coding and leadership.-->
     </p>
+</div>
+<div class="section" id="services">
     <h2>Our Services</h2>
     <p>
         We strive for low-cost programs to teach and encourage students, especially girls
         and other underrepresented youths in the STEM community, to code, to examine the world, and to lead.
         We currently offer three programs: Hello World, Form and Function, and Uncommon Sense.
         Hello World is a summer camp aimed at teaching middle school girls the inner workings of websites.
-        Form and Function is a free after-school program empowering middle schoolers with the tools web development.
+        Form and Function is a free after-school program empowering middle schoolers with the tools of web development.
         Uncommon Sense allows high schoolers to examine the world critically and see things with a skeptical eye.
-        For our paid programs, we ensure that scholarships are readily available to ensure all can enjoy
+        For our paid programs, scholarships are readily available to ensure all can enjoy
         our programs.
-        In addition to sharing the gift of code and knowledge, we train student volunteers through
-        hands-on learning to adopt the responsibility, initiative, and dedication critical to strong leadership.
+        We also train student volunteers to adopt the responsibility, initiative, and dedication critical to strong leadership, all through hands-on learning.
         We started as a summer camp to teach middle school girls how to code, and the following year,
         we expanded to clubs for middle schools and high schools.
         In 2020, we also incorporated critical thinking as one of our services.
@@ -103,7 +193,7 @@ style: about.css
         adopt the responsibility, initiative, and dedication critical to strong leadership.-->
     </p>
 </div>
-<div class="section">
+<div class="section" id="mascot">
     <h2>Meet our Mascot</h2>
     <div class="flexcontain">
         <div class="item" id="bot-item">
@@ -112,11 +202,14 @@ style: about.css
         <div class="item">
             <div id="speechbubble">
                 <p>
-                    Hello, I'm Bit by Bot, the official mascot of Bit by Bit! I was created in the summer of 2020 by our
+                    Hello, I'm Bit by Bot, the official mascot of Form and Function and Hello World! I was created in
+                    the summer of 2020 by our
                     volunteer and graphic design artist Olivia Wadley. I enjoy coding and learning new things about the
-                    world around me. In Bit by Bit, I get to experience the wonders of learning every day. To see more of
-                    me, you can visit the <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">Form and 
-                    Function</a> or <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">Hello World</a> information pages!    
+                    world around me. In Bit by Bit, I get to experience the wonders of learning every day. To see more
+                    of
+                    me, you can visit the <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">Form and
+                        Function</a> or <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">Hello
+                        World</a> information pages!
                 </p>
             </div>
         </div>

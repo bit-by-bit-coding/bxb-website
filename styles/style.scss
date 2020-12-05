@@ -255,11 +255,24 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     border-radius: 5px;
 }
 
-#banner { text-align: center; }
+.banner {
+    justify-content: center; 
+}
+#logoContainer {
+    display: flex;
+    margin: auto;
+    height: 25vw;
+}
 #bigLogo {
-    width: calc( 30vw + 100px );
+    width: calc( 10vw + 50px );
     display: block;
-    margin: 25px auto;
+}
+#logoText {
+    display: block;
+    margin: auto 25px;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: $main;
 }
 
 @media screen and (min-width: 992px) {
@@ -293,6 +306,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 @media (min-width: 768px) {
+    #logoContainer {
+        height: 200px;
+    }
     .details-container{
         flex-direction: row;
     }
@@ -486,6 +502,9 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     }
     .banner{
         height: 40vh;
+    }
+    #logoText {
+        font-size: 2em;
     }
     #topnav {
         #navlogo {
