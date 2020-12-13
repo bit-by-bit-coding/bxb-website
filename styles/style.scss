@@ -208,6 +208,51 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     transform: scaleY(1);
 }
 
+#alert:hover::before {
+    transform: scaleX(1);
+}
+
+#alertbot {
+    height: 10vh;
+    border-radius: 20px;
+    border: 5px solid $accentorange;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+}
+
+#alert-info {
+    display: none;
+    background: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+}
+
+#alert:hover > #alert-info {
+    display: block;
+    border-radius: 20px;
+
+}
+
+#alert::before {
+    content: "";
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border: 3px solid $accentorange;
+    transform: scaleX(0);
+    width: 30%;
+    height: 10vh;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+    border-radius: 20px;
+}
+
 #navlogo {
     height: 50px;
     margin-top: 10px;
