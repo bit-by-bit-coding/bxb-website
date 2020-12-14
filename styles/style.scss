@@ -213,21 +213,23 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 #alertbot {
-    height: 10vh;
+    height: 12vh;
     border-radius: 20px;
     border: 5px solid $accentorange;
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px;
+    background-color: #fff;
 }
 
+#alert {
+    background: $accentorange;
+    z-index: 2;
 }
 
 #alert:hover > #alert-info {
     display: block;
-    border-radius: 20px;
-
 }
 
 #alert::before {
@@ -235,15 +237,15 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     display: block;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 65px;
     background: #fff;
-    border: 3px solid $accentorange;
+    border: 5px solid $accentorange;
     transform: scaleX(0);
-    width: 30%;
-    height: 10vh;
+    height: 12vh;
     transition: 0.5s ease-in-out;
     transform-origin: right;
     border-radius: 20px;
+    padding: 10px 80px 10px 10px;
 }
 
 #navlogo {
@@ -551,6 +553,14 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     }
     #logoText {
         font-size: 2em;
+    }
+    #alertbot {
+        right: 10px;
+        bottom: 10px;
+    }
+    #alert::before {
+        right: 10px;
+        bottom: 10px;
     }
     #topnav {
         #navlogo {
