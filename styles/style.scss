@@ -222,13 +222,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     padding: 10px;
 }
 
-#alert-info {
-    display: none;
-    background: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 20px;
 }
 
 #alert:hover > #alert-info {
@@ -238,7 +231,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 }
 
 #alert::before {
-    content: "";
+    content: "Bit By Bit will be closed for winter break from Dec. 21 to Jan. 1.";
     display: block;
     position: fixed;
     bottom: 20px;
