@@ -223,11 +223,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     background-color: #fff;
 }
 
-#alert {
-    background: $accentorange;
-    z-index: 2;
-}
-
 #alert:hover > #alert-info {
     display: block;
 }
@@ -242,6 +237,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     border: 5px solid $accentorange;
     transform: scaleX(0);
     height: 12vh;
+    width: calc(30% + 100px);
     transition: 0.5s ease-in-out;
     transform-origin: right;
     border-radius: 20px;
