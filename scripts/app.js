@@ -736,7 +736,7 @@ var sceneSettings = {
 };
 
 // ---- Scene
-container = document.getElementById( 'canvas' );
+container = document.getElementById( 'particles-js' );
 scene = new THREE.Scene();
 
 // ---- Camera
