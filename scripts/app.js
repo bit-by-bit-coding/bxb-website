@@ -729,7 +729,7 @@ var FRAME_COUNT = 0;
 var sceneSettings = {
 
 	pause: false,
-	bgColor: 0x111113,
+	bgColor: 1389936,
 	enableGridHelper: false,
 	enableAxisHelper: false
 
