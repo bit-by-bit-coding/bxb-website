@@ -1,3 +1,4 @@
+// animation from https://github.com/nxxcxx/Neural-Network
 // Neuron ----------------------------------------------------------------
 
 function Neuron( x, y, z ) {
