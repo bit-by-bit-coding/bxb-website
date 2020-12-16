@@ -542,6 +542,14 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     #logoText {
         font-size: 2em;
     }
+    #alertbot {
+        right: 10px;
+        bottom: 10px;
+    }
+    #alert::before {
+        right: 10px;
+        bottom: 10px;
+    }
     #topnav {
         #navlogo {
             display: none;
