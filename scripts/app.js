@@ -719,7 +719,7 @@ if ( !Detector.webgl ) {
 
 var container, stats;
 var scene, light, camera, cameraCtrl, renderer;
-var WIDTH = window.innerWidth;
+var WIDTH = window.width;
 var HEIGHT = window.innerHeight * 0.45;
 var pixelRatio = window.devicePixelRatio || 1;
 var screenRatio = WIDTH / HEIGHT;
