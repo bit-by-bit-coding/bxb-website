@@ -2,12 +2,10 @@
 --- 
 @import 'variables';
 
-.bot {
-	margin-top: 20px;
-}
 
 .section img {
-	height: 300px;
+	height: 400px;
+	margin-left: 0;
 }
 
 .no-margin {
@@ -17,10 +15,6 @@
 		margin: 0;
 
 	}
-}
-
-#righttext {
-	flex-grow: 20;
 }
 
 .flexcontain {
@@ -37,10 +31,10 @@
 	.section img {
 		height: 200px;
 	}
-#pumpkin {
-	width: 225px;
-	height: auto;
-}
+	#pumpkin {
+		width: 225px;
+		height: auto;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -50,15 +44,20 @@
 }
 
 @media screen and (max-width: 767px) {
-	.computerbot {
-		display: none;
-	}
 	#pumpkin {
 	padding: 0;
 	}
-	.bot {
-		display: block;
-		margin: auto;
-		padding-left: 0 !important;
-	}
 }	
+
+.bot {
+	margin-top: 20px;
+}
+
+#righttext {
+	flex-grow: 10;
+}
+
+#pumpkin {
+	width: 225px;
+	height: auto;
+}

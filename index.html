@@ -7,26 +7,29 @@ scripts:
 - "app.js"
 style: index.css
 ---
-<div class="details-container">
-    <div class="details-item" id="righttext">
-        <h2> Mission </h2>
-        <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
-            technology, thinking, and leadership to improve the world, bit by bit.
-        </p>
-        <h2> Activity</h2>
-        <p>We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
-            youths, to code, lead, and improve their understanding of the world.
-        </p>
-    </div>
-    <div class="details-item">
-        <img class="bot" id="pumpkin" src="imgs/snowbot.svg">
+
+<div class="section no-margin">
+    <div class="details-container">
+        <div class="details-item" id="righttext">
+            <h2> Mission </h2>
+            <p>To diversify the community of ponderers and creators by equipping the next generation with the tools of
+                technology, thinking, and leadership to improve the world, bit by bit.
+            </p>
+            <h2> Activity</h2>
+            <p>We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
+                youths, to code, lead, and improve their understanding of the world.
+            </p>
+        </div>
+        <div class="details-item">
+            <img class="bot" id="pumpkin" src="imgs/snowbot.svg">
+        </div>
     </div>
 </div>
 <div class="section">
     <h2>Middle School Programs</h2>
     <div class="details-container">
         <div class="details-item">
-            <img class="boximg" src="imgs/something.png">
+            <img class="boximg" src="imgs/ffgroup.png">
             <h3 class="noslashes">
                 <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
                     Form and Function
@@ -61,5 +64,27 @@ style: index.css
             </p>
             <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
         </div>
+    </div>
+</div>
+
+<div class="section no-margin">
+    <div class="details-item">
+        <h2>High School Programs</h3>
+            <h3 class="noslashes">
+                <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
+                    Uncommon Sense
+                </a>
+            </h3>
+            <p>Uncommon Sense is a free weekly program launched in partnership with <a
+                    href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
+                highschoolers interested in learning ways to
+                form hypotheses about the world and make decisions that effectively accomplish their goals.
+                Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
+                psychology,
+                game theory, prediction markets, and so much more!
+            </p>
+            <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and
+                sign
+                up!</a>
     </div>
 </div>
