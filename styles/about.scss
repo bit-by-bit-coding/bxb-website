@@ -3,6 +3,26 @@
 
 @import 'variables';
 
+#topbuttons .details-container{
+  margin-right: 20px;
+  flex-wrap: nowrap;
+}
+
+.buttons{
+  background-color:$main;
+  color: #F3F3F3;
+  border-radius: 10px;
+  width: 20vw;
+  min-width: 130px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 10px;
+  &:hover {
+      opacity: 0.85;
+  }
+}
+
 /* About Us Page */
 .instructors-container {
   width: 100%;
@@ -15,8 +35,8 @@
 .instructors-item {
   display: inline-flex;
   flex-flow: column;
-  max-width: 500px;
   flex: 1 400px;
+  max-width: 500px;
   margin: 10px 20px;
 
   p{
@@ -27,8 +47,7 @@
 
 .instructors-item img {
   height: 250px;
-  border-radius: 10px;
-  border-bottom: 3px solid $dark;
+  border-radius: 12px;
 }
 
 .instructors-item strong {
@@ -37,6 +56,33 @@
   font-size: 1.5em;
   margin-top: 20px;
 }
+
+.title{
+  font-size: 1.1em;
+  color: $dark;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+#lead {
+  flex: 1 300px;
+}
+
+.light-border{
+  border-left: 7px solid $lightblue;
+  border-bottom: 7px solid $lightblue;
+}
+
+.blue-border{
+  border-left: 7px solid $main;
+  border-bottom: 7px solid $main;
+}
+
+.dark-border{
+  border-left: 7px solid $dark;
+  border-bottom: 7px solid $dark;
+}
+
 
 // #canvas{
 //   height: 300px;
@@ -48,7 +94,71 @@
   display: block;
 }
 
-#bigLogo{
+#bigLogo, #logoText {
   will-change: opacity;
   mix-blend-mode: multiply;
+}
+
+#bot {
+  width: 200px;
+}
+
+.flexcontain {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .flexcontain {
+    flex-direction: column;
+  }
+  #bot{
+    display: block;
+    margin: auto;
+  }
+  #speechbubble {
+    margin: 10px 0;
+    margin-left: 5%;
+  }
+  #speechbubble:before {
+    display: none;
+  }
+  #speechbubble:after {
+    display: none;
+  }
+}
+
+#speechbubble {
+  width: 80%;
+  border: 4px solid $main;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+#speechbubble:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid $main;
+  border-top: 10px solid $main;
+  border-bottom: 10px solid transparent;
+  left: -21px;
+  top: 6px;
+}
+
+#speechbubble:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 7px solid transparent;
+  border-right: 7px solid #fff;
+  border-top: 7px solid #fff;
+  border-bottom: 7px solid transparent;
+  left: -11px;
+  top: 10px;
 }

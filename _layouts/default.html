@@ -30,14 +30,20 @@
 	<!--Banner-->
 	<div id="particles-js" class="banner">
 		<canvas id="canvas" height="300"></canvas>
-		<img id="bigLogo" src="imgs/logobxb.svg" draggable="false">
+		<div id="logoContainer">
+			<img id="bigLogo" src="imgs/favicon.svg" draggable="false">
+			<h1 id="logoText">{{page.banner-title}}</h1>	
+		</div>
 	</div>
-
+	
 
 	<div class="content">
 		{{ content }}
 	</div>
 
+	<div id="alert">
+		<img id="alertbot" src="imgs/alertbot.PNG">
+	</div>
 
 	<!--Footer-->
 	{% include footer.html %}
