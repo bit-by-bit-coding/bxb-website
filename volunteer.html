@@ -9,9 +9,9 @@ style: volunteer.css
 ---
 
 <h1>Volunteer</h1>
-    <p>
-        I want to help with...
-    </p>
+<p>
+    I want to help with...
+</p>
 <div class="section" id="topbuttons">
     <div class="details-container">
         <div class="details-item">
@@ -29,11 +29,16 @@ style: volunteer.css
                 <button class="buttons">Form and Function</button>
             </a>
         </div>
-        
+        <div class="details-item">
+            <a href="#helloworld">
+                <button class="buttons">Hello World</button>
+            </a>
+        </div>
+
     </div>
 </div>
 
-<p>Learn about <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">our programs</a></p> 
+<p>Learn about <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">our programs</a></p>
 
 <div class="section" id="bxbcentral">
     <div class="details-container">
@@ -134,6 +139,36 @@ style: volunteer.css
             </div>
         </div>
     </div>
+</div>
+<div class="section" id="helloworld">
+    <div class="details-container">
+        <div class="details-item">
+            <h2>Hello World</h2>
+            <p><strong>Important Notes: </strong>Volunteer applications will close May 22nd.</p>
+            <p><strong>What:</strong> Hello World is our web development summer camp that teaches middle school girls
+                how to code an interactive website in HTML, CSS, and JavaScript. Bit by bit, students will learn to
+                code!
+            </p>
+            <p><strong>Who:</strong> We’re looking for volunteers who know the basics of HTML, CSS, or JavaScript. A
+                little programming experience is required, but we are happy to teach more! We offer free training for
+                coding instructors. Volunteers teach, write curriculum, and have fun.
+            </p>
+            <p><strong>When:</strong> Hello World occurs from 2pm to 5pm PT, Monday through Friday. Session 1 is July
+                5th-9th and July 12th-16th. Session 2 is July 19th-23th and July 26th-30th. We ask that our volunteers
+                sign up for 1 session at minimum. There will also be volunteer trainings in the weeks leading up the
+                camp.
+            </p>
+            <p><strong>Benefits:</strong> Gain loads of volunteer hours, join a group of programmers, and introduce
+                middle school girls to the power of code. We’ll teach you coding, communication, and instructional
+                skills so you can gain invaluable experience in these fields!
+            </p>
+            <a href="{{ 'hwvolunteerinfo.html' | relative_url | remove: '.html' }}">Learn more and apply</a>
+        </div>
+        <div class="details-item">
+            <img id="hwphoto" src="imgs/Row.jpg">
+        </div>
+    </div>
+
 </div>
 <div class="section">
     <img id="ffphoto" src="imgs/ffvolunteer.png">
