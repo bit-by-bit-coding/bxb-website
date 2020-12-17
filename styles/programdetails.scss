@@ -54,7 +54,8 @@
 
 #bot {
   max-height: 20vw;
-  padding-left: 60px;
+  padding-left: 25%;
+  padding-top: 10vh;
 }
 
 .item {
@@ -83,12 +84,19 @@
   width: 40vw;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   #top-image {
     width: 100%;
   }
   #bot {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1800px){
+  #bot {
+    padding-left: 10%;
+    padding-top: 0;
   }
 }
 
