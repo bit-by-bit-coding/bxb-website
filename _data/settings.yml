@@ -1,0 +1,14 @@
+menu:
+  - {name: Home, url: "/"}
+  - name: Programs
+    submenu:
+      - {name: Uncommon Sense, url: "uncommonsense.html"}
+      - {name: Form and Function, url: "formfunction.html"}
+      - {name: Hello World, url: "helloworld.html"}
+  - name: About
+    submenu:
+      - {name: About Us, url: "aboutus.html"}
+      - {name: Our Team, url: "ourteam.html"}
+  - {name: Resources, url: "resources.html"}
+  - {name: Volunteer, url: "volunteer.html"}
+  - {name: Donate, url: "donate.html"}

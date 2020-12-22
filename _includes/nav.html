@@ -2,82 +2,43 @@
     <a href="{{ 'index.html' | relative_url | remove: '.html' }}">
         <img src="imgs/Logo.svg" id="navlogo">
     </a>
-    <input class="checkbox-toggle mobile" type="checkbox"/>
+    <input class="checkbox-toggle mobile" type="checkbox" />
 
     <div class="hamburger mobile">
         <div></div>
     </div>
     <nav id="topnav-right">
-        <div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="{{ '/' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">Home</button>
-                        </a>
-                    </li>
-                    <div class="dropdown-container">
-                        <div class="checking">
-                            <li class="dropdown" id="programs-dropdown">
-                                <button class="navbutton no-a-button">Programs &#9660;</button>
-                                <!--<a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
+        <ul id="nav-ul">
+            {% for menu-item in site.data.settings.menu %}
+            {% if menu-item.submenu[0] %}
+            <li class="dropdown-container">
+                <a href="#">
+                    <button class="navbutton">{{ menu-item.name }}</button>
+                </a>
+                <i class="menu-arrow"></i>
+                <input type="checkbox" class="dropdown-checkbox" checked>
+
+                <!--<a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
                                     <button class="navbutton topbutton">Programs &#9660;</button>
                                 </a>-->
-                                <ul class="dropdown-content" id="programs-content">
-                                    <li>
-                                        <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}">
-                                            <button class="dropdownbutton">Uncommon Sense</button>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ 'formfunction.html' | relative_url | remove: '.html' }}">
-                                            <button class="dropdownbutton">Form and Function</button>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                                            <button class="dropdownbutton">Hello World</button>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="dropdown-container" id="about-container">
-                        <li class="dropdown" id="about-dropdown">
-                            <button class="navbutton no-a-button" id="about-button">About &#9660;</button>
-                            <ul class="dropdown-content" id="about-content">
-                                <li>
-                                    <a href="{{ 'aboutus.html' | relative_url | remove: '.html' }}">
-                                        <button class="dropdownbutton">About Us</button>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ 'ourteam.html' | relative_url | remove: '.html' }}">
-                                        <button class="dropdownbutton">Our Team</button>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </div>
+                {% for submenu-item in menu-item.submenu %}
+                <ul class="dropdown-content">
                     <li>
-                      <a href="{{ 'resources.html' | relative_url | remove: '.html' }}">
-                        <button class="navbutton">Resources</button>
-                      </a>
-                    </li>
-                    <li>
-                        <a href="{{ 'volunteer.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">Volunteer</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ 'donate.html' | relative_url | remove: '.html' }}">
-                            <button class="navbutton">Donate</button>
+                        <a href="{{ submenu-item.url | relative_url | remove: '.html' }}">
+                            <button class="navbutton dropdownbutton">{{ submenu-item.name }}</button>
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div>
-
+                {% endfor %}
+            </li>
+            {% else %}
+            <li>
+                <a href="{{ menu-item.url | relative_url | remove: '.html' }}">
+                    <button class="navbutton">{{ menu-item.name }}</button>
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </nav>
 </nav>
