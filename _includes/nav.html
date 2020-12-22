@@ -12,24 +12,27 @@
             {% for menu-item in site.data.settings.menu %}
             {% if menu-item.submenu[0] %}
             <li class="dropdown-container">
+                <input type="radio" name="submenu" class="dropdown-checkbox">
+
                 <a href="#">
                     <button class="navbutton">{{ menu-item.name }}</button>
                 </a>
                 <i class="menu-arrow"></i>
-                <input type="checkbox" class="dropdown-checkbox" checked>
 
                 <!--<a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
                                     <button class="navbutton topbutton">Programs &#9660;</button>
                                 </a>-->
-                {% for submenu-item in menu-item.submenu %}
                 <ul class="dropdown-content">
+                    {% for submenu-item in menu-item.submenu %}
+
                     <li>
                         <a href="{{ submenu-item.url | relative_url | remove: '.html' }}">
                             <button class="navbutton dropdownbutton">{{ submenu-item.name }}</button>
                         </a>
                     </li>
+
+                    {% endfor %}
                 </ul>
-                {% endfor %}
             </li>
             {% else %}
             <li>

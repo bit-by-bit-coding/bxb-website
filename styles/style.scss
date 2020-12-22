@@ -3,6 +3,8 @@
 
 @import "variables";
 
+$translucent-white: rgba(255, 255, 255, 0.9);
+
 * {
     font-family: $body-font;
 }
@@ -148,21 +150,21 @@ h6 {
 
 /* Navigation Bar */
 #topnav {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: $translucent-white;
     #nav-ul {
         height: auto;
     }
 }
 
 #topnav,
-nav ul {
+nav #nav-ul {
     display: flex;
     position: sticky;
     top: 0;
     margin: 0;
     padding: 0 2.5vw;
     height: 65px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     z-index: 1;
 
@@ -202,15 +204,15 @@ nav ul {
 }
 
 // menu from https://codepen.io/abergin/pen/ihlDf
-#topnav{
+#topnav {
     .transition {
         transition: all 0.25s ease-in-out;
     }
-    
+
     .flipIn {
         animation: flipdown 0.5s ease both;
     }
-    
+
     .no-select {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         -webkit-touch-callout: none;
@@ -220,7 +222,7 @@ nav ul {
         -ms-user-select: none;
         user-select: none;
     }
-    
+
     .navbutton {
         //font-size: 26px;
         //line-height: 34px;
@@ -232,56 +234,69 @@ nav ul {
         cursor: pointer;
         @extend .no-select;
     }
-    
+
     .dropdown-content {
         //color: $dark;
         //font-size: 17px;
         //line-height: 26px;
         //letter-spacing: 1px;
         position: relative;
-        overflow: hidden;
-        max-height: 800px;
+        //overflow: hidden;
+        //max-height: 800px;
         @extend .transition;
-        opacity: 1;
-        transform: translate(0, 0);
-        margin-top: 14px;
+        opacity: 0;
+        transform: translate(0, 50%);
+        max-height: 0;
+        margin-top: 0px;
         z-index: 2;
+        background: $translucent-white;
+        width: min-content;
     }
-    
+
     ul {
         list-style: none;
         perspective: 900;
         padding: 0;
         margin: 0;
-    
-        >li {
+
+        > li {
             position: relative;
             padding: 0;
-            margin: 0;
+            margin: 0 10px;
             padding-bottom: 4px;
             padding-top: 18px;
+            //width: min-content;
             //border-top: 1px dotted grey;
             @extend .flipIn;
-    
+
             &:nth-of-type(1) {
-                animation-delay: 0.5s;
+                animation-delay: 0.1s;
             }
-    
+
             &:nth-of-type(2) {
-                animation-delay: 0.75s;
+                animation-delay: 0.2s;
             }
             &:nth-of-type(3) {
-                animation-delay: 1s;
+                animation-delay: 0.3s;
             }
-            &:last-of-type {
-                padding-bottom: 0;
+            &:nth-of-type(4) {
+                animation-delay: 0.4s;
             }
+            &:nth-of-type(5) {
+                animation-delay: 0.5s;
+            }
+            &:nth-of-type(6) {
+                animation-delay: 0.6s;
+            }
+            // &:last-of-type {
+            //     padding-bottom: 0;
+            // }
             .menu-arrow {
                 position: absolute;
                 transform: translate(-6px, 0);
-                margin-top: 16px;
-                right: 0;
-    
+                margin-top: -16px;
+                right: 10px;
+
                 &:before,
                 &:after {
                     content: "";
@@ -291,16 +306,15 @@ nav ul {
                     width: 3px;
                     height: 9px;
                 }
-    
+
                 &:before {
-                    transform: translate(-2px, 0) rotate(45deg);
+                    transform: translate(2px, 0) rotate(45deg);
                 }
-    
                 &:after {
-                    transform: translate(2px, 0) rotate(-45deg);
+                    transform: translate(-2px, 0) rotate(-45deg);
                 }
             }
-    
+
             .dropdown-checkbox {
                 position: absolute;
                 cursor: pointer;
@@ -308,27 +322,42 @@ nav ul {
                 height: 100%;
                 z-index: 1;
                 opacity: 0;
-    
-                &:checked {
-                    & ~ .dropdown-content {
-                        margin-top: 0;
-                        max-height: 0;
-                        opacity: 0;
-                        transform: translate(0, 50%);
+                top: 0;
+                left: 0;
+
+                &:checked,
+                &:hover {
+                    & ~ a .navbutton::before {
+                        transform: scaleY(1);
                     }
+                    & ~ a .navbutton {
+                        color: white;
+                        border-radius: 5px;
+                    }
+                    
                     & ~ .menu-arrow {
                         &:before {
-                            transform: translate(2px, 0) rotate(45deg);
+                            transform: translate(-2px, 0) rotate(45deg);
                         }
+
                         &:after {
-                            transform: translate(-2px, 0) rotate(-45deg);
+                            transform: translate(2px, 0) rotate(-45deg);
                         }
+
+                        &:before, &:after {
+                            background: white;
+                        }
+                    }
+                    & ~ .dropdown-content {
+                        transform: translate(0, 0);
+                        opacity: 1;
+                        max-height: 100%;
+                        margin-top: 14px;
                     }
                 }
             }
         }
     }
-    
 }
 
 @keyframes flipdown {
@@ -379,6 +408,8 @@ nav ul {
     cursor: pointer;
     background-color: inherit;
     height: 100%;
+    width: 100%;
+    text-align: left;
 
     text-transform: uppercase;
     color: $main;
@@ -668,6 +699,7 @@ nav ul {
         $main-color: #fff;
         //$hover-color: darken($main-color,10%);
         $anim-duration: 0.4s;
+        align-items: center;
 
         .flex-center {
             display: flex;
@@ -728,9 +760,8 @@ nav ul {
                         transform: scale(1);
                         transition-duration: 0.75s;
 
-                            opacity: 1;
-                            transition: opacity $anim-duration ease $anim-duration;
-                        
+                        opacity: 1;
+                        transition: opacity $anim-duration ease $anim-duration;
                     }
                 }
             }
@@ -804,13 +835,9 @@ nav ul {
                 font-size: 1.3em;
             }
 
-            .dropdown-container {
-                pointer-events: none;
-            }
-
             > #nav-ul {
-                width: 300vw;
-                height: 300vw;
+                width: 200vmax;
+                height: 300vmax;
                 color: $main-color;
                 background: $content-bg-color;
                 border-radius: 50%;
@@ -821,33 +848,31 @@ nav ul {
                 overflow: hidden;
                 @extend .flex-center;
 
-                    text-align: center;
-                    
-                    opacity: 0;
-                    transition: opacity $anim-duration ease;
-                    overflow-y: auto;
-                    flex: none;
-                    //@extend .flex-center;
-                    flex-direction: column;
-                    //width: 100%;
-                    //height: 100%;
+                text-align: center;
 
-                
-                    
-                        max-height: 100vh;
+                opacity: 0;
+                transition: opacity $anim-duration ease;
+                overflow-y: auto;
+                flex: none;
+                //@extend .flex-center;
+                flex-direction: column;
+                //width: 100%;
+                //height: 100%;
 
-                        > li {
-                            padding: 0;
-                            margin: 1em;
-                            display: block;
+                max-height: 100vh;
 
-                            > a {
-                                position: relative;
-                                cursor: pointer;
-                                transition: color $anim-duration ease;
-                                font-size: 1.5em;
-                                margin: 10px 0;
-                                /*:hover {
+                > li {
+                    padding: 0;
+                    margin: 1em;
+                    display: block;
+
+                    > a {
+                        position: relative;
+                        cursor: pointer;
+                        transition: color $anim-duration ease;
+                        font-size: 1.5em;
+                        margin: 10px 0;
+                        /*:hover {
                                     color: $hover-color;
 
                                     &:after {
@@ -855,23 +880,22 @@ nav ul {
                                     }
                                 }*/
 
-                                > button.tinybutton {
-                                    font-size: 2rem;
-                                }
+                        > button.tinybutton {
+                            font-size: 2rem;
+                        }
 
-                                &:after {
-                                    content: "";
-                                    position: absolute;
-                                    z-index: 1;
-                                    bottom: -0.15em;
-                                    left: 0;
-                                    width: 0;
-                                    height: $hover-line-height;
-                                    //background: $hover-color;
-                                    transition: width $anim-duration ease;
-                                }
-                            }
-                        
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            z-index: 1;
+                            bottom: -0.15em;
+                            left: 0;
+                            width: 0;
+                            height: $hover-line-height;
+                            //background: $hover-color;
+                            transition: width $anim-duration ease;
+                        }
+                    }
                 }
             }
         }

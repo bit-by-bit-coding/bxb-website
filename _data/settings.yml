@@ -3,7 +3,7 @@ menu:
   - name: Programs
     submenu:
       - {name: Uncommon Sense, url: "uncommonsense.html"}
-      - {name: Form and Function, url: "formfunction.html"}
+      - {name: Form & Function, url: "formfunction.html"}
       - {name: Hello World, url: "helloworld.html"}
   - name: About
     submenu:
