@@ -240,9 +240,10 @@ nav #nav-ul {
         //font-size: 17px;
         //line-height: 26px;
         //letter-spacing: 1px;
-        position: relative;
         //overflow: hidden;
         //max-height: 800px;
+        display: none;
+        position: relative;
         @extend .transition;
         opacity: 0;
         transform: translate(0, 50%);
@@ -254,6 +255,12 @@ nav #nav-ul {
 
         li {
             margin: 0;
+        }
+    }
+
+    .open {
+        .dropdown-content{
+            display: block;
         }
     }
 
