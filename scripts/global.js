@@ -7,8 +7,7 @@ const menu = {
         menu.closeMenu();
         menu.open = e.currentTarget;
         $(e.currentTarget).addClass("open");
-        console.log(e.currentTarget.classList);
-
+        console.log(e.target);
     },
     closeMenu: () => {
         console.log("closing time");
@@ -28,5 +27,10 @@ const menu = {
 $(window).resize(menu.setTriggers);
 
 $(document).click(menu.closeMenu);
+
+$(".dropdown-container").on('click mouseenter', (e) => {
+    console.log("stop!");
+    e.stopPropagation();
+})
 
 menu.setTriggers();

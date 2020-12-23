@@ -312,7 +312,7 @@ nav #nav-ul {
                     background-color: $main;
                     width: 3px;
                     height: 9px;
-                    right: 0;
+                    right: 7px;
                     top: 5px;
                 }
 
@@ -433,19 +433,16 @@ nav #nav-ul {
     padding-left: 0px;
     left: 0;
 }
-.navbutton:hover::before {
-    transform: scaleY(1);
-}
 
-.nav-item:hover {
-    .navbutton{
+
+
+    .navbutton:hover{
         color: white;
+        &::before {
+            transform: scaleY(1);
+        }
     }
 
-    .menu-arrow:before, .menu-arrow:after {
-        background: white;
-    }
-}
 
 .banner {
     justify-content: center;
