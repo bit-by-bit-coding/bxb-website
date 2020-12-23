@@ -11,13 +11,12 @@
         <ul id="nav-ul">
             {% for menu-item in site.data.settings.menu %}
             {% if menu-item.submenu[0] %}
-            <li class="dropdown-container">
-                <input type="radio" name="submenu" class="dropdown-checkbox">
-
+            <li class="dropdown-container nav-item">
                 <a href="#">
-                    <button class="navbutton">{{ menu-item.name }}</button>
+                    <button class="navbutton">{{ menu-item.name }}
+                        <i class="menu-arrow"></i>
+                    </button>
                 </a>
-                <i class="menu-arrow"></i>
 
                 <!--<a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
                                     <button class="navbutton topbutton">Programs &#9660;</button>
