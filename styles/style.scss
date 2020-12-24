@@ -197,6 +197,7 @@ nav #nav-ul {
     color: #fff;
     font-size: 0.9em;
     position: relative;
+    text-align: center;
     &:hover {
         opacity: 0.75;
         transition-duration: 0.3s;
@@ -236,6 +237,7 @@ nav #nav-ul {
     }
 
     .dropdown-content {
+        visibility: hidden;
         //color: $dark;
         //font-size: 17px;
         //line-height: 26px;
@@ -244,6 +246,8 @@ nav #nav-ul {
         //overflow: hidden;
         //max-height: 800px;
         @extend .transition;
+        transition: visibility 0s, all 0.25s ease-in-out;
+
         opacity: 0;
         transform: translate(0, 50%);
         max-height: 0;
@@ -254,6 +258,7 @@ nav #nav-ul {
 
         li {
             margin: 0;
+            padding: 0;
         }
     }
 
@@ -324,7 +329,7 @@ nav #nav-ul {
                 }
             }
 
-            .navbutton:hover {
+            .navbutton:hover, .dropdownbutton:hover {
                 color: white;
                 &::before {
                     transform: scaleY(1);
@@ -361,6 +366,7 @@ nav #nav-ul {
                     }
                 }
                 .dropdown-content {
+                    visibility: visible;
                     transform: translate(0, 0);
                     opacity: 1;
                     max-height: 100%;
@@ -411,7 +417,7 @@ nav #nav-ul {
     border: none;
 }
 
-.navbutton {
+.navbutton, .dropdownbutton {
     transition: 0.5s ease-in-out;
     border: none;
     //border-bottom: solid $main 1px;
@@ -429,7 +435,7 @@ nav #nav-ul {
     position: relative;
 }
 
-.navbutton::before {
+.navbutton::before, .dropdownbutton::before {
     content: "";
     display: block;
     position: absolute;
