@@ -13,13 +13,22 @@
   margin-bottom: 0;
 }
 
+#uncommonsense {
+  * {
+      font-family: 'Duru Sans', sans-serif;
+  }
+  button {
+      background: $dark;
+  }
+}
+
 /// staggard bars ///
 .info-banner {
   color: #fff;
   margin: 20px -40px;
   padding: 15px;
-  background: $main;
-  font-size: 1.75em;
+  background: $dark;
+  font-size: 1.5em;
   line-height: 1em;
   
   @media screen and (min-width: 992px){
