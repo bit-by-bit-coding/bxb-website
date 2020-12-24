@@ -244,7 +244,6 @@ nav #nav-ul {
         //letter-spacing: 1px;
         //overflow: hidden;
         //max-height: 800px;
-        display: none;
         position: relative;
         @extend .transition;
         transition: visibility 0s, all 0.25s ease-in-out;
@@ -260,12 +259,6 @@ nav #nav-ul {
         li {
             margin: 0;
             padding: 0;
-        }
-    }
-
-    .open {
-        .dropdown-content{
-            display: block;
         }
     }
 
