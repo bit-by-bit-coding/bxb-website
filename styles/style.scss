@@ -298,6 +298,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     display: flex;
     margin: auto;
     height: 25vw;
+    max-height: 300px;
 }
 #bigLogo {
     width: calc( 10vw + 50px );
@@ -314,6 +315,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 @media screen and (min-width: 992px) {
     #bigLogo{
         max-width: 800px;
+        max-height: 300px;
     }
     .content{
         width: calc(100% - 200px);
