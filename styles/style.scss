@@ -324,6 +324,19 @@ nav #nav-ul {
                 }
             }
 
+            .navbutton:hover {
+                color: white;
+                &::before {
+                    transform: scaleY(1);
+                }
+                .menu-arrow {
+                    &::before,
+                    &::after {
+                        background: white;
+                    }
+                }
+            }
+
             &.open {
                 .navbutton {
                     color: white;
@@ -430,13 +443,6 @@ nav #nav-ul {
     //border-radius: 5px;
     padding-left: 0px;
     left: 0;
-}
-
-.navbutton:hover {
-    color: white;
-    &::before {
-        transform: scaleY(1);
-    }
 }
 
 .banner {
