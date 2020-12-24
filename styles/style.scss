@@ -298,7 +298,7 @@ nav #nav-ul {
             .menu-arrow {
                 display: inline-block;
                 width: 10px;
-                
+
                 //position: absolute;
                 //transform: translate(-10px, 0);
                 //margin-top: 8px;
@@ -324,38 +324,36 @@ nav #nav-ul {
                 }
             }
 
-        
-
-                &.open {
-                    .navbutton {
-                        color: white;
-                        border-radius: 5px;
-                        &::before {
-                            transform: scaleY(1);
-                        }
-                    }
-                    
-                    .menu-arrow {
-                        &:before {
-                            transform: translate(-2px, 0) rotate(45deg);
-                        }
-
-                        &:after {
-                            transform: translate(2px, 0) rotate(-45deg);
-                        }
-
-                        &:before, &:after {
-                            background: white;
-                        }
-                    }
-                    .dropdown-content {
-                        transform: translate(0, 0);
-                        opacity: 1;
-                        max-height: 100%;
-                        margin-top: 23px;
+            &.open {
+                .navbutton {
+                    color: white;
+                    border-radius: 5px;
+                    &::before {
+                        transform: scaleY(1);
                     }
                 }
-            
+
+                .menu-arrow {
+                    &:before {
+                        transform: translate(-2px, 0) rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: translate(2px, 0) rotate(-45deg);
+                    }
+
+                    &:before,
+                    &:after {
+                        background: white;
+                    }
+                }
+                .dropdown-content {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                    max-height: 100%;
+                    margin-top: 23px;
+                }
+            }
         }
     }
 }
@@ -434,15 +432,12 @@ nav #nav-ul {
     left: 0;
 }
 
-
-
-    .navbutton:hover{
-        color: white;
-        &::before {
-            transform: scaleY(1);
-        }
+.navbutton:hover {
+    color: white;
+    &::before {
+        transform: scaleY(1);
     }
-
+}
 
 .banner {
     justify-content: center;
@@ -487,7 +482,6 @@ nav #nav-ul {
     margin: 10px;
     flex-basis: 300px;
 }
-
 
 /* Footer */
 #footer {
@@ -887,11 +881,12 @@ nav #nav-ul {
                         }
 
                         .menu-arrow {
-                            &::before, &::after {
+                            &::before,
+                            &::after {
                                 top: 10px;
                             }
                         }
-                        
+
                         &:after {
                             content: "";
                             position: absolute;
