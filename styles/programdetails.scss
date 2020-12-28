@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-#no-below{
+.no-below{
   margin-bottom: 0;
 }
 
@@ -52,7 +52,7 @@
   mix-blend-mode: multiply;
 }
 
-#bot {
+.bot {
   max-height: 20vw;
   padding-left: 25%;
   padding-top: 5vh;
@@ -91,7 +91,7 @@
   #bot {
     display: none;
   }
-  #remove-flex{
+  .remove-flex{
     display: block;
   }
 }
