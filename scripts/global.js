@@ -35,19 +35,25 @@ menu.setTriggers();
 // pass in a css selector (or an element or jQuery object) and the send_to code
 // example: addConversion("#ff-signup", 'AW-458476450/wSX1CPqMm-4BEKKXz9oB');
 
-function addConversion(selector, sendTo){
-    const url = $(selector).attr("href");
-    
+function addConversion(selector, sendTo) {
+
     function gtag_report_conversion(e) {
+        const url = e.currentTarget.href;
         const callback = function () {
             if (typeof (url) != 'undefined') {
                 window.location = url;
             }
         };
-        gtag('event', 'conversion', {
-            'send_to': sendTo,
-            'event_callback': callback
-        });
+        if (gtag) { // fallback in case they have adblock
+            gtag('event', 'conversion', {
+                'send_to': sendTo,
+                'event_callback': callback
+            });
+        }
+        else {
+            callback();
+        }
+
         return false; //prevents following the link
     }
     $(selector).click(gtag_report_conversion);
