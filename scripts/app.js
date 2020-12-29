@@ -13,7 +13,6 @@ function Neuron( x, y, z ) {
 	THREE.Vector3.call( this, x, y, z );
 
 }
-
 Neuron.prototype = Object.create( THREE.Vector3.prototype );
 
 Neuron.prototype.connectNeuronTo = function ( neuronB ) {
