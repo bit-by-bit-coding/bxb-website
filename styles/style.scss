@@ -375,6 +375,14 @@ nav #nav-ul {
                     max-height: 100%;
                 }
             }
+            &.open2 {
+                .subdropdown-content {
+                    visibility: visible;
+                    transform: translate(0, 0);
+                    opacity: 1;
+                    max-height: 100%;
+                }
+            }
         }
     }
 }
