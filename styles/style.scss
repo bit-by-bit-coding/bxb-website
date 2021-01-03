@@ -466,17 +466,13 @@ nav #nav-ul {
 .navbutton, .dropdownbutton {
     transition: 0.5s ease-in-out;
     border: none;
-    //border-bottom: solid $main 1px;
     cursor: pointer;
     background-color: inherit;
-    //height: 100%;
     width: 100%;
     text-align: left;
-
     text-transform: uppercase;
     color: $main;
     font-size: 0.9em;
-
     position: relative;
 }
 
