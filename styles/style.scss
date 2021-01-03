@@ -239,7 +239,8 @@ nav #nav-ul {
         cursor: pointer;
         @extend .no-select;
     }
-    .dropdown-content, .subdropdown-content {
+
+    .dropdown-content {
         visibility: hidden;
         //color: $dark;
         //font-size: 17px;
@@ -373,6 +374,7 @@ nav #nav-ul {
                     transform: translate(0, 0);
                     opacity: 1;
                     max-height: 100%;
+                    margin-top: 23px;
                 }
             }
         }
