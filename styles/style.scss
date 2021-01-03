@@ -402,41 +402,41 @@ nav #nav-ul {
 }
 // /menu
 
-#alert:hover::before {
-    transform: scaleX(1);
-}
+// #alert:hover::before {
+//     transform: scaleX(1);
+// }
 
-#alertbot {
-    height: 12vh;
-    border-radius: 20px;
-    border: 5px solid $accentorange;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: #fff;
-}
+// #alertbot {
+//     height: 12vh;
+//     border-radius: 20px;
+//     border: 5px solid $accentorange;
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     padding: 10px;
+//     background-color: #fff;
+// }
 
-#alert:hover > #alert-info {
-    display: block;
-}
+// #alert:hover > #alert-info {
+//     display: block;
+// }
 
-#alert::before {
-    content: "Bit by Bit will be closed for winter break from Dec. 21 to Jan. 1.";
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 65px;
-    background: #fff;
-    border: 5px solid $accentorange;
-    transform: scaleX(0);
-    height: 12vh;
-    width: calc(30% + 100px);
-    transition: 0.5s ease-in-out;
-    transform-origin: right;
-    border-radius: 20px;
-    padding: 10px 90px 10px 10px;
-}
+// #alert::before {
+//     content: "Bit by Bit will be closed for winter break from Dec. 21 to Jan. 1.";
+//     display: block;
+//     position: fixed;
+//     bottom: 20px;
+//     right: 65px;
+//     background: #fff;
+//     border: 5px solid $accentorange;
+//     transform: scaleX(0);
+//     height: 12vh;
+//     width: calc(30% + 100px);
+//     transition: 0.5s ease-in-out;
+//     transform-origin: right;
+//     border-radius: 20px;
+//     padding: 10px 90px 10px 10px;
+// }
 
 #navlogo {
     height: 50px;
@@ -728,14 +728,14 @@ nav #nav-ul {
         flex-basis: initial;
     }
 
-    #alertbot {
-        right: 10px;
-        bottom: 10px;
-    }
-    #alert::before {
-        right: 10px;
-        bottom: 10px;
-    }
+    // #alertbot {
+    //     right: 10px;
+    //     bottom: 10px;
+    // }
+    // #alert::before {
+    //     right: 10px;
+    //     bottom: 10px;
+    // }
     
     #topnav {
         #navlogo {
