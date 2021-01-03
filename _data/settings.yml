@@ -2,17 +2,9 @@ menu:
   - {name: Home, url: "/"}
   - name: Programs
     submenu:
-      - name: Summer
-        url: "#"
-        subsubmenu:
-          - {name: Uncommon Sense, url: "uncommonsense.html"}
-          - {name: Hello World, url: "helloworld.html"}
-          - {name: Neural Logical, url: "neurallogical.html"}
-      - name: School Year
-        url: "#"
-        subsubmenu:
-          - {name: Uncommon Sense, url: "uncommonsense.html"}
-          - {name: Form & Function, url: "formfunction.html"}
+      - {name: Uncommon Sense, url: "uncommonsense.html"}
+      - {name: Form & Function, url: "formfunction.html"}
+      - {name: Hello World, url: "helloworld.html"}
   - name: About
     submenu:
       - {name: About Us, url: "aboutus.html"}
