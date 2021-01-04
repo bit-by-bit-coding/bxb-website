@@ -13,6 +13,10 @@ List
     flex-wrap: nowrap;
 }
 
+#hwphoto {
+    width: 100%;
+    padding-top: 10vh;
+}
 #ffphoto {
     width: 100%;
 }
@@ -21,7 +25,7 @@ List
     background-color:$main;
     color: #F3F3F3;
     border-radius: 10px;
-    width: 20vw;
+    width: 15vw;
     min-width: 100px;
     border: none;
     font-size: 1em;
