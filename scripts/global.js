@@ -29,12 +29,12 @@ const menu = {
     setTriggers: () => {
         menu.$dropdowns.off();
         menu.$subdropdowns.off();
-        // if ($(window).width() <= 768) {
+        //if ($(window).width() <= 768) {
             menu.$dropdowns.click(menu.openMenu);
             menu.$subdropdowns.click(menu.openSubmenu);
-        // } else {
-        //     menu.$dropdowns.hover(menu.openMenu, menu.closeMenu);
-        // }
+        //} else {
+        //    menu.$dropdowns.hover(menu.openMenu, menu.closeMenu);
+        //}
     }
 }
 
