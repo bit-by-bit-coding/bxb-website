@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-#no-below{
+.no-below{
   margin-bottom: 0;
 }
 
@@ -52,9 +52,10 @@
   mix-blend-mode: multiply;
 }
 
-#bot {
+.bot {
   max-height: 20vw;
-  padding-left: 60px;
+  padding-left: 25%;
+  padding-top: 5vh;
 }
 
 .item {
@@ -83,12 +84,22 @@
   width: 40vw;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   #top-image {
     width: 100%;
   }
   #bot {
     display: none;
+  }
+  .remove-flex{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1500px){
+  #bot {
+    padding-left: 20%;
+    padding-top: 1vw;
   }
 }
 
@@ -149,6 +160,7 @@ section.faqs {
   }
 
   details {
+    cursor: pointer;
     border: none;
     border-bottom: 2px solid $dark;
     box-sizing: border-box;
