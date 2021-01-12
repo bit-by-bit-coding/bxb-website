@@ -239,8 +239,6 @@ nav #nav-ul {
         cursor: pointer;
         @extend .no-select;
     }
-
-    .dropdown-content, .subdropdown-content {
     .arrow2 {
         background-color: #fff;
         color: #fff;
@@ -268,7 +266,15 @@ nav #nav-ul {
         z-index: 2;
         background: $translucent-white;
         //max-width: 300px;
-
+        
+    .subdropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0px;
+        z-index: 2;
+        background: $translucent-white;
+    }
         li {
             margin: 0;
             padding: 0;
@@ -313,7 +319,6 @@ nav #nav-ul {
             // &:last-of-type {
             //     padding-bottom: 0;
             // }
-            .menu-arrow {
             .arrow1 {
                 display: inline-block;
                 width: 10px;
@@ -422,11 +427,29 @@ nav #nav-ul {
                 }
             }
             &.open2 {
+
+                @media screen and (min-width: 769px) {
+                    .subdropdown-content {
+                        visibility: visible;
+                        position: relative;
+                        left: 100%;
+                        top: -20px;
+                        height: 0;
+                    }
+                }
                 .subdropdown-content {
                     visibility: visible;
-                    transform: translate(0, 0);
                     opacity: 1;
-                    max-height: 100%;
+                    .dropdownbutton {
+                        background-color: white;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    .subdropdown-content {
+                        max-height: 100%;
+                        transform: translate(0, 0);    
+                    }
+                }
                 .arrow2 {
                     &:before {
                         transform: translate(-2px, 0) rotate(45deg);
@@ -888,7 +911,7 @@ nav #nav-ul {
 
                     #nav-ul {
                         transform: scale(1);
-                        transition-duration: 0.75s;
+                        transition-duration: 0.2s;
 
                         opacity: 1;
                         transition: opacity $anim-duration ease $anim-duration;
