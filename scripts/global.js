@@ -12,10 +12,9 @@ const menu = {
     },
     openSubmenu: (e) => {
         if (e.currentTarget === menu.open) return;
-        menu.closeMenu();
-        menu.closeSubmenu();
+        e.stopPropagation()
+        menu.closeSubmenu;
         menu.open = e.currentTarget;
-        $(e.currentTarget).addClass("open");
         $(e.currentTarget).addClass("open2");
     },
     closeMenu: () => {
@@ -29,19 +28,21 @@ const menu = {
     setTriggers: () => {
         menu.$dropdowns.off();
         menu.$subdropdowns.off();
-        //if ($(window).width() <= 768) {
+        if ($(window).width() <= 768) {
             menu.$dropdowns.click(menu.openMenu);
             menu.$subdropdowns.click(menu.openSubmenu);
-        //} else {
-        //    menu.$dropdowns.hover(menu.openMenu, menu.closeMenu);
-        //}
+        } else {
+           menu.$dropdowns.hover(menu.openMenu, menu.closeMenu);
+           menu.$subdropdowns.hover(menu.openSubmenu, menu.closeSubmenu);
+
+        }
     }
 }
 
 $(window).resize(menu.setTriggers);
+$(document).click(menu.closeSubmenu);
 
 $(document).click(menu.closeMenu);
-$(document).click(menu.closeSubmenu);
 
 menu.setTriggers();
 
