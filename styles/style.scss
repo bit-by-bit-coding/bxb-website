@@ -427,6 +427,19 @@ nav #nav-ul {
                     transform: translate(0, 0);
                     opacity: 1;
                     max-height: 100%;
+                .arrow2 {
+                    &:before {
+                        transform: translate(-2px, 0) rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: translate(2px, 0) rotate(-45deg);
+                    }
+
+                    &:before,
+                    &:after {
+                        background: $main;
+                    }
                 }
             }
         }
