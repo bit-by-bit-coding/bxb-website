@@ -241,6 +241,15 @@ nav #nav-ul {
     }
 
     .dropdown-content, .subdropdown-content {
+    .arrow2 {
+        background-color: #fff;
+        color: #fff;
+        &:before, &:after {
+            background-color: #fff;
+        color: #fff;
+        }
+    }
+    .dropdown-content {
         visibility: hidden;
         //color: $dark;
         //font-size: 17px;
@@ -305,6 +314,36 @@ nav #nav-ul {
             //     padding-bottom: 0;
             // }
             .menu-arrow {
+            .arrow1 {
+                display: inline-block;
+                width: 10px;
+
+                //position: absolute;
+                //transform: translate(-10px, 0);
+                //margin-top: 8px;
+                //right: 10px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    @extend .transition;
+                    position: absolute;
+                    background-color: $main;
+                    width: 3px;
+                    height: 9px;
+                    right: 7px;
+                    top: 5px;
+                }
+
+                &:before {
+                    transform: translate(2px, 0) rotate(45deg);
+                }
+                &:after {
+                    transform: translate(-2px, 0) rotate(-45deg);
+                }
+            }
+
+            .arrow2 {
                 display: inline-block;
                 width: 10px;
 
@@ -338,7 +377,13 @@ nav #nav-ul {
                 &::before {
                     transform: scaleY(1);
                 }
-                .menu-arrow {
+                .arrow1 {
+                    &::before,
+                    &::after {
+                        background: white;
+                    }
+                }
+                .arrow2 {
                     &::before,
                     &::after {
                         background: white;
@@ -355,7 +400,7 @@ nav #nav-ul {
                     }
                 }
 
-                .menu-arrow {
+                .arrow1 {
                     &:before {
                         transform: translate(-2px, 0) rotate(45deg);
                     }
@@ -956,7 +1001,14 @@ nav #nav-ul {
                             font-size: 2rem;
                         }
 
-                        .menu-arrow {
+                        .arrow1 {
+                            &::before,
+                            &::after {
+                                top: 10px;
+                            }
+                        }
+
+                        .arrow2 {
                             &::before,
                             &::after {
                                 top: 10px;
