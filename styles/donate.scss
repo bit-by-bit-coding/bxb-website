@@ -32,12 +32,12 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     #donatewidget {
         display: none;
     }
 }
-@media (min-width: 321px) {
+@media (min-width: 769px) {
     #fallbackbutton {
         display: none;
     }
