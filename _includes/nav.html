@@ -11,13 +11,13 @@
             {% for item in site.data.settings.menu %}
             {% if item.submenu[0] %}
             <li class="dropdown-container nav-item"><a href="#"><button class="navbutton">{{ item.name }}
-                <i class="menu-arrow"></i></button></a>
+                <i class="menu-arrow arrow1"></i></button></a>
                 <ul class="dropdown-content">
                     {% for subitem in item.submenu %}
                     {% if subitem.subsubmenu[0] %}
                     <li class="subdropdown-container"><a href="{{ subitem.url }}"><button
-                                class="navbutton dropdownbutton">{{ subitem.name }}<i
-                                    class="menu-arrow"></i></button></a>
+                                class="dropdownbutton">{{ subitem.name }}<i
+                                    class="menu-arrow arrow2"></i></button></a>
 
                         <ul class="subdropdown-content">
                             {% for subsubitem in subitem.subsubmenu %}
