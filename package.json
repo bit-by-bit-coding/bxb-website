@@ -10,7 +10,6 @@
     "uglify": "^0.1.3"
   },
   "dependencies": {
-    "crypto-js": "^4.0.0",
     "jquery": "^2.1.4",
     "ndarray": "^1.0.16",
     "underscore": "^1.8.3"
