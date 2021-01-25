@@ -6,6 +6,7 @@ menu:
       - {name: Form & Function, url: "formfunction.html"}
       - {name: Hello World, url: "helloworld.html"}
       - {name: Neural Logical, url: "neurallogical.html"}
+      - {name: US Summer, url: "us-summer-signup.html"}
   - name: About
     submenu:
       - {name: About Us, url: "aboutus.html"}
