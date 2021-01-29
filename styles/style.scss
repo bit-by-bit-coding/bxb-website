@@ -518,6 +518,14 @@ nav #nav-ul {
     }
 }
 
+/*Top Buttons(Page links)*/
+#topbuttons .details-container{
+    margin-right: 20px;
+    flex-wrap: nowrap;
+    font-size: 1.3rem;
+    
+}
+
 /* Details*/
 .details-container {
     display: flex;
