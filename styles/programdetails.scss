@@ -11,6 +11,18 @@
 
 .no-below{
   margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  position: relative;
+  margin-bottom: 6rem;
+  margin-left: 40%;
+  margin-top: 3rem;
+  border: solid 0.5px #FFA452;
+  padding: 3rem;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  color:rgb(101, 105, 107)
 }
 
 #uncommonsense {
@@ -19,6 +31,10 @@
   }
   button {
       background: $dark;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      background-color: #FFA452;
   }
 }
 
@@ -54,12 +70,22 @@
 
 .bot {
   max-height: 20vw;
-  padding-left: 25%;
-  padding-top: 5vh;
+  margin-top: 15rem;
+  position: absolute;
+  margin-left: 3rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  
 }
 
 .item {
-  flex: 1 1 10vw;
+  // flex: 1 1 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  font-size: 1.3rem;
+  position:relative;
+  margin-right: 65%;
 }
 
 .buttons {
