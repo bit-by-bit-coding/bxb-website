@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+	<title>{{page.title}}</title>
+	{% include head.html %}
+	
+	{% if page.style %}
+	<link rel="stylesheet" href="styles/{{page.style}}">
+	{% endif %}
+
+	{%- comment -%} this will only put the google analytics on the page when github pages builds it {%- endcomment -%}
+	{% if jekyll.environment == "production" %}
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167759946-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-167759946-1');
+		//Google Ad Tag
+		gtag('config', 'AW-458476450');
+	</script>
+	{% endif %}
+</head>
+
+<body>
+	<!--Nav Bar-->
+	<nav id="topnav">
+        <a href="{{ 'index.html' | relative_url | remove: '.html' }}">
+            <img src="imgs/Logo.svg" id="navlogo">
+        </a>
+        <input class="checkbox-toggle mobile" type="checkbox" />
+        <div class="hamburger mobile">
+            <div></div>
+        </div>
+        <nav id="topnav-right">
+            <ul id="nav-ul">
+                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Apply</button></a></li>
+                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
+                    <button class="navbutton">About</button></a></li>
+                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
+                    <button class="navbutton">Recommend a Student</button></a></li>
+                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
+                    <button class="navbutton">FAQs</button></a></li>
+            </ul>
+        </nav>
+    </nav>
+
+	<!--Banner-->
+	<!--<div id="particles-js" class="banner">
+		<canvas id="canvas" height="300"></canvas>
+		<div id="logoContainer">
+			<img id="bigLogo" src="imgs/favicon.svg" draggable="false">
+			<h1 id="logoText">{{page.banner-title}}</h1>	
+		</div>
+	</div>-->
+	
+
+	<div class="content">
+		{{ content }}
+	</div>
+
+	<!--Footer-->
+	{% include footer.html %}
+
+	<!--Javascript includes-->
+	{% include script.html %}
+	
+</body>
