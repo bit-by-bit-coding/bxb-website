@@ -1,0 +1,32 @@
+---
+---
+p{
+    font-family: 'Duru Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.details-container{
+    justify-content: center;
+    align-items: center;
+}
+
+#particles-js{
+    height: max-content;
+}
+
+#bigLogo{
+    width: 300px;
+    margin: auto;
+}
+#apply-logo{
+    width: 25vw;
+    flex: 1 4 350px;
+    margin: 0 auto;
+}
+
+#apply-text{
+    width: 60vw;
+    flex: 4 1 350px;
+}
