@@ -18,20 +18,7 @@ List
     width: 100%;
 }
 
-.buttons{
-    background-color:$main;
-    color: #F3F3F3;
-    border-radius: 10px;
-    width: 15vw;
-    min-width: 100px;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    padding: 5px 10px;
-    &:hover {
-        opacity: 0.85;
-    }
-}
+
 
 // .steps {
 //     clear: both;

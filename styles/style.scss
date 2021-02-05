@@ -13,7 +13,7 @@ $translucent-white: rgba(255, 255, 255, 0.9);
 body {
     color: #4a4746;
     line-height: 1.5em;
-    font-size: 1em;
+    font-size: 1.2rem;
     padding: 0;
     margin: 0;
     display: flex;
@@ -528,7 +528,7 @@ nav #nav-ul {
 #topbuttons .details-container{
     margin-right: 20px;
     flex-wrap: nowrap;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     
 }
 
@@ -547,9 +547,36 @@ nav #nav-ul {
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-    margin: 10px;
+    margin: 3px;
     flex-basis: 300px;
 }
+
+
+.buttons{
+    background-color:$main;
+    color: #F3F3F3;
+    border-radius: 15px;
+    width: 13vw;
+    min-width: 130px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 10px 55px 1px 0;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.85;
+    }
+  }
+
+  .team-btn{
+    margin: 0 0 0 8.2rem;
+  }
+
+  .about-btn{
+    margin: 0 2rem 0;
+    
+  }
 
 /* Footer */
 #footer {
@@ -639,7 +666,7 @@ nav #nav-ul {
             border: none;
             border-radius: 10px;
             height: 37px;
-            width: 98%;
+            width: 90%;
             color: white;
             font-weight: bold;
             font-size: 1.2rem;
