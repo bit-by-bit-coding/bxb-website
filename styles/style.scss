@@ -154,9 +154,13 @@ h6 {
 
 /* Navigation Bar */
 #topnav {
-    background-color: $translucent-white;
+    background-color: #153670;
+
     #nav-ul {
         height: auto;
+        margin-right: 10rem;
+        
+    
     }
 }
 
@@ -167,7 +171,7 @@ nav #nav-ul {
     top: 0;
     margin: 0;
     padding: 0 2.5vw;
-    height: 65px;
+    height: 80px;
     align-items: flex-start;
     justify-content: space-between;
     z-index: 1;
@@ -194,28 +198,28 @@ nav #nav-ul {
     border: none;
     margin: 0.1vw;
     cursor: pointer;
-    background-color: inherit;
+    background-color: #FEBE42;
     height: 100%;
     width: 100%;
     text-align: left;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 1rem;
     position: relative;
     text-align: center;
     &:hover {
-        opacity: 0.75;
-        transition-duration: 0.3s;
+        // opacity: 0.75;
+        transition-duration: 0.01s;
     }
 }
 
 // menu from https://codepen.io/abergin/pen/ihlDf
 #topnav {
     .transition {
-        transition: all 0.25s ease-in-out;
+        transition: all 0.10s ease-in-out;
     }
 
     .flipIn {
-        animation: flipdown 0.5s ease both;
+        animation: flipdown 0.02s ease both;
     }
 
     .no-select {
@@ -235,7 +239,6 @@ nav #nav-ul {
         //letter-spacing: 1px;
         //display: block;
         //background-color: $main;
-        margin: 0;
         cursor: pointer;
         @extend .no-select;
     }
@@ -275,7 +278,7 @@ nav #nav-ul {
         > li {
             position: relative;
             padding: 0;
-            margin: 0 10px;
+            margin: 13px 1rem;
             padding-bottom: 4px;
             padding-top: 18px;
             //width: min-content;
@@ -307,6 +310,8 @@ nav #nav-ul {
             .menu-arrow {
                 display: inline-block;
                 width: 10px;
+                padding-left: 50px;
+                
 
                 //position: absolute;
                 //transform: translate(-10px, 0);
@@ -443,9 +448,9 @@ nav #nav-ul {
 // }
 
 #navlogo {
-    height: 50px;
+    height: 60px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 10rem;
 }
 
 .mobile {
@@ -466,23 +471,24 @@ nav #nav-ul {
     text-align: left;
     text-transform: uppercase;
     color: $main;
-    font-size: 0.9em;
-    position: relative;
+    font-size: 1rem;
+    position: relative;    
 }
+
 
 .navbutton::before, .dropdownbutton::before {
     content: "";
     display: block;
     position: absolute;
-    background: $main;
+    background: #FEBE42;
     transform: scaleY(0.05);
     width: 100%;
     height: 100%;
     transition: 0.25s ease-in-out;
     transform-origin: 50% 100%;
     z-index: -1;
-    //border-radius: 5px;
-    padding-left: 0px;
+    // border-radius: 5px;
+    padding-right: 0;
     left: 0;
 }
 
@@ -551,10 +557,11 @@ nav #nav-ul {
     padding: 0.5vh 2vw;
     color: white;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1rem;
 
     .fa-stack {
         transition: color 0.3s;
+        margin: 1rem;
         &:hover {
             color: $dark;
             .fa-inverse {
@@ -569,7 +576,7 @@ nav #nav-ul {
     }
 
     div {
-        margin: 20px;
+        margin: 1rem 3rem;
     }
 
     a {
@@ -587,7 +594,7 @@ nav #nav-ul {
     justify-content: center;
 
     p {
-        font-size: 13px;
+        font-size: 1rem;
         margin: 0px;
     }
 }
@@ -611,7 +618,7 @@ nav #nav-ul {
 }
 
 #footer a.small-link {
-    font-size: 13px;
+    font-size: 1rem;
     text-decoration: underline;
     color: white;
     &:hover {
@@ -625,7 +632,7 @@ nav #nav-ul {
 
     #donate {
         margin: 0px;
-        margin-top: 10px;
+        // margin-top: 10px;
 
         button {
             background-color: $main;
@@ -635,7 +642,8 @@ nav #nav-ul {
             width: 98%;
             color: white;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 1.2rem;
+            text-align: center;
             &:hover {
                 background: $dark;
                 cursor: pointer;
@@ -655,19 +663,21 @@ nav #nav-ul {
     margin: 20px 0;
 
     p {
-        padding: 10px 0 5px 0;
+        padding: 10px 0 5px 25px;
     }
 }
 
 #mailing-list {
-    max-width: 275px;
+    max-width: 150%;
     height: 70px;
     background: $dark;
     padding: 0;
+    text-align: center;
 }
 
 .footer-info {
     min-width: 150px;
+    
 }
 
 //Homepage
