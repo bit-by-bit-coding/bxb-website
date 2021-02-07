@@ -239,7 +239,14 @@ nav #nav-ul {
         cursor: pointer;
         @extend .no-select;
     }
-
+    .arrow2 {
+        background-color: #fff;
+        color: #fff;
+        &:before, &:after {
+            background-color: #fff;
+        color: #fff;
+        }
+    }
     .dropdown-content {
         visibility: hidden;
         //color: $dark;
@@ -259,7 +266,15 @@ nav #nav-ul {
         z-index: 2;
         background: $translucent-white;
         //max-width: 300px;
-
+        
+    .subdropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0px;
+        z-index: 2;
+        background: $translucent-white;
+    }
         li {
             margin: 0;
             padding: 0;
@@ -304,7 +319,36 @@ nav #nav-ul {
             // &:last-of-type {
             //     padding-bottom: 0;
             // }
-            .menu-arrow {
+            .arrow1 {
+                display: inline-block;
+                width: 10px;
+
+                //position: absolute;
+                //transform: translate(-10px, 0);
+                //margin-top: 8px;
+                //right: 10px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    @extend .transition;
+                    position: absolute;
+                    background-color: $main;
+                    width: 3px;
+                    height: 9px;
+                    right: 7px;
+                    top: 5px;
+                }
+
+                &:before {
+                    transform: translate(2px, 0) rotate(45deg);
+                }
+                &:after {
+                    transform: translate(-2px, 0) rotate(-45deg);
+                }
+            }
+
+            .arrow2 {
                 display: inline-block;
                 width: 10px;
 
@@ -338,7 +382,13 @@ nav #nav-ul {
                 &::before {
                     transform: scaleY(1);
                 }
-                .menu-arrow {
+                .arrow1 {
+                    &::before,
+                    &::after {
+                        background: white;
+                    }
+                }
+                .arrow2 {
                     &::before,
                     &::after {
                         background: white;
@@ -355,7 +405,7 @@ nav #nav-ul {
                     }
                 }
 
-                .menu-arrow {
+                .arrow1 {
                     &:before {
                         transform: translate(-2px, 0) rotate(45deg);
                     }
@@ -374,7 +424,45 @@ nav #nav-ul {
                     transform: translate(0, 0);
                     opacity: 1;
                     max-height: 100%;
-                    margin-top: 23px;
+                }
+            }
+            &.open2 {
+
+                @media screen and (min-width: 769px) {
+                    .subdropdown-content {
+                        visibility: visible;
+                        position: relative;
+                        left: 100%;
+                        top: -20px;
+                        height: 0;
+                    }
+                }
+                .subdropdown-content {
+                    visibility: visible;
+                    opacity: 1;
+                    .dropdownbutton {
+                        background-color: white;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    .subdropdown-content {
+                        max-height: 100%;
+                        transform: translate(0, 0);    
+                    }
+                }
+                .arrow2 {
+                    &:before {
+                        transform: translate(-2px, 0) rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: translate(2px, 0) rotate(-45deg);
+                    }
+
+                    &:before,
+                    &:after {
+                        background: $main;
+                    }
                 }
             }
         }
@@ -823,7 +911,7 @@ nav #nav-ul {
 
                     #nav-ul {
                         transform: scale(1);
-                        transition-duration: 0.75s;
+                        transition-duration: 0.2s;
 
                         opacity: 1;
                         transition: opacity $anim-duration ease $anim-duration;
@@ -949,7 +1037,14 @@ nav #nav-ul {
                             font-size: 2rem;
                         }
 
-                        .menu-arrow {
+                        .arrow1 {
+                            &::before,
+                            &::after {
+                                top: 10px;
+                            }
+                        }
+
+                        .arrow2 {
                             &::before,
                             &::after {
                                 top: 10px;
