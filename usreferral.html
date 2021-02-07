@@ -2,12 +2,18 @@
 layout: us-summer
 title: "Summer Uncommon Sense: Bit by Bit"
 style: usreferral.css
+scripts:
+- "utils.js"
+- "sort.js"
+- "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+- "us-summer-signup.js"
 ---
 <div class="details-container">
     <div class="details-item" id="apply-text">
         <p>
             Got an invitation? Apply.
         </p>
+        <input id="password-input" type="password">
         <p>
             If you don't have an invitation, you can request one from a teacher. If you are homeschooled or 
             have other extenuating circumstances, <a href="mailto:{{site.contact.email}}">let us know</a>.
