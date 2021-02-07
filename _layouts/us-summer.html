@@ -37,14 +37,12 @@
         </div>
         <nav id="topnav-right">
             <ul id="nav-ul">
-                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
-                    <button class="navbutton">Apply</button></a></li>
-                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
-                    <button class="navbutton">About</button></a></li>
-                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
-                    <button class="navbutton">Recommend a Student</button></a></li>
-                <li><a href="{{ item.url | relative_url | remove: '.html' }}">
-                    <button class="navbutton">FAQs</button></a></li>
+                <!--<li><a href="{{ item.url | relative_url | remove: '.html' }}">
+                    <button class="navbutton">About</button></a></li>-->
+                <li><a href="#faqs">
+					<button class="navbutton">FAQs</button></a></li>
+				<li><a href="https://forms.gle/dF2fzhvuGbaNYokb6">
+					<button class="navbutton">Recommend a Student</button></a></li>
             </ul>
         </nav>
     </nav>
