@@ -38,23 +38,29 @@
         <nav id="topnav-right">
             <ul id="nav-ul">
                 <!--<li><a href="{{ item.url | relative_url | remove: '.html' }}">
-                    <button class="navbutton">About</button></a></li>-->
-                <li><a href="#faqs">
+					<button class="navbutton">About</button></a></li>-->
+				<li><a href="{{ 'summerus.html' | relative_url | remove: '.html' }}">
+					<button class="navbutton">Homepage</button></a></li>
+				<li><a href="{{ 'usreferral.html' | relative_url | remove: '.html' }}">
+					<button class="navbutton">Apply</button></a></li>
+                <li><a href="{{ 'summerus.html' | relative_url | remove: '.html' }} #faqs">
 					<button class="navbutton">FAQs</button></a></li>
 				<li><a href="https://forms.gle/dF2fzhvuGbaNYokb6">
-					<button class="navbutton">Recommend a Student</button></a></li>
+					<button class="navbutton">Nominate a Student</button></a></li>
+				<li><a href="{{ 'index.html' | relative_url | remove: '.html' }}">
+					<button class="navbutton">Bit by Bit Homepage</button></a></li>
             </ul>
         </nav>
     </nav>
 
 	<!--Banner-->
-	<!--<div id="particles-js" class="banner">
+	<div id="particles-js" class="banner">
 		<canvas id="canvas" height="300"></canvas>
 		<div id="logoContainer">
 			<img id="bigLogo" src="imgs/favicon.svg" draggable="false">
 			<h1 id="logoText">{{page.banner-title}}</h1>	
 		</div>
-	</div>-->
+	</div>
 	
 
 	<div class="content">
