@@ -48,3 +48,20 @@
 		padding-left: 0 !important;
 	}
 }
+.homepage-container {
+	display: flex;
+	flex-direction: row; //mobile-first layout
+	padding: 0 -5px;
+	align-content: stretch;
+	align-items: stretch;
+	justify-content: space-evenly;
+  
+  }
+  
+  .homepage-column{
+	min-width: 200px;
+	margin: 5px;
+	padding: 20px;
+	border-width: 10px;
+	flex: 1 1 0px;
+  }
