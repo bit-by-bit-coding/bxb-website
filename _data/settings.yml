@@ -5,7 +5,7 @@ menu:
       - name: Summer
         url: "#"
         subsubmenu:
-          - {name: Uncommon Sense, url: "summerus.html"}
+          - {name: Uncommon Sense, url: "uncommonsenseseminar.html"}
           - {name: Hello World, url: "helloworld.html"}
           - {name: Neural Logical, url: "neurallogical.html"}
       - name: School Year
