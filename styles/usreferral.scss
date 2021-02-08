@@ -1,0 +1,122 @@
+---
+---
+@import "variables";
+
+$translucent-white: rgba(255, 255, 255, 0.9);
+
+h3 {
+    font-size: 1.5em;
+    font-family: $body-font;
+}
+h4{
+    font-size: 1.3em;
+    color: $dark;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.main-text{
+    font-family: 'Duru Sans', sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 35px;
+}
+
+.details-container{
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    width: 100%;
+}
+
+#password-input{
+    width: 100px;
+    height: 25px;
+}
+
+#particles-js{
+    height: max-content;
+}
+
+#bigLogo{
+    width: 300px;
+    margin: auto;
+}
+#apply-logo{
+    width: 25vw;
+    flex: 1 4 350px;
+    margin: 0 auto;
+}
+
+#apply-text{
+    width: 60vw;
+    flex: 4 1 350px;
+}
+
+//FAQs
+section.faqs {
+    summary {
+      font-size: 1.2em;
+      // keep the same default font color (slightly not black) that seems to have been the default button text color
+      color: rgb(46, 52, 54);
+  
+      // remove the default triangle to indicate whether the details is "open"
+      // we are using or own custom one instead
+      list-style: none;
+    }
+    //temporary fix because chrome does not support the list-style thing
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    // code to add the custom "open" indicator
+    summary:after {
+      display: block;
+      position: absolute;
+      background: white;
+      border: 2px solid $dark;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 32px;
+      border-radius: 50%;
+      content: "+";
+      text-align: center;
+      left: 5px;
+      transform: translateY(-16px);
+    }
+  
+    details {
+      cursor: pointer;
+      border: none;
+      border-bottom: 2px solid $dark;
+      box-sizing: border-box;
+      width: 100%;
+      background: none;
+      text-align: left;
+      font-family: inherit;
+      position: relative;
+      transition: 0.3s;
+      padding-left: 50px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+    }
+  
+    summary:hover,
+    details[open] summary {
+      color: $main;
+    }
+  
+    details[open] {
+      summary:after {
+        content: "-";
+      }
+  
+      :not(summary) {
+        animation-name: invisiblyGrowFontSize, fadeIn;
+        animation-duration: 500ms, 200ms;
+        animation-delay: 0ms, 500ms;
+      }
+    }
+  }

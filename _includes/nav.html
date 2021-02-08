@@ -8,32 +8,33 @@
     </div>
     <nav id="topnav-right">
         <ul id="nav-ul">
-            {% for menu-item in site.data.settings.menu %}
-            {% if menu-item.submenu[0] %}
-            <li class="dropdown-container nav-item">
-                <a href="#">
-                    <button class="navbutton">{{ menu-item.name }}
-                        <i class="menu-arrow"></i>
-                    </button>
-                </a>
+            {% for item in site.data.settings.menu %}
+            {% if item.submenu[0] %}
+            <li class="dropdown-container nav-item"><a href="#"><button class="navbutton">{{ item.name }}
+                <i class="menu-arrow arrow1"></i></button></a>
                 <ul class="dropdown-content">
-                    {% for submenu-item in menu-item.submenu %}
+                    {% for subitem in item.submenu %}
+                    {% if subitem.subsubmenu[0] %}
+                    <li class="subdropdown-container"><a href="{{ subitem.url }}"><button
+                                class="dropdownbutton">{{ subitem.name }}<i
+                                    class="menu-arrow arrow2"></i></button></a>
 
-                    <li>
-                        <a href="{{ submenu-item.url | relative_url | remove: '.html' }}">
-                            <button class="dropdownbutton">{{ submenu-item.name }}</button>
-                        </a>
+                        <ul class="subdropdown-content">
+                            {% for subsubitem in subitem.subsubmenu %}
+                            <li><a href="{{ subsubitem.url }}"><button class="dropdownbutton">
+                                {{ subsubitem.name}}</button></a></li>
+                            {% endfor %}
+                        </ul>
                     </li>
 
-                    {% endfor %}
+                    {% else %}
+                    <li><a href="{{ subitem.url }}"><button class="dropdownbutton">{{ subitem.name }}</button></a></li>
+                        {% endif %}
+                        {% endfor %}
                 </ul>
-            </li>
-            {% else %}
-            <li>
-                <a href="{{ menu-item.url | relative_url | remove: '.html' }}">
-                    <button class="navbutton">{{ menu-item.name }}</button>
-                </a>
-            </li>
+                {% else %}
+            <li><a href="{{ item.url | relative_url | remove: '.html' }}"><button class="navbutton">{{ item.name
+                        }}</button></a></li>
             {% endif %}
             {% endfor %}
         </ul>
