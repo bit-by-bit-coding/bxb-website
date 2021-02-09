@@ -128,6 +128,49 @@
   }
 }
 
+section.main {
+  display: flex;
+  flex-wrap: wrap;
+  .comp {
+    flex-grow: 1;
+  }
+  .educate{
+    flex-grow: 1;
+  }
+  .ponder {
+    flex-grow: 1;
+  }
+  .ponder, .educate, .comp {
+    border: 2px black solid;
+    border-style: none solid solid solid;
+    p {
+      padding: 10px;
+      text-indent: 15px;
+    }
+  }
+  header {
+    text-align: center;
+    padding: 25px;
+    background-color: $dark;
+    color: #fff;
+    font-size: 1.8em;
+    margin: 0px;
+  }
+  @media (min-width: 860px) {
+    .educate, .comp {
+      width: 18%;
+    }
+    .ponder{
+      width: 48%;
+      border-style: solid;
+      header {
+        background-color: #fff;
+        color: gray;
+        font-weight: bold;
+      }
+    }
+  }
+}
 section.faqs {
   summary {
     font-size: 1.2em;
