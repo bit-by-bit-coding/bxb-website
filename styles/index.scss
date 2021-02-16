@@ -55,14 +55,14 @@
 	align-content: stretch;
 	align-items: stretch;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
   
-  }
-  
-  .homepage-column{
+.homepage-column{
 	min-width: 200px;
 	margin: 5px;
 	padding: 20px;
 	border-width: 10px;
 	flex: 1 1 0px;
-  }
+}
 
