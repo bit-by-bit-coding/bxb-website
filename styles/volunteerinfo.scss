@@ -3,7 +3,7 @@
 
 @import 'variables';
 
-#bigLogo{
+#bigLogo, #logoText {
     will-change: opacity;
     mix-blend-mode: multiply;
 }
@@ -12,12 +12,12 @@ h1{
     line-height: 30px;
 }
 
-h3{
-    color: $dark;
+#no-below{
+    margin-bottom: 0;
 }
 
-.content h3::before, .content h4::before{
-    content: "";
+#bigger-text{
+    font-size: 1.3em;
 }
 
 .details-item{

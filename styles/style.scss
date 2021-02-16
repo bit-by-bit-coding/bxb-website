@@ -1,22 +1,17 @@
 ---
 ---
 
-/*TODO
-Wrap signup button on homepage
-Make testimonials wrap on mobile
-Fix brs on about us page
-Fix map sizing
-*/
+@import "variables";
 
-@import 'variables';
+$translucent-white: rgba(255, 255, 255, 0.9);
 
-*{
+* {
     font-family: $body-font;
 }
 
 /* General */
 body {
-    color: rgb(112, 112, 112);
+    color: #4a4746;
     line-height: 1.5em;
     font-size: 1em;
     padding: 0;
@@ -26,15 +21,15 @@ body {
     min-height: 100vh;
 }
 
-a{
+a {
     color: $dark;
-    transition: .5s;
-    &:hover{
+    transition: 0.5s;
+    &:hover {
         color: $main;
     }
 }
 
-.section{
+.section {
     display: inline-block;
     margin: 0 auto;
 }
@@ -42,8 +37,12 @@ a{
 h1 {
     color: $dark;
     font-family: $heading-font;
-    font-weight: 750;
+    font-weight: 700;
     line-height: 1;
+}
+
+#logoText {
+    line-height: 125%;
 }
 
 h2 {
@@ -54,6 +53,7 @@ h2 {
 }
 
 h3 {
+    color: $dark;
     font-family: $heading-font;
     margin-bottom: 0.5%;
 }
@@ -64,7 +64,9 @@ h3 {
     text-align: center;
 }
 
-strong { font-weight: 700; }
+strong {
+    font-weight: 700;
+}
 
 button {
     font-family: inherit;
@@ -73,40 +75,40 @@ button {
 }
 
 button.action-button {
-  /* display: block; */
-  margin: 10px 5px;
-  text-align: center;
-  transition: 0.5s;
-  font-weight: 200;
-  background-image: linear-gradient(-45deg, #283576 0%, #2d97b7 100%);
-  cursor: pointer;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: none;
-  padding: 5px 20px;
-  /* max-width: 200px; */
-  /* width: 80%; */
+    /* display: block; */
+    margin: 10px 5px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 200;
+    background-image: $gradient;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    padding: 5px 20px;
+    /* max-width: 200px; */
+    /* width: 80%; */
 }
 button.action-button:hover {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 /* banner */
-.banner{
+.banner {
     height: 300px;
     display: flex;
     align-content: center;
 
-    canvas{
+    canvas {
         position: absolute;
         z-index: -1;
     }
 }
 
-#canvas{
-  height: 300px;
-  width: 100%;
+#canvas {
+    height: 300px;
+    width: 100%;
 }
 
 /* take this out */
@@ -126,48 +128,67 @@ img {
     width: calc(100% - 60px);
 }
 
-.content h1::before,.content h2::before, .content h3::before,
-.content h4::before, .content h5::before, .content h6::before {
-    content: "// ";
+.content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &:before {
+            content: "// ";
+        }
+    }
 }
 
-h1.noslashes::before, h2.noslashes::before, h3.noslashes::before, 
-h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
-    content: "";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &.noslashes::before {
+        content: "";
+    }
 }
 
 /* Navigation Bar */
-#topnav, nav ul {
+#topnav {
+    background-color: $translucent-white;
+    #nav-ul {
+        height: auto;
+    }
+}
+
+#topnav,
+nav #nav-ul {
     display: flex;
     position: sticky;
     top: 0;
     margin: 0;
     padding: 0 2.5vw;
     height: 65px;
-    background-color: rgba(255, 255, 255, 0.9);
-    align-items: center;
-    justify-content:   space-between;
+    align-items: flex-start;
+    justify-content: space-between;
     z-index: 1;
 
     a {
         text-decoration: none;
     }
-    ul, li {
+    ul,
+    li {
         list-style: none;
         padding: 0;
-    } 
+    }
 }
 
-.dropdown-content {
-    display: none;
-    background: none;
-    position: absolute;
-    top: 45px;
-}
-
-.dropdown:hover > .dropdown-content {
-    display: block;
-}
+// .dropdown-content {
+//     transform: scaleY(0);
+//     transition: 0.1s;
+//     background: none;
+//     position: absolute;
+//     top: -2px;
+// }
 
 .dropdownbutton {
     border: none;
@@ -177,34 +198,337 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     height: 100%;
     width: 100%;
     text-align: left;
-    color: whitesmoke;
+    color: #fff;
     font-size: 0.9em;
     position: relative;
+    text-align: center;
     &:hover {
         opacity: 0.75;
         transition-duration: 0.3s;
     }
 }
 
-// animation from https://coronavirus.su.domains/
-.dropdown::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 45px;
-    background: $main;
-    transform: scaleY(0);
-    width: 30%;
-    height: calc(100% + 10px);
-    transition: 0.5s ease-in-out;
-    transform-origin: 100% 0%;
-    z-index: -1;
-    border-radius: 5px;
+// menu from https://codepen.io/abergin/pen/ihlDf
+#topnav {
+    .transition {
+        transition: all 0.25s ease-in-out;
+    }
+
+    .flipIn {
+        animation: flipdown 0.5s ease both;
+    }
+
+    .no-select {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .navbutton {
+        //font-size: 26px;
+        //line-height: 34px;
+        //font-weight: 300;
+        //letter-spacing: 1px;
+        //display: block;
+        //background-color: $main;
+        margin: 0;
+        cursor: pointer;
+        @extend .no-select;
+    }
+    .arrow2 {
+        background-color: #fff;
+        color: #fff;
+        &:before, &:after {
+            background-color: #fff;
+        color: #fff;
+        }
+    }
+    .dropdown-content {
+        visibility: hidden;
+        //color: $dark;
+        //font-size: 17px;
+        //line-height: 26px;
+        //letter-spacing: 1px;
+        //overflow: hidden;
+        //max-height: 800px;
+        position: relative;
+        @extend .transition;
+        transition: visibility 0s, all 0.25s ease-in-out;
+
+        opacity: 0;
+        transform: translate(0, 50%);
+        max-height: 0;
+        margin-top: 0px;
+        z-index: 2;
+        background: $translucent-white;
+        //max-width: 300px;
+        
+    .subdropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0px;
+        z-index: 2;
+        background: $translucent-white;
+    }
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    ul {
+        list-style: none;
+        perspective: 900;
+        padding: 0;
+        margin: 0;
+
+        > li {
+            position: relative;
+            padding: 0;
+            margin: 0 10px;
+            padding-bottom: 4px;
+            padding-top: 18px;
+            //width: min-content;
+            //border-top: 1px dotted grey;
+            @extend .flipIn;
+
+            &:nth-of-type(1) {
+                animation-delay: 0.1s;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: 0.2s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 0.3s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: 0.4s;
+            }
+            &:nth-of-type(5) {
+                animation-delay: 0.5s;
+            }
+            &:nth-of-type(6) {
+                animation-delay: 0.6s;
+            }
+            // &:last-of-type {
+            //     padding-bottom: 0;
+            // }
+            .arrow1 {
+                display: inline-block;
+                width: 10px;
+
+                //position: absolute;
+                //transform: translate(-10px, 0);
+                //margin-top: 8px;
+                //right: 10px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    @extend .transition;
+                    position: absolute;
+                    background-color: $main;
+                    width: 3px;
+                    height: 9px;
+                    right: 7px;
+                    top: 5px;
+                }
+
+                &:before {
+                    transform: translate(2px, 0) rotate(45deg);
+                }
+                &:after {
+                    transform: translate(-2px, 0) rotate(-45deg);
+                }
+            }
+
+            .arrow2 {
+                display: inline-block;
+                width: 10px;
+
+                //position: absolute;
+                //transform: translate(-10px, 0);
+                //margin-top: 8px;
+                //right: 10px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    @extend .transition;
+                    position: absolute;
+                    background-color: $main;
+                    width: 3px;
+                    height: 9px;
+                    right: 7px;
+                    top: 5px;
+                }
+
+                &:before {
+                    transform: translate(2px, 0) rotate(45deg);
+                }
+                &:after {
+                    transform: translate(-2px, 0) rotate(-45deg);
+                }
+            }
+
+            .navbutton:hover, .dropdownbutton:hover {
+                color: white;
+                &::before {
+                    transform: scaleY(1);
+                }
+                .arrow1 {
+                    &::before,
+                    &::after {
+                        background: white;
+                    }
+                }
+                .arrow2 {
+                    &::before,
+                    &::after {
+                        background: white;
+                    }
+                }
+            }
+
+            &.open {
+                .navbutton {
+                    color: white;
+                    border-radius: 5px;
+                    &::before {
+                        transform: scaleY(1);
+                    }
+                }
+
+                .arrow1 {
+                    &:before {
+                        transform: translate(-2px, 0) rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: translate(2px, 0) rotate(-45deg);
+                    }
+
+                    &:before,
+                    &:after {
+                        background: white;
+                    }
+                }
+                .dropdown-content {
+                    visibility: visible;
+                    transform: translate(0, 0);
+                    opacity: 1;
+                    max-height: 100%;
+                }
+            }
+            &.open2 {
+
+                @media screen and (min-width: 769px) {
+                    .subdropdown-content {
+                        visibility: visible;
+                        position: relative;
+                        left: 100%;
+                        top: -20px;
+                        height: 0;
+                    }
+                }
+                .subdropdown-content {
+                    visibility: visible;
+                    opacity: 1;
+                    .dropdownbutton {
+                        background-color: white;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    .subdropdown-content {
+                        max-height: 100%;
+                        transform: translate(0, 0);    
+                    }
+                }
+                .arrow2 {
+                    &:before {
+                        transform: translate(-2px, 0) rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: translate(2px, 0) rotate(-45deg);
+                    }
+
+                    &:before,
+                    &:after {
+                        background: $main;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.dropdown:hover::before {
-    transform: scaleY(1);
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+    5% {
+        opacity: 1;
+    }
+    80% {
+        transform: rotateX(8deg);
+    }
+    83% {
+        transform: rotateX(6deg);
+    }
+    92% {
+        transform: rotateX(-3deg);
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
 }
+// /menu
+
+// #alert:hover::before {
+//     transform: scaleX(1);
+// }
+
+// #alertbot {
+//     height: 12vh;
+//     border-radius: 20px;
+//     border: 5px solid $accentorange;
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     padding: 10px;
+//     background-color: #fff;
+// }
+
+// #alert:hover > #alert-info {
+//     display: block;
+// }
+
+// #alert::before {
+//     content: "Bit by Bit will be closed for winter break from Dec. 21 to Jan. 1.";
+//     display: block;
+//     position: fixed;
+//     bottom: 20px;
+//     right: 65px;
+//     background: #fff;
+//     border: 5px solid $accentorange;
+//     transform: scaleX(0);
+//     height: 12vh;
+//     width: calc(30% + 100px);
+//     transition: 0.5s ease-in-out;
+//     transform-origin: right;
+//     border-radius: 20px;
+//     padding: 10px 90px 10px 10px;
+// }
 
 #navlogo {
     height: 50px;
@@ -221,91 +545,84 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     border: none;
 }
 
-.navbutton {
+.navbutton, .dropdownbutton {
     transition: 0.5s ease-in-out;
     border: none;
-    border-bottom: solid $main 1px;
-    margin: 0 0.8vw;
     cursor: pointer;
     background-color: inherit;
-    height: 100%;
-
+    width: 100%;
+    text-align: left;
     text-transform: uppercase;
     color: $main;
     font-size: 0.9em;
-    
     position: relative;
 }
 
-.navbutton::before {
+.navbutton::before, .dropdownbutton::before {
     content: "";
     display: block;
     position: absolute;
-    background: #2d97b7;
-    transform: scaleY(0);
+    background: $main;
+    transform: scaleY(0.05);
     width: 100%;
     height: 100%;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
     transform-origin: 50% 100%;
     z-index: -1;
-    border-radius: 5px;
+    //border-radius: 5px;
     padding-left: 0px;
     left: 0;
 }
-.navbutton:hover::before {
-    transform: scaleY(1);
-}
 
-.navbutton:hover{
-    color: white;
-    border-radius: 5px;
+.banner {
+    justify-content: center;
 }
-
-#banner { text-align: center; }
+#logoContainer {
+    display: flex;
+    margin: auto;
+    height: 25vw;
+    max-height: 300px;
+}
 #bigLogo {
-    width: 60vw;
+    width: calc(10vw + 50px);
     display: block;
-    margin: 0 auto;
+}
+#logoText {
+    display: block;
+    margin: auto 25px;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: $main;
 }
 
 @media screen and (min-width: 992px) {
-    #bigLogo{
+    #bigLogo {
         max-width: 800px;
+        max-height: 300px;
     }
-    .content{
+    .content {
         width: calc(100% - 200px);
         max-width: 1500px;
     }
 }
 
-
-
 /* Details*/
 .details-container {
-  display: flex;
-  flex-direction: column; //mobile-first layout
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-  padding: 0 -10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0 -10px;
 }
 
 .details-item {
-  padding: 1% 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-  position: relative;
-  margin: 10px;
-}
-
-@media (min-width: 768px) {
-    .details-container{
-        flex-direction: row;
-    }
-
-    .details-item {
-        flex-basis: 300px;
-    }
+    padding: 1% 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    margin: 10px;
+    flex-basis: 300px;
 }
 
 /* Footer */
@@ -316,26 +633,26 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     text-align: center;
     font-size: 0.8em;
 
-    .fa-stack{
+    .fa-stack {
         transition: color 0.3s;
-        &:hover{
+        &:hover {
             color: $dark;
-            .fa-inverse{
+            .fa-inverse {
                 color: #fff;
             }
         }
     }
-    .fa-inverse{
+    .fa-inverse {
         color: $dark;
 
-       transition: color 0.3s;
+        transition: color 0.3s;
     }
 
-    div{
+    div {
         margin: 20px;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: #fff;
         font-size: 1.5em;
@@ -349,7 +666,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     align-items: center;
     justify-content: center;
 
-    p{
+    p {
         font-size: 13px;
         margin: 0px;
     }
@@ -361,12 +678,12 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     align-items: flex-start;
 
     h2 {
-        color: #41ceda;
+        color: $main;
         margin: 5px 0px 10px;
         min-width: max-content;
     }
 
-    a{
+    a {
         font-size: 13px;
         margin: 0px;
         text-decoration: underline;
@@ -376,27 +693,27 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 #footer a.small-link {
     font-size: 13px;
     text-decoration: underline;
-    color:white;
+    color: white;
     &:hover {
-        color: #41ceda;
+        color: $main;
     }
 }
 
 #footer-buttons {
     display: flex;
     flex-direction: column;
-  
+
     #donate {
         margin: 0px;
         margin-top: 10px;
-        
+
         button {
-            background-color: #41ceda;
+            background-color: $main;
             border: none;
             border-radius: 10px;
             height: 37px;
             width: 98%;
-            color: white;  
+            color: white;
             font-weight: bold;
             font-size: 15px;
             &:hover {
@@ -405,7 +722,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             }
         }
     }
-    
+
     #socials {
         margin: 0px;
         display: flex;
@@ -425,7 +742,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 #mailing-list {
     max-width: 275px;
     height: 70px;
-    background:#283576;
+    background: $dark;
     padding: 0;
 }
 
@@ -433,8 +750,12 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     min-width: 150px;
 }
 
+//Homepage
+.nomargin-below{
+    margin-bottom: 0;
+}
 
-/* Homepage
+/* 
 #warning {
     color: #e77d00;
 }
@@ -472,7 +793,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     }
 }*/
 
-
 .social-media {
     height: 8vh;
     margin: 0 1vw;
@@ -482,36 +802,57 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
     opacity: 0.85;
 }
 
-
 /* responsive */
 @media only screen and (max-width: 768px) {
-
-    canvas, #canvas, div canvas{
+    canvas,
+    #canvas,
+    div canvas {
         top: 0;
         height: 40vh;
     }
-    .banner{
+    .banner {
         height: 40vh;
     }
+    #logoText {
+        font-size: 2em;
+    }
+
+    .details-container {
+        flex-direction: column;
+    }
+
+    .details-item {
+        flex-basis: initial;
+    }
+
+    // #alertbot {
+    //     right: 10px;
+    //     bottom: 10px;
+    // }
+    // #alert::before {
+    //     right: 10px;
+    //     bottom: 10px;
+    // }
+    
     #topnav {
         #navlogo {
             display: none;
         }
-
         .mobile {
             display: initial;
         }
 
         $hamburger-menu-size: 60px;
-        $hamburger-menu-border-radius: .12em;
+        $hamburger-menu-border-radius: 0.12em;
         $hamburger-menu-line-height: 2px;
         $hover-line-height: $hamburger-menu-line-height;
 
-        $content-bg-color: rgba(255, 255, 255, 0.9);
+        $content-bg-color: #fff;
 
-        $main-color: #FEFEFE;
+        $main-color: #fff;
         //$hover-color: darken($main-color,10%);
-        $anim-duration: .4s;
+        $anim-duration: 0.4s;
+        align-items: center;
 
         .flex-center {
             display: flex;
@@ -530,7 +871,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             color: inherit;
             text-decoration: none;
         }
-
 
         position: fixed;
         top: 10vh;
@@ -565,24 +905,22 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
                     }
                 }
 
-                & ~ #topnav-right  {
+                & ~ #topnav-right {
                     pointer-events: auto;
                     visibility: visible;
 
-                    > div {
+                    #nav-ul {
                         transform: scale(1);
-                        transition-duration: .75s;
+                        transition-duration: 0.2s;
 
-                        > div {
-                            opacity: 1;
-                            transition: opacity $anim-duration ease $anim-duration;
-                        }
+                        opacity: 1;
+                        transition: opacity $anim-duration ease $anim-duration;
                     }
                 }
             }
 
             &:hover + .hamburger {
-                box-shadow: inset 0 0 10px rgba(0, 0, 0, .1);
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
             }
 
             &:checked:hover + .hamburger > div {
@@ -597,7 +935,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             z-index: 1;
             width: $hamburger-menu-size;
             height: $hamburger-menu-size;
-            padding: .5em 1em;
+            padding: 0.5em 1em;
             background: $main;
             border-radius: 0 $hamburger-menu-border-radius $hamburger-menu-border-radius 0;
             cursor: pointer;
@@ -616,7 +954,7 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
 
                 &:before,
                 &:after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     z-index: 1;
                     top: -$hamburger-menu-size / 6;
@@ -634,7 +972,6 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
         }
 
         #topnav-right {
-     
             position: fixed;
             top: 0;
             left: 0;
@@ -646,17 +983,14 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
             backface-visibility: hidden;
             outline: 1px solid transparent;
             @extend .flex-center;
-           
-            ul.dropdown-content {
-                display: none;
+
+            .no-a-button {
+                font-size: 1.3em;
             }
-            li.dropdown::before {
-                display: none;
-            }
-            
-            > div {
-                width: 200vw;
-                height: 200vw;
+
+            > #nav-ul {
+                width: 300vmax;
+                height: 300vmax;
                 color: $main-color;
                 background: $content-bg-color;
                 border-radius: 50%;
@@ -667,38 +1001,31 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
                 overflow: hidden;
                 @extend .flex-center;
 
-                > div {
-                    text-align: center;
-                    max-width: 90vw;
-                    max-height: 100vh;
-                    opacity: 0;
-                    transition: opacity $anim-duration ease;
-                    overflow-y: auto;
-                    flex: none;
-                    @extend .flex-center;
-                    flex-direction: column;
-                    width: 100%;
-                    height: 100%;
+                text-align: center;
 
-                    > ul {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-                        display: block;
-                        max-height: 100vh;
+                opacity: 0;
+                transition: opacity $anim-duration ease;
+                overflow-y: auto;
+                flex: none;
+                //@extend .flex-center;
+                flex-direction: column;
+                //width: 100%;
+                //height: 100%;
 
-                        > li {
-                            padding: 0;
-                            margin: 1em;
-                            display: block;
+                max-height: 100vh;
 
-                            > a {
-                                position: relative;
-                                cursor: pointer;
-                                transition: color $anim-duration ease;
-                                font-size: 1.5em;
-                                margin: 10px 0;
-                               /*:hover {
+                > li {
+                    padding: 0;
+                    margin: 1em;
+                    display: block;
+
+                    > a {
+                        position: relative;
+                        cursor: pointer;
+                        transition: color $anim-duration ease;
+                        font-size: 1.5em;
+                        margin: 10px 0;
+                        /*:hover {
                                     color: $hover-color;
 
                                     &:after {
@@ -706,22 +1033,34 @@ h4.noslashes::before, h5.noslashes::before, h6.noslashes::before {
                                     }
                                 }*/
 
-                                > button.tinybutton {
-                                    font-size: 2rem;
-                                }
+                        > button.tinybutton {
+                            font-size: 2rem;
+                        }
 
-                                &:after {
-                                    content: '';
-                                    position: absolute;
-                                    z-index: 1;
-                                    bottom: -.15em;
-                                    left: 0;
-                                    width: 0;
-                                    height: $hover-line-height;
-                                    //background: $hover-color;
-                                    transition: width $anim-duration ease;
-                                }
+                        .arrow1 {
+                            &::before,
+                            &::after {
+                                top: 10px;
                             }
+                        }
+
+                        .arrow2 {
+                            &::before,
+                            &::after {
+                                top: 10px;
+                            }
+                        }
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            z-index: 1;
+                            bottom: -0.15em;
+                            left: 0;
+                            width: 0;
+                            height: $hover-line-height;
+                            //background: $hover-color;
+                            transition: width $anim-duration ease;
                         }
                     }
                 }

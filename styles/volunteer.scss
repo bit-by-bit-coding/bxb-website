@@ -13,11 +13,15 @@ List
     flex-wrap: nowrap;
 }
 
+#ffphoto {
+    width: 100%;
+}
+
 .buttons{
     background-color:$main;
     color: #F3F3F3;
     border-radius: 10px;
-    width: 20vw;
+    width: 15vw;
     min-width: 100px;
     border: none;
     font-size: 1em;
@@ -86,7 +90,7 @@ List
 //     }
 // }
 
-#bigLogo {
+#bigLogo, #logoText {
     will-change: opacity;
     mix-blend-mode: multiply;
 }
