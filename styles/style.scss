@@ -12,8 +12,8 @@ $translucent-white: rgba(255, 255, 255, 0.9);
 /* General */
 body {
     color: #4a4746;
-    line-height: 1.5em;
-    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
     display: flex;
@@ -158,7 +158,7 @@ h6 {
 
     #nav-ul {
         height: auto;
-        margin-right: 10rem;
+        margin-right: 9rem;
         
     
     }
@@ -182,7 +182,7 @@ nav #nav-ul {
     ul,
     li {
         list-style: none;
-        padding: 0;
+        padding: 0px;
     }
 }
 
@@ -196,9 +196,9 @@ nav #nav-ul {
 
 .dropdownbutton {
     border: none;
-    margin: 0.1vw;
+    margin: 0.05vw;
     cursor: pointer;
-    background-color: #FEBE42;
+    //background-color: #FEBE42;
     height: 100%;
     width: 100%;
     text-align: left;
@@ -326,8 +326,9 @@ nav #nav-ul {
                     background-color: $main;
                     width: 3px;
                     height: 9px;
-                    right: 7px;
+                    right: 3px;
                     top: 5px;
+                    margin-right: 10px;
                 }
 
                 &:before {
@@ -480,7 +481,7 @@ nav #nav-ul {
     content: "";
     display: block;
     position: absolute;
-    background: #FEBE42;
+    background: #1A98C6;
     transform: scaleY(0.05);
     width: 100%;
     height: 100%;
@@ -488,7 +489,7 @@ nav #nav-ul {
     transform-origin: 50% 100%;
     z-index: -1;
     // border-radius: 5px;
-    padding-right: 0;
+    padding-left: 0;
     left: 0;
 }
 
@@ -528,7 +529,7 @@ nav #nav-ul {
 #topbuttons .details-container{
     margin-right: 20px;
     flex-wrap: nowrap;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
 }
 
@@ -760,7 +761,7 @@ nav #nav-ul {
 }
 
 /* responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     canvas,
     #canvas,
     div canvas {
@@ -1018,6 +1019,7 @@ nav #nav-ul {
         }
     }
 }
+
 
 button.tinybutton {
     font-size: 1rem;
