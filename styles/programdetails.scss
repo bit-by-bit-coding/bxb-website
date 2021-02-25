@@ -127,7 +127,32 @@
   .remove-flex{
     display: block;
   }
+  .neural-background{
+    position: absolute;
+    width: 90vw;
+    margin-top: 16.6rem;
+    margin-left: 3rem;
+  }
+  
+  #uncommonsense {
+      button{
+      font-size: 2rem;
+    }
+    .item{
+      margin-left: 50px;
+    }
+    .bot {
+      max-height: 30vw;
+      margin-top: 90rem;
+      position: absolute;
+      margin-left: 0.3rem;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      
+    }
+  }
 }
+
 
 @media screen and (min-width: 1500px){
   #bot {
