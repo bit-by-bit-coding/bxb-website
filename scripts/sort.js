@@ -6,7 +6,7 @@ var color_maps = {
   },
   helloWorld: function(x) {
     var y = x * 100;
-    return 'hsl(194, 61%,' + y + '%)';
+    return 'hsl(194, 78%,' + y + '%)';
   },
   grayscale: function(x) {
     var y = x * 255;

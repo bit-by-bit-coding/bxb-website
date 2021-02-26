@@ -3,7 +3,46 @@
 
 @import 'variables';
 
-#bigLogo{
+#bigLogo, #logoText {
     will-change: opacity;
     mix-blend-mode: multiply;
+}
+
+h1{
+    line-height: 30px;
+}
+
+#no-below{
+    margin-bottom: 0;
+}
+
+#bigger-text{
+    font-size: 1.3em;
+}
+
+.details-item{
+    flex: 1 1 275px;
+}
+
+#volunteer-info{
+    align-items: baseline;
+}
+
+.flexbutton {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionbutton {
+    background-color: $main;
+    color: #F3F3F3;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin: 10px;
+    &:hover {
+        opacity: 0.85;
+    }
 }

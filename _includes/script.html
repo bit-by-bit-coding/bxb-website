@@ -1,6 +1,14 @@
-<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="scripts/global.js"></script>
+
 {% if page.scripts %}
 {% for script in page.scripts %}
-<script src="scripts/{{script}}"></script>
+<script src="
+		{% unless script contains "://" %}
+			scripts/
+		{% endunless %}
+		{{script}}
+	"{{path}}"></script>
 {% endfor %}
 {% endif %}
