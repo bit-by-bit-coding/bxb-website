@@ -3,25 +3,6 @@
 
 @import 'variables';
 
-#topbuttons .details-container{
-  margin-right: 20px;
-  flex-wrap: nowrap;
-}
-
-.buttons{
-  background-color:$main;
-  color: #F3F3F3;
-  border-radius: 10px;
-  width: 20vw;
-  min-width: 130px;
-  border: none;
-  font-size: 1em;
-  cursor: pointer;
-  padding: 5px 10px;
-  &:hover {
-      opacity: 0.85;
-  }
-}
 
 /* About Us Page */
 .instructors-container {

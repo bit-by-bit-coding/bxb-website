@@ -12,8 +12,8 @@ $translucent-white: rgba(255, 255, 255, 0.9);
 /* General */
 body {
     color: #4a4746;
-    line-height: 1.5em;
-    font-size: 1em;
+    line-height: 1.5rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
     display: flex;
@@ -154,9 +154,13 @@ h6 {
 
 /* Navigation Bar */
 #topnav {
-    background-color: $translucent-white;
+    background-color: #153670;
+
     #nav-ul {
         height: auto;
+        margin-right: 9rem;
+        
+    
     }
 }
 
@@ -167,7 +171,7 @@ nav #nav-ul {
     top: 0;
     margin: 0;
     padding: 0 2.5vw;
-    height: 65px;
+    height: 80px;
     align-items: flex-start;
     justify-content: space-between;
     z-index: 1;
@@ -178,7 +182,7 @@ nav #nav-ul {
     ul,
     li {
         list-style: none;
-        padding: 0;
+        padding: 0px;
     }
 }
 
@@ -192,30 +196,30 @@ nav #nav-ul {
 
 .dropdownbutton {
     border: none;
-    margin: 0.1vw;
+    margin: 0.05vw;
     cursor: pointer;
-    background-color: inherit;
+    //background-color: #FEBE42;
     height: 100%;
     width: 100%;
     text-align: left;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 1rem;
     position: relative;
     text-align: center;
     &:hover {
-        opacity: 0.75;
-        transition-duration: 0.3s;
+        // opacity: 0.75;
+        transition-duration: 0.01s;
     }
 }
 
 // menu from https://codepen.io/abergin/pen/ihlDf
 #topnav {
     .transition {
-        transition: all 0.25s ease-in-out;
+        transition: all 0.10s ease-in-out;
     }
 
     .flipIn {
-        animation: flipdown 0.5s ease both;
+        animation: flipdown 0.02s ease both;
     }
 
     .no-select {
@@ -235,7 +239,6 @@ nav #nav-ul {
         //letter-spacing: 1px;
         //display: block;
         //background-color: $main;
-        margin: 0;
         cursor: pointer;
         @extend .no-select;
     }
@@ -290,7 +293,7 @@ nav #nav-ul {
         > li {
             position: relative;
             padding: 0;
-            margin: 0 10px;
+            margin: 13px 1rem;
             padding-bottom: 4px;
             padding-top: 18px;
             //width: min-content;
@@ -351,6 +354,8 @@ nav #nav-ul {
             .arrow2 {
                 display: inline-block;
                 width: 10px;
+                padding-left: 50px;
+                
 
                 //position: absolute;
                 //transform: translate(-10px, 0);
@@ -365,8 +370,9 @@ nav #nav-ul {
                     background-color: $main;
                     width: 3px;
                     height: 9px;
-                    right: 7px;
+                    right: 3px;
                     top: 5px;
+                    margin-right: 10px;
                 }
 
                 &:before {
@@ -531,9 +537,9 @@ nav #nav-ul {
 // }
 
 #navlogo {
-    height: 50px;
+    height: 60px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 10rem;
 }
 
 .mobile {
@@ -554,23 +560,24 @@ nav #nav-ul {
     text-align: left;
     text-transform: uppercase;
     color: $main;
-    font-size: 0.9em;
-    position: relative;
+    font-size: 1rem;
+    position: relative;    
 }
+
 
 .navbutton::before, .dropdownbutton::before {
     content: "";
     display: block;
     position: absolute;
-    background: $main;
+    background: #1A98C6;
     transform: scaleY(0.05);
     width: 100%;
     height: 100%;
     transition: 0.25s ease-in-out;
     transform-origin: 50% 100%;
     z-index: -1;
-    //border-radius: 5px;
-    padding-left: 0px;
+    // border-radius: 5px;
+    padding-left: 0;
     left: 0;
 }
 
@@ -606,6 +613,14 @@ nav #nav-ul {
     }
 }
 
+/*Top Buttons(Page links)*/
+#topbuttons .details-container{
+    margin-right: 20px;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+    
+}
+
 /* Details*/
 .details-container {
     display: flex;
@@ -621,9 +636,36 @@ nav #nav-ul {
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-    margin: 10px;
+    margin: 3px;
     flex-basis: 300px;
 }
+
+
+.buttons{
+    background-color:$main;
+    color: #F3F3F3;
+    border-radius: 15px;
+    width: 13vw;
+    min-width: 130px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 10px 55px 1px 0;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.85;
+    }
+  }
+
+  .team-btn{
+    margin: 0 0 0 8.2rem;
+  }
+
+  .about-btn{
+    margin: 0 2rem 0;
+    
+  }
 
 /* Footer */
 #footer {
@@ -631,10 +673,11 @@ nav #nav-ul {
     padding: 0.5vh 2vw;
     color: white;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1rem;
 
     .fa-stack {
         transition: color 0.3s;
+        margin: 1rem;
         &:hover {
             color: $dark;
             .fa-inverse {
@@ -649,7 +692,7 @@ nav #nav-ul {
     }
 
     div {
-        margin: 20px;
+        margin: 1rem 3rem;
     }
 
     a {
@@ -667,7 +710,7 @@ nav #nav-ul {
     justify-content: center;
 
     p {
-        font-size: 13px;
+        font-size: 1rem;
         margin: 0px;
     }
 }
@@ -691,7 +734,7 @@ nav #nav-ul {
 }
 
 #footer a.small-link {
-    font-size: 13px;
+    font-size: 1rem;
     text-decoration: underline;
     color: white;
     &:hover {
@@ -705,17 +748,18 @@ nav #nav-ul {
 
     #donate {
         margin: 0px;
-        margin-top: 10px;
+        // margin-top: 10px;
 
         button {
             background-color: $main;
             border: none;
             border-radius: 10px;
             height: 37px;
-            width: 98%;
+            width: 90%;
             color: white;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 1.2rem;
+            text-align: center;
             &:hover {
                 background: $dark;
                 cursor: pointer;
@@ -735,19 +779,21 @@ nav #nav-ul {
     margin: 20px 0;
 
     p {
-        padding: 10px 0 5px 0;
+        padding: 10px 0 5px 25px;
     }
 }
 
 #mailing-list {
-    max-width: 275px;
+    max-width: 150%;
     height: 70px;
     background: $dark;
     padding: 0;
+    text-align: center;
 }
 
 .footer-info {
     min-width: 150px;
+    
 }
 
 //Homepage
@@ -803,7 +849,7 @@ nav #nav-ul {
 }
 
 /* responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     canvas,
     #canvas,
     div canvas {
@@ -1068,6 +1114,7 @@ nav #nav-ul {
         }
     }
 }
+
 
 button.tinybutton {
     font-size: 1rem;

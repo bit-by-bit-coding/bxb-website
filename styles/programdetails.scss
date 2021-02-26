@@ -62,22 +62,6 @@
   flex: 1 1 10vw;
 }
 
-.buttons {
-  background-color: $main;
-  color: #f3f3f3;
-  border-radius: 10px;
-  width: 100%;
-  border: none;
-  font-size: 1em;
-  cursor: pointer;
-  padding: 5px 20px;
-  margin-top: 10px;
-}
-
-.buttons:hover {
-  opacity: 0.85;
-}
-
 #top-image {
   object-fit: cover;
   height: 100%;
