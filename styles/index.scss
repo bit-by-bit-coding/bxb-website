@@ -65,4 +65,14 @@
 	border-width: 10px;
 	flex: 1 1 0px;
 }
+.link-column {
+	transition: 0.2s;
+	&:hover {
+	 box-shadow: 2px 2px 5px $dark;
+	 border-radius: 10px;
+	}
+	p {
+	  color: $dark;
+	}
+  }
 
