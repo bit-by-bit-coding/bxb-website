@@ -1,32 +1,42 @@
 <nav id="topnav">
     <a href="{{ 'index.html' | relative_url | remove: '.html' }}">
-        <img src="imgs/logobxbattached.svg" id="navlogo">
+        <img src="imgs/Logo.svg" id="navlogo">
     </a>
-    <input class="checkbox-toggle mobile" type="checkbox"/>
-
+    <input class="checkbox-toggle mobile" type="checkbox" />
     <div class="hamburger mobile">
         <div></div>
     </div>
     <nav id="topnav-right">
-        <div>
-            <div>
-                <a href="{{ '/' | relative_url | remove: '.html' }}">
-                    <button class="navbutton">Home</button>
-                </a>
-                <a href="{{ 'programs.html' | relative_url | remove: '.html' }}">
-                    <button class="navbutton">Programs</button>
-                </a>
-                <a href="{{ 'about.html' | relative_url | remove: '.html' }}">
-                    <button class="navbutton">About</button>
-                </a>
-                <a href="{{ 'volunteer.html' | relative_url | remove: '.html' }}">
-                    <button class="navbutton">Volunteer</button>
-                </a>
-                <a href="{{ 'donate.html' | relative_url | remove: '.html' }}">
-                    <button class="navbutton">Donate</button>
-                </a>
-            </div>
-        </div>
+        <ul id="nav-ul">
+            {% for item in site.data.settings.menu %}
+            {% if item.submenu[0] %}
+            <li class="dropdown-container nav-item"><a href="#"><button class="navbutton">{{ item.name }}
+                <i class="menu-arrow arrow1"></i></button></a>
+                <ul class="dropdown-content">
+                    {% for subitem in item.submenu %}
+                    {% if subitem.subsubmenu[0] %}
+                    <li class="subdropdown-container"><a href="{{ subitem.url }}"><button
+                                class="dropdownbutton">{{ subitem.name }}<i
+                                    class="menu-arrow arrow2"></i></button></a>
 
+                        <ul class="subdropdown-content">
+                            {% for subsubitem in subitem.subsubmenu %}
+                            <li><a href="{{ subsubitem.url }}"><button class="dropdownbutton">
+                                {{ subsubitem.name}}</button></a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    {% else %}
+                    <li><a href="{{ subitem.url }}"><button class="dropdownbutton">{{ subitem.name }}</button></a></li>
+                        {% endif %}
+                        {% endfor %}
+                </ul>
+                {% else %}
+            <li><a href="{{ item.url | relative_url | remove: '.html' }}"><button class="navbutton">{{ item.name
+                        }}</button></a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </nav>
 </nav>

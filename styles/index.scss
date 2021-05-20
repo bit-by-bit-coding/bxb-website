@@ -2,16 +2,8 @@
 --- 
 @import 'variables';
 
-#parallax {
-	background-image: url("something.png");
-	width: 100%;
-	padding-left: 0;
-	margin: 0;
-	height: 400px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.bot {
+	margin-top: 20px;
 }
 
 .section img {
@@ -32,17 +24,27 @@
 	}
 }
 
+#pumpkin {
+	width: 225px;
+	height: auto;
+}
+
+@media screen and (min-width: 992px) {
+	#pumpkin {
+		width: 175px;
+	}
+}
+
 @media screen and (max-width: 767px) {
+	.computerbot {
+		display: none;
+	}
+	#pumpkin {
+	padding: 0;
+	}
 	.bot {
-		display: none;
-	}
-
-	#myImgCarousel {
-		display: none;
-	}
-
-	.bigimgs {
-		height: 100%;
-		width: auto;
+		display: block;
+		margin: auto;
+		padding-left: 0 !important;
 	}
 }
