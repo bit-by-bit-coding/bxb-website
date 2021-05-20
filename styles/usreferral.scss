@@ -1,170 +1,171 @@
 ---
 ---
+
 @import "variables";
 
 $translucent-white: rgba(255, 255, 255, 0.9);
 
 //US Summer Info page
 #uncommonsense {
-    * {
-        font-family: 'Duru Sans', sans-serif;
-    }
-    button {
-        background: $dark;
-    }
+  * {
+    font-family: "Duru Sans", sans-serif;
+  }
+  // button {
+  //   background: $dark;
+  // }
 }
 
 .buttons {
-    background-color: $main;
-    color: #f3f3f3;
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    padding: 5px 20px;
-    margin-top: 10px;
-}
-  
-.buttons:hover {
-    opacity: 0.85;
+  background-color: $main;
+  color: #f3f3f3;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-top: 10px;
 }
 
-#bigLogo, #logoText {
+.buttons:hover {
+  opacity: 0.85;
+}
+
+#bigLogo,
+#logoText {
   will-change: opacity;
   mix-blend-mode: multiply;
 }
 
 /// staggard bars ///
 .info-banner {
-    color: #fff;
-    margin: 20px -40px;
-    padding: 15px;
-    background: $dark;
-    font-size: 1.5em;
-    line-height: 1em;
+  color: #fff;
+  margin: 20px -40px;
+  padding: 15px;
+  background: $dark;
+  font-size: 1.5em;
+  line-height: 1em;
 
-    @media screen and (min-width: 992px){
-        margin: 20px -110px;
-        max-width: calc(50vw + 600px);
-    }
+  @media screen and (min-width: 992px) {
+    margin: 20px -110px;
+    max-width: calc(50vw + 600px);
+  }
 
-    &:nth-child(even) {
-        margin-left: auto;
-    }
-    &:nth-child(odd){
-        text-align: right;
-        margin-right: auto;
-    }
+  &:nth-child(even) {
+    margin-left: auto;
+  }
+  &:nth-child(odd) {
+    text-align: right;
+    margin-right: auto;
+  }
 }
 
 //FAQs
 section.faqs {
-    summary {
-        font-size: 1.1em;
-        // keep the same default font color (slightly not black) that seems to have been the default button text color
-        color: rgb(46, 52, 54);
+  summary {
+    font-size: 1.1em;
+    // keep the same default font color (slightly not black) that seems to have been the default button text color
+    color: rgb(46, 52, 54);
 
-        // remove the default triangle to indicate whether the details is "open"
-        // we are using or own custom one instead
-        list-style: none;
-    }
-    //temporary fix because chrome does not support the list-style thing
-    summary::-webkit-details-marker {
-        display: none;
-    }
-    // code to add the custom "open" indicator
+    // remove the default triangle to indicate whether the details is "open"
+    // we are using or own custom one instead
+    list-style: none;
+  }
+  //temporary fix because chrome does not support the list-style thing
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  // code to add the custom "open" indicator
+  summary:after {
+    display: block;
+    position: absolute;
+    background: white;
+    border: 2px solid $dark;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 32px;
+    border-radius: 50%;
+    content: "+";
+    text-align: center;
+    left: 5px;
+    transform: translateY(-16px);
+  }
+
+  details {
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid $dark;
+    box-sizing: border-box;
+    width: 100%;
+    background: none;
+    text-align: left;
+    font-family: inherit;
+    position: relative;
+    transition: 0.3s;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
+  summary:hover,
+  details[open] summary {
+    color: $main;
+  }
+
+  details[open] {
     summary:after {
-        display: block;
-        position: absolute;
-        background: white;
-        border: 2px solid $dark;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 32px;
-        border-radius: 50%;
-        content: "+";
-        text-align: center;
-        left: 5px;
-        transform: translateY(-16px);
+      content: "-";
     }
 
-    details {
-        cursor: pointer;
-        border: none;
-        border-bottom: 2px solid $dark;
-        box-sizing: border-box;
-        width: 100%;
-        background: none;
-        text-align: left;
-        font-family: inherit;
-        position: relative;
-        transition: 0.3s;
-        padding-left: 50px;
-        margin-bottom: 30px;
-        margin-left: 20px;
+    :not(summary) {
+      animation-name: invisiblyGrowFontSize, fadeIn;
+      animation-duration: 500ms, 200ms;
+      animation-delay: 0ms, 500ms;
     }
-
-    summary:hover,
-    details[open] summary {
-        color: $main;
-    }
-
-    details[open] {
-        summary:after {
-        content: "-";
-        }
-
-        :not(summary) {
-        animation-name: invisiblyGrowFontSize, fadeIn;
-        animation-duration: 500ms, 200ms;
-        animation-delay: 0ms, 500ms;
-        }
-    }
+  }
 }
-
 
 //Referral page
 h3 {
-    font-size: 1.5em;
-    font-family: $body-font;
+  font-size: 1.5em;
+  font-family: $body-font;
 }
 
-h4{
-    font-size: 1.3em;
-    color: $dark;
-    margin-left: 20px;
-    margin-bottom: 10px;
+h4 {
+  font-size: 1.3em;
+  color: $dark;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-.main-text{
-    font-family: 'Duru Sans', sans-serif;
-    text-align: center;
-    font-size: 2em;
-    line-height: 40px;
-    
-    a{
-        font-family: 'Duru Sans', sans-serif;
-    }
+.main-text {
+  font-family: "Duru Sans", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  line-height: 40px;
+
+  a {
+    font-family: "Duru Sans", sans-serif;
+  }
 }
 
-.details-container{
-    justify-content: center;
-    align-items: center;
+.details-container {
+  justify-content: center;
+  align-items: center;
 }
 
-.section{
-    width: 100%;
+.section {
+  width: 100%;
 }
 
-#bigger{
-    font-size: 2.4em;
+#bigger {
+  font-size: 2.4em;
 }
 
-#password-input{
-    width: 100px;
-    height: 25px;
+#password-input {
+  width: 100px;
+  height: 25px;
 }
 
 /*#pageLogo{
@@ -181,3 +182,25 @@ h4{
     width: 60vw;
     flex: 4 1 350px;
 }*/
+
+//* TEAM PAGE
+
+#topbuttons .details-container {
+  margin-right: 20px;
+  flex-wrap: nowrap;
+}
+
+.buttons {
+  background-color: $main;
+  color: #f3f3f3;
+  border-radius: 10px;
+  width: 20vw;
+  min-width: 130px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 10px;
+  &:hover {
+    opacity: 0.85;
+  }
+}
