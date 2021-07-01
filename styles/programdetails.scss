@@ -252,3 +252,67 @@ em {
 #beachbot {
   height: 200px;
 }
+
+//Hello World
+.larger-text {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.medium-text{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#student-projects{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.action-button{
+  background-image: none;
+  background-color: $lightblue;
+}
+
+.details-item{
+  margin: 0;
+}
+
+.blue-box{
+  align-items: center;
+  color: #fff;
+  margin: 30px -100px;
+  padding: 10px 100px;
+  background: $dark;
+
+  a{
+    color: $lightblue;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 50px;
+    margin: 30px -30px;
+  }
+}
+
+#hw-image{
+  width: 25vw;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  #javascript-week{
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+	#hw-image {
+		display: none;
+	}
+
+  .details-item{
+    margin: 25px 0;
+  }
+}
