@@ -8,6 +8,14 @@ List
 (adapted from https://codepen.io/chriscoyier/pen/xjapNK)
 */
 
+h2{
+    margin-bottom: 15px;
+}
+
+h3{
+    margin-top: 0;
+}
+
 #topbuttons .details-container{
     margin-right: 20px;
     flex-wrap: nowrap;
@@ -94,4 +102,72 @@ List
 #bigLogo, #logoText {
     will-change: opacity;
     mix-blend-mode: multiply;
+}
+
+//Dropdowns
+section.dropdowns {
+    summary {
+      font-size: 1.2em;
+      // keep the same default font color (slightly not black) that seems to have been the default button text color
+      color: rgb(46, 52, 54);
+  
+      // remove the default triangle to indicate whether the details is "open"
+      // we are using or own custom one instead
+      list-style: none;
+    }
+    //temporary fix because chrome does not support the list-style thing
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    // code to add the custom "open" indicator
+    summary:after {
+      display: block;
+      position: absolute;
+      background: white;
+      border: 2px solid $dark;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 32px;
+      border-radius: 50%;
+      content: "+";
+      text-align: center;
+      left: 5px;
+      transform: translateY(-16px);
+    }
+  
+    details {
+      cursor: pointer;
+      border: none;
+      border-bottom: 2px solid $dark;
+      box-sizing: border-box;
+      width: 100%;
+      background: none;
+      text-align: left;
+      font-family: inherit;
+      position: relative;
+      transition: 0.3s;
+      padding-left: 50px;
+      margin-bottom: 30px;
+    }
+    
+    details[open] summary {
+        h2{
+            padding-bottom: 15px;
+            border-bottom: 2px solid $dark;
+        }
+    }
+  
+    details[open] {
+        summary:after {
+        content: "-";
+        transform: translateY(-33px);
+        }
+
+        :not(summary) {
+        animation-name: invisiblyGrowFontSize, fadeIn;
+        animation-duration: 500ms, 200ms;
+        animation-delay: 0ms, 500ms;
+        }
+    }
 }
