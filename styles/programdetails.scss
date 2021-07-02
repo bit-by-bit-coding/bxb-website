@@ -264,13 +264,13 @@ em {
   line-height: 1.5em;
 }
 
-#student-projects{
+.middle-button{
   text-align: center;
   display: block;
   margin: auto;
 }
 
-.action-button{
+.largebutton{
   background-image: none;
   background-color: $lightblue;
 }
@@ -279,12 +279,17 @@ em {
   margin: 0;
 }
 
+.space {
+  margin-right: 45px;
+}
+
 .blue-box{
   align-items: center;
   color: #fff;
   margin: 30px -100px;
   padding: 10px 100px;
   background: $dark;
+  overflow: hidden;
 
   a{
     color: $lightblue;
@@ -292,7 +297,7 @@ em {
 
   @media screen and (max-width: 767px) {
     padding: 10px 50px;
-    margin: 30px -30px;
+    margin: 30px -35px;
   }
 }
 
@@ -305,6 +310,10 @@ em {
   #javascript-week{
     padding-bottom: 30px;
   }
+
+  #project-links{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -312,7 +321,20 @@ em {
 		display: none;
 	}
 
-  .details-item{
-    margin: 25px 0;
+  #ff-image {
+    display: none;
   }
+
+  .details-item{
+    margin: 10px 0;
+  }
+}
+
+//Form and Function
+#ff-image {
+  width: 20vw;
+  max-width: 350px;
+  margin: 15px;
+  margin-right: 35px;
+  padding: 0 20px;
 }
