@@ -8,6 +8,17 @@ List
 (adapted from https://codepen.io/chriscoyier/pen/xjapNK)
 */
 
+h2{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+h3{
+    margin-top: 0;
+    color: $main;
+    font-size: 1.5em;
+}
+
 #topbuttons .details-container{
     margin-right: 20px;
     flex-wrap: nowrap;
@@ -20,12 +31,13 @@ List
 
 .buttons{
     background-color:$main;
-    color: #F3F3F3;
+    color: #ffffff;
     border-radius: 10px;
     width: 15vw;
-    min-width: 100px;
+    min-width: 250px;
     border: none;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: $heading-font;
     cursor: pointer;
     padding: 5px 10px;
     &:hover {
@@ -94,4 +106,135 @@ List
 #bigLogo, #logoText {
     will-change: opacity;
     mix-blend-mode: multiply;
+}
+
+//Dropdowns
+section.dropdowns {
+    summary {
+      font-size: 1.2em;
+      // keep the same default font color (slightly not black) that seems to have been the default button text color
+      color: rgb(46, 52, 54);
+  
+      // remove the default triangle to indicate whether the details is "open"
+      // we are using or own custom one instead
+      list-style: none;
+    }
+    //temporary fix because chrome does not support the list-style thing
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    // code to add the custom "open" indicator
+    summary:after {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 40px;
+      border-radius: 50%;
+      font-family: $heading-font;
+      font-weight: 600;
+      content: "+";
+      text-align: center;
+      left: 10px;
+      top: 33%;
+    }
+  
+    details {
+      cursor: pointer;
+      border: none;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: rgba(105, 206, 236, 0.20);
+      padding: 20px;
+      border-radius: 25px;
+      text-align: left;
+      font-family: inherit;
+      position: relative;
+      transition: 0.3s;
+      padding-left: 50px;
+      margin-bottom: 30px;
+    }
+    
+    //details[open] summary {
+    //    .underline{
+    //        border-bottom: 2px solid $dark;
+    //    }
+    //}
+  
+    details[open] {
+        background-color: white;
+        padding: 0;
+
+        summary:after {
+        content: "-";
+        top: 20px;
+        }
+
+        :not(summary) {
+        animation-name: invisiblyGrowFontSize, fadeIn;
+        animation-duration: 200ms, 100ms;
+        animation-delay: 0ms, 0ms;
+        }
+
+        .underline{
+            background-color: rgba(105, 206, 236, 0.20);
+            border-radius: 25px;
+            padding: 20px;
+            padding-left: 50px;
+        }
+    }
+
+    .details-container{
+        margin: 15px;
+        background-color: white;
+        border-radius: 25px;
+    }
+}
+
+.underline{
+    padding-bottom: 5px;
+
+    h2, p{
+        display: inline;
+    }
+}
+
+.center-line{
+    background-color: $dark;
+    opacity: 75%;
+    margin: 15px 10px 15px 5px;
+    border-radius: 10px;
+    width: 3px;
+}
+
+@media screen and (max-width: 1227.5px) {
+    #remove-line{
+        display: none;
+    }
+
+    .center-line{
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1545px) {
+    .extra-block{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .details-container{
+        display: block;
+    }
+
+    .center-line{
+        margin-top: 30px;
+    }
+
+    #remove-line{
+        display: block;
+    }
 }
