@@ -10,14 +10,13 @@ List
 
 h2{
     margin-bottom: 15px;
-}
-
-h2{
     position: relative;
 }
 
 h3{
     margin-top: 0;
+    color: $main;
+    font-size: 1.5em;
 }
 
 #topbuttons .details-container{
@@ -32,12 +31,13 @@ h3{
 
 .buttons{
     background-color:$main;
-    color: #F3F3F3;
+    color: #ffffff;
     border-radius: 10px;
     width: 15vw;
-    min-width: 100px;
+    min-width: 250px;
     border: none;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: $heading-font;
     cursor: pointer;
     padding: 5px 10px;
     &:hover {
@@ -202,12 +202,13 @@ section.dropdowns {
 
 .center-line{
     background-color: $dark;
+    opacity: 75%;
     margin: 15px 10px 15px 5px;
     border-radius: 10px;
     width: 3px;
 }
 
-@media screen and (max-width: 1295.5px) {
+@media screen and (max-width: 1227.5px) {
     #remove-line{
         display: none;
     }
@@ -218,14 +219,22 @@ section.dropdowns {
     }
 }
 
-@media screen and (min-width: 1605px) {
-    #extra-block{
-        display: hidden;
+@media screen and (min-width: 1545px) {
+    .extra-block{
+        display: none;
     }
 }
 
 @media screen and (max-width: 845px) {
     .details-container{
+        display: block;
+    }
+
+    .center-line{
+        margin-top: 30px;
+    }
+
+    #remove-line{
         display: block;
     }
 }
