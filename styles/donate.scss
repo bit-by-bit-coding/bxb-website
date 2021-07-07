@@ -17,7 +17,8 @@
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%
+    width: 100%;
+    z-index: 1;
 }
 #logoContainer {
     background-color: #fff;
