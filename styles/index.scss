@@ -2,17 +2,10 @@
 --- 
 @import 'variables';
 
-.bot {
-	margin-top: 20px;
-}
 
 .section img {
-	height: 200px;
-	padding-left: 75px;
-}
-
-#righttext {
-	flex-grow: 10;
+	height: 400px;
+	margin-left: 0;
 }
 
 .no-margin {
@@ -24,9 +17,24 @@
 	}
 }
 
-#pumpkin {
-	width: 225px;
-	height: auto;
+.flexcontain {
+	display: flex;
+}
+
+.boximg {
+	object-fit: cover;
+	width: 100%;
+	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.section img {
+		height: 200px;
+	}
+	#pumpkin {
+		width: 225px;
+		height: auto;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -36,15 +44,20 @@
 }
 
 @media screen and (max-width: 767px) {
-	.computerbot {
-		display: none;
-	}
 	#pumpkin {
 	padding: 0;
 	}
-	.bot {
-		display: block;
-		margin: auto;
-		padding-left: 0 !important;
-	}
+}	
+
+.bot {
+	margin-top: 20px;
+}
+
+#righttext {
+	flex-grow: 10;
+}
+
+#pumpkin {
+	width: 225px;
+	height: auto;
 }
