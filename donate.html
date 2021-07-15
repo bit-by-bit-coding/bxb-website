@@ -8,18 +8,44 @@ style: donate.css
 ---
 
 <h2>Donate</h2>
-<p>
-    We thank you for considering donating to Bit by Bit! 100% of the money we receive through your donation is 
-    invested directly back into improving the quality of our programs, offering new exciting summer programs, 
-    creating interactive resources, and more. All donations are tax deductible and your receipt is sent to you 
-    immediately. 
-</p>
-<p>
-    Before you donate to us, however, please recognize there are other charities that save more lives per 
-    dollar than we can with your donation. We recommend that you consider donating to 
-    <a href="https://www.givewell.org/">a GiveWell charity</a> before donating to us. If you do not plan to donate 
-    to one of these highly effective charities instead, then we welcome your donation!
-</p>
+<div class="details-container">
+
+    <div class="details-item">
+        <div id="bluebox">
+            <p>
+                100% of the money we receive through your donation is
+                invested directly back into improving the quality of our programs, offering new exciting summer
+                programs,
+                creating interactive resources, and more. All donations are tax deductible and your receipt is sent to
+                you
+                immediately.
+            </p>
+        </div>
+    </div>
+    <div class='details-item'>
+        <p>
+            We thank you for considering donating to Bit by Bit!
+        </p>
+        <p>
+            Before you donate to us, however, please recognize there are other charities that save more lives per
+            dollar than we can with your donation. We recommend that you consider donating to
+            <a href="https://www.givewell.org/">a GiveWell charity</a> before donating to us. If you do not plan to
+            donate
+            to one of these highly effective charities instead, then we welcome your donation!
+        </p>
+    </div>
+</div>
+
+
+<a
+    href="https://secure.givelively.org/donate/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups?ref=sd_widget">
+    <button class="action-button largebutton" id="fallback-button">
+Make a Donation
+    </button>
+</a>
+
+
+
 
 <div class="details-container">
     <div class="details-item">
@@ -30,14 +56,15 @@ style: donate.css
     </div>
     <div class="details-item">
         <h2>Sponsors</h2>
-        <p> A huge thanks to our sponsors who have helped us through our journey and who are helping us improve our programs!</p>
+        <p> A huge thanks to our sponsors who have helped us through our journey and who are helping us improve our
+            programs!</p>
         <img class="sponsorlogo" src="imgs/puppet-logo.jpg" alt="puppet">
     </div>
 </div>
-
 <!-- Begin Give Lively Fundraising Widget -->
 <div id="donatewidget">
-    <script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/branded_donation/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups.js';document.getElementsByTagName('head')[0].appendChild(gl);</script>
-    <div data-widget-src='https://secure.givelively.org/donate/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups?ref=sd_widget' id="give-lively-widget" class="gl-branded-donation-widget"></div>
+    <script>gl = document.createElement('script'); gl.src = 'https://secure.givelively.org/widgets/branded_donation/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups.js'; document.getElementsByTagName('head')[0].appendChild(gl);</script>
+    <div data-widget-src='https://secure.givelively.org/donate/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups?ref=sd_widget'
+        id="give-lively-widget" class="gl-branded-donation-widget"></div>
 </div>
 <!-- End Give Lively Fundraising Widget -->
