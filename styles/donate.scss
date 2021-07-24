@@ -10,7 +10,6 @@
     background-color: rgba(105, 206, 236, 0.20);
     border-radius: 15px;
     padding: 25px; 
-    margin: 15px;
     border-left: 5px solid $main;
     border-bottom: 5px solid $main;
 
@@ -22,12 +21,16 @@
     }
 }
 
+#donatewidget {
+    margin-right: 15px;
+}
 .sponsorlogo {
     width: 250px;
 }
 
 #logoContainer {
     background-color: #fff;
+    height: 70%;
 }
 
 @media only screen and (max-width: 768px) {
