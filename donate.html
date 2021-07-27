@@ -42,14 +42,19 @@ style: donate.css
 
 <div class="details-container">
     <div class="details-item">
-        <h2>Make A Donation</h2>
-        <!-- Begin Give Lively Fundraising Widget -->
         <div id="donatewidget">
+            <h2>Make a Donation</h2>
+            <div id="donatewidget">
             <script>gl = document.createElement('script'); gl.src = 'https://secure.givelively.org/widgets/branded_donation/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups.js'; document.getElementsByTagName('head')[0].appendChild(gl);</script>
             <div data-widget-src='https://secure.givelively.org/donate/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups?ref=sd_widget'
                 id="give-lively-widget" class="gl-branded-donation-widget"></div>
+            </div>
         </div>
-        <!-- End Give Lively Fundraising Widget -->
+        <div id="fallback-button">
+            <a href="https://secure.givelively.org/donate/bit-by-bit-coding/improving-coding-education-to-underrepresented-groups?ref=sd_widget">
+                <button class="largebutton action-button">Donate Now</button>
+            </a>
+        </div>
     </div>
     <div class="details-item">
         <h2>Sponsors</h2>

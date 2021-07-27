@@ -50,13 +50,15 @@
             font-size: 1em;
         }
     }
-}
-
-@media only screen and (max-width: 768px) {
     #donatewidget {
         display: none;
     }
+    #fallback-button {
+        display: block;
+    }
+    
 }
+
 @media (min-width: 769px) {
     #fallback-button {
         display: none;
