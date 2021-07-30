@@ -10,7 +10,7 @@ style: usreferral.css
 <div id="uncommonsense">
     <div class="details-container">
         <div class="details-item">
-            <h1>Uncommon Sense Summer Seminar</h1>
+            <h1 class="noslashes" >Uncommon Sense Seminar</h1>
             <div class="info-banner">
                 Play with cutting-edge artificial intelligence and try to figure out its impact on the world.
             </div>
@@ -20,172 +20,201 @@ style: usreferral.css
             <div class="info-banner">
                 Compete in the <strong>The Economist's World in 2021</strong> forecasting challenge.
             </div>
+            
+            <div class="subtitle">
+                <!-- in-line color text-->
+                <p >        Uncommon Sense is a free critical thinking summer program for rising highschool freshmen to rising college freshmen hosted in California.</strong></p>
+                <p >        Nominations are due on May 30th at 11:59 PM Pacific Time. </p>
+                <p><strong>The application deadline has been extended to June 4th at 11:59 PM Pacific Time</strong>.</p>
+            </div>
+            <br>
+            <!--<a href="{{ 'usreferral.html' | relative_url | remove: '.html' }}" id="us-signup"><button
+                class="action-button largebutton">Apply</button></a>
+            -->
+            <section class="details-container">
 
-            <p>Everyone, from students to world leaders, makes countless decisions each day such as:</p>
-            <p>
-                Should you be taking vitamin D to prevent COVID 
-                (<a href="https://doi.org/10.1016/j.jsbmb.2020.105751">one study shows it significantly reduced 
-                COVID-19 hospitalizations</a> but 
-                <a href="https://www.nature.com/articles/s41598-020-77093-z">another study shows it doesn’t 
-                    help patients who are already hospitalized</a>)?
-            </p>
-            <p>
-                What career will make you happiest and have the best impact on the world (a 
-                <a href="https://80000hours.org/2012/08/how-many-lives-does-a-doctor-save/">doctor typically 
-                    only saves</a>  
-                as many lives as 
-                <a href="https://80000hours.org/2017/05/how-much-do-hedge-fund-traders-earn/#how-do-hedge-funds-make-money-and-how-is-it-shared-among-the-employees">a quantitative trader</a> 
-                <a href="https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models">donating</a> 
-                1% of their income)?
-            </p>
-            <p>
-                How should the US tackle climate change (<a href="https://www.vox.com/2014/10/4/6901299/plastic-bags-environment">a 
-                plastic bag ban may actually increase emissions</a>, 
-                though it would decrease litter)?
-            </p>
+                <a href="{{ 'usreferral.html' | relative_url | remove: '.html' }}" id="us-signup"><button
+                    class="action-button largebutton" >Apply</button></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeh8SZo0AByYkF63PjRuR0OgqChISqPOJfb86zTSj4IBWRPXw/viewform"
+                        id="us-nominate"><button class="action-button largebutton" >Nominate a Student</button></a>
+            </section>
+            
 
+            <h3 class="noslashes">What is Uncommon Sense?</h3>
+            <p>Uncommon Sense is an <strong>all-expenses-paid</strong>, critical thinking program held in
+                Pescadero, California
+                in partnership with
+                <a href="https://web.stanford.edu/group/ea/">
+                    Stanford Effective Altruism</a>.
+                Twenty students aged 14-18 will be selected from across the country to be
+                flown in to participate in this program from July 31st to August 6th at <a href="https://www.ventureretreat.org/accommodations">Venture Retreat Center</a>. Students will not pay for food,
+                housing, or transportation to participate. This program is sponsored by a philanthropic
+                grant to increase the number of students that do extraordinary work in their future careers.
+            </p>
             <p>
-                <strong>Too often, these decisions are automatic, or influenced by our cognitive biases, or 
+                Students will listen to and converse with speakers from <strong>Stanford, OpenAI, and Carnegie Mellon
+                    University</strong>.
+                Participants will get to explore concepts at the heart of disciplines such as machine learning, game
+                theory, and statistics,
+                and will begin to see the profound ways that these concepts connect to the world.
+                <!--and to each other-->
+
+                Evolution regulates living organisms and the spread of ideas; 
+                Bayes theorem can be used to predict whether or not you have COVID, but it might also explain the cause of depression; 
+                activation energy can tell you when a chemical reaction will occur and when a social movement will start.
+                And all of these tie into the decisions we make every single day.
+            </p>
+            <h3 class="noslashes">Our Philosophy</h3>
+            <p> Everyone, from students to world leaders, makes countless decisions each
+                day such as:
+            <ul>
+                <li>
+                    Should you be taking vitamin D to prevent COVID
+                    (<a href="https://doi.org/10.1016/j.jsbmb.2020.105751">one study shows it significantly reduced
+                        COVID-19 hospitalizations</a> but
+                    <a href="https://www.nature.com/articles/s41598-020-77093-z">another study shows it doesn’t
+                        help patients who are already hospitalized</a>)?
+                </li>
+                <li>
+                    What career will make you happiest and have the best impact on the world (a
+                    <a href="https://80000hours.org/2012/08/how-many-lives-does-a-doctor-save/">doctor typically
+                        only saves</a>
+                    far fewer lives than
+                    <a
+                        href="https://80000hours.org/2017/05/how-much-do-hedge-fund-traders-earn/#how-do-hedge-funds-make-money-and-how-is-it-shared-among-the-employees">a
+                        quantitative trader</a>
+                    <a
+                        href="https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models">donating</a>
+                    1% of their income)?
+                </li>
+                <li>
+                    How should the US tackle climate change (<a
+                        href="https://www.vox.com/2014/10/4/6901299/plastic-bags-environment">a
+                        plastic bag ban may actually increase emissions</a>,
+                    though it would decrease litter)?
+                </li>
+            </ul>
+            </p>
+            <p>
+                <strong>Too often, these decisions are automatic, or influenced by our cognitive biases, or
                     dictated by social norms.
                 </strong>
-                Even people’s most strongly held opinions are often just a product of their environment, not 
-                something they’ve actually thought through and come to their own conclusion on ⁠— you can 
-                predict someone’s political party with, 
+                Even people’s most strongly held opinions are often just a product of their environment, not
+                something they’ve actually thought through and come to their own conclusion on ⁠— you can
+                predict someone’s political party with,
                 <a href="https://news.gallup.com/poll/14515/teens-stay-true-parents-political-perspectives.aspx">
-                    70% accuracy
-                </a> 
-                based on how their parents voted.
+                    70% accuracy</a>
+                based on how their parents voted. We want to fix that. Our goal is to <strong>help people determine how
+                    they think the world works and what they can do to shape it</strong>.
             </p>
-
-            <p>
-                <strong>What is Uncommon Sense?</strong>
-                Our program is a free online seminar for high schoolers offered in partnership with 
-                <a href="https://web.stanford.edu/group/ea/">
-                    Stanford Effective Altruism
-                </a>
-                that gives inquisitive high schoolers the opportunity to master decision-making techniques based 
-                in philosophy, economics, game theory, cognitive science, and statistics. Our teaching team of 
-                Stanford students provides students with valuable critical thinking skills in a unique 
+              <p>
+                In order to increase the number of students that do highly meaningful and remarkable work, we seek to help our students
+                develop rigorous and independent worldviews that they can use to effect positive change on a large scale in their careers.
+              </p>  
+              <!--
+                <p>We make countless decisions everyday. <!--However, these decisions may be less independent than we may think.--
+                  Too often, however, these decisions are either made automatically without conscious deliberation,
+                  or are dictated by cognitive biases and social norms. 
+                  Even the opinions that we hold strongest seem to in large part come from those around us, rather than
+                  from independent conclusions derived from careful thought. For example, one can
+                  predict another’s political affiliation with
+                  <a href="https://news.gallup.com/poll/14515/teens-stay-true-parents-political-perspectives.aspx">
+                      70% accuracy</a> just based on how their parents voted. 
+                      Without deliberation, our beliefs may be less independent than we normally may be inclined assume. -->
+                <!-- <p>
+                
+                that gives inquisitive high schoolers the opportunity to master decision-making techniques based
+                in philosophy, economics, game theory, cognitive science, and statistics. Our teaching team of
+                Stanford students provides students with valuable critical thinking skills in a unique
                 discussion-based format.
-            </p>
-            <p>
-                Students will use the skills they learn in Uncommon Sense to compete in global forecasting 
-                competitions like 
+            </p> -->
+                <!-- <p>
+                Students will use the skills they learn in Uncommon Sense to compete in global forecasting
+                competitions like
                 <a href="https://www.gjopen.com/challenges/50-the-economist-the-world-in-2021">
                     The Economist's World in 2021 forecasting challenge
-                </a> for the chance to win the 
-                title of Superforecaster. In these contests, students will practice answers to questions such as 
-                “How many COVID-19 vaccines will be approved and/or authorized for emergency use by the U.S. FDA 
-                as of 31 March 2021?” and “What will be China's year-on-year GDP growth rate for the second quarter 
+                </a> for the chance to win the
+                title of Superforecaster. In these contests, students will practice answers to questions such as
+                “How many COVID-19 vaccines will be approved and/or authorized for emergency use by the U.S. FDA
+                as of 31 March 2021?” and “What will be China's year-on-year GDP growth rate for the second quarter
                 of 2021?”
-            </p>
+            </p> -->
             <p>
-                In addition to forecasting, accepted students will learn to build models of complex systems, create 
-                Bayesian priors, examine and combat their cognitive biases, and make more accurate predictions. Classes 
-                are project-based, incorporating interactive activities such as a cold war nuclear simulation, an 
-                iterated prisoner’s dilemma tournament, betting with fake currency, and much more.
-            </p>
-            <p>
-                Above all, Uncommon Sense will help you reconsider the countless decisions you make each day, like:
-            </p>
-            <p>
-                Should you be taking vitamin D to prevent COVID 
-                (<a href="https://doi.org/10.1016/j.jsbmb.2020.105751">one study shows it significantly reduced COVID-19 
-                    hospitalizations
-                </a> 
-                but 
-                <a href="https://www.nature.com/articles/s41598-020-77093-z">
-                    another study shows it doesn’t help patients who are already hospitalized</a>)? 
-                What career will make you happiest and have the best impact on the world  
-                (<a href="https://80000hours.org/2012/08/how-many-lives-does-a-doctor-save/">a doctor typically only saves
-                </a>
-                as many lives as 
-                <a href="https://80000hours.org/2017/05/how-much-do-hedge-fund-traders-earn/#how-do-hedge-funds-make-money-and-how-is-it-shared-among-the-employees">
-                    a quantitative trader
-                </a> 
-                <a href="https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models">
-                    donating
-                </a> 
-                1% of their income)? How should the US tackle 
-                climate change (<a href="https://www.vox.com/2014/10/4/6901299/plastic-bags-environment">a plastic bag ban may actually 
-                    increase emissions</a>, though it would decrease litter)?
-            </p>
-            <p>
-                Graduates of Uncommon Sense will gain the skills they need to come to their own conclusions about 
-                critical problems, make more informed choices, and better understand the levers and gears in the world 
-                around them.
-            </p>
-            <p>
-                The program consists of a variety of lectures, discussions, games, and activities all conducted online 
-                weekdays between the hours of 10am and 8 pm PT from July 28th to June 9th. On average, there are about 1 
-                hour of required real-time activities, 2 hours of optional real-time activities, and 2 hours of asynchronous 
-                work each day.
+                This summer, participants will learn how to build models of complex systems,
+                <a
+                    href="https://www.gjopen.com/challenges/50-the-economist-the-world-in-2021">compete
+                to forecast
+                answers to important geopolitical questions</a>, create
+                Bayesian priors to make predictions, examine and mitigate their cognitive biases, and develop better
+                understandings of the world.
+                Our program is project-based, incorporating interactive activities such as a cold war nuclear
+                simulation, an
+                iterated prisoner’s dilemma tournament, creating markets using fake currency, and much more.
             </p>
 
-            <a
-            href="{{ 'usreferral.html' | relative_url | remove: '.html' }}" id="us-signup"><button
-                    class="action-button largebutton">Apply</button></a>
+            <p>
+                Graduates of Uncommon Sense will gain the skills they need to come to their own conclusions about
+                critical problems, and be able to make more informed choices to achieve their goals and shape the
+                world around them.
+            </p>
+
+            <h3 class="noslashes">The Application</h3>
+
+            <p>To apply for Uncommon Sense, students must first request a teacher nomination. Please ask the teacher you
+                know best to <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeh8SZo0AByYkF63PjRuR0OgqChISqPOJfb86zTSj4IBWRPXw/viewform">nominate
+                    you</a>. However, if you are homeschooled, or have other extenuating circumstances, please
+                <a href="mailto:{{site.contact.email}}">contact us</a>. Teachers may not nominate more than ten
+                students. <strong>Nominations are due at May 30th 11:59 PM Pacific Time. </strong>
+            </p>
+            <p>Once nominated, students must <strong>apply by our extended deadline, June 4th at 11:59 PM Pacific Time</strong>.
+                We will request interviews from promising applicants over the following week.
+                We aim to release decisions before June 30th.
+            </p>
+            <!--
+            <p>
+                Nomination & Application Deadline: May 30th. <br>
+                Interviews: June 1 - June 7. <br>
+                Final Decisions: June 30th.
+            </p>-->
+            <!-- In-line red background color-->
+            
+
         </div>
     </div>
 
     <div class="section">
         <section class="faqs" id="faqs">
-            <h3>FAQs</h3>
+            <h3 class="noslashes">FAQs</h3>
             <h4 class="noslashes">About the program</h4>
             <details>
-                <summary>What, exactly, do you teach?</summary>
+                <summary>What specifically do you teach?</summary>
                 <p>
-                    Great question! The things we teach fall into two broad categories:
+                    <!--Great question! -->The strategies we teach fall into two broad categories:
                 <ol>
                     <li>
-                        Instrumental Rationality: the skills you need to achieve your goals. What do you value for
-                        its own sake? What are the things you want to achieve above all else, the things your other
+                        <strong>Instrumental Rationality: the skills you need to achieve your goals.</strong>
+                        What do you value for
+                        its own sake? What are the goals you want to achieve above all else, the goals your other
                         actions are stepping-stones towards? These terminal goals could be happiness, improving the
-                        world, becoming famous, anything. Now ask yourself what you did this past hour. Was it the
-                        best possible action you could have taken to achieve your goals? We help you achieve your
+                        world, becoming famous, or anything. Now ask yourself what you did this past hour. Was it the
+                        best possible action you could have taken to achieve your goals?
+                        We help you achieve your
                         goals by giving you tools that help you become accustomed to making plans and habits that
-                        actually work and inch you in the direction you want to go.
+                        actually work, and inch you in the direction you want to go.
                     </li>
                     <li>
-                        Epistemic rationality: the use of evidence and reason to form accurate beliefs about the world.
+                        <strong>Epistemic rationality: the use of evidence and reason to form accurate beliefs about the
+                            world.</strong>
                         Specific skills we will teach include Bayesian reasoning, statistics, epistemology, cognitive
-                        biases, forecasting, and building models of complex systems. We teach epistemic rationality by
-                        offering interesting and complex ideas for you to discuss, debate, and form beliefs about. We
-                        also equip you with useful ideas that help you think clearly about uncertainty and complex
+                        biases, forecasting, and the study of complex systems.
+                        We teach epistemic rationality by
+                        offering interesting and complex ideas for students to discuss, debate, and form beliefs about.
+                        We also equip participants with useful ideas that help to think clearly about uncertainty and
+                        complex
                         systems.
                     </li>
                 </ol>
-                </p>
-            </details>
-            <details>
-                <summary>What do you mean by "beliefs"?</summary>
-                <p>
-                    When we say “belief,” we mean anything you think is true about the world. Something as simple as
-                    “the
-                    sky is blue” is a belief. So is something as controversial as “GMOs are safe to eat.” Beliefs are
-                    not
-                    indisputable Truths about the world--you can be very confident in some beliefs, but you should still
-                    be
-                    willing to change your mind about them based on evidence. If I go outside and see that the sky is
-                    purple,
-                    I might change my mind about believing the sky is blue. If I read a study that says many GMOs have
-                    been
-                    linked to cancer, I might change my mind about GMOs being safe.
-                </p>
-                <p>
-                    Many people think their beliefs are infallible. They spend most of their time trying to persuade
-                    other
-                    people of their beliefs and very little of their time seeing if other people's beliefs persuade them
-                    to
-                    change their own opinions. But most people also fiercely disagree with each other about many of
-                    their
-                    core beliefs (X political party is best, Y religion is true, Z is the most important issue facing
-                    humanity right now). So it stands to reason that many of them are simply wrong and unwilling to even
-                    entertain this possibility. Uncommon Sense is for the people who think they could be wrong about
-                    their
-                    beliefs, people who seek out contrasting viewpoints to test their beliefs, people who see changing
-                    their
-                    beliefs as an opportunity to learn rather than as a personal attack.
                 </p>
             </details>
             <details>
@@ -205,7 +234,7 @@ style: usreferral.css
                     Here are a few fun little puzzles that should give you a taste of the flavor of questions we
                     focus on:
                 <ul>
-                    <li>You are in a jury trying to decide whether or not to condemn someone for kidnapping and
+                    <li>You are on a jury trying to decide whether or not to condemn someone for kidnapping and
                         ransoming an innocent man. Police are certain the perpetrator was one of 30 people staying
                         in a certain motel who match the basic demographics of the kidnapper and have weak alibis.
                         The businessperson then picked the accused out of a lineup. You know a perpetrator gets
@@ -229,7 +258,7 @@ style: usreferral.css
                             paradox of voting
                         </a>
                         , voting is never a rational choice for a self-interested individual to make because your
-                        vote has a miniscule chance of influencing the election but there is a significant cost to
+                        vote has a minuscule chance of influencing the election but there is a significant cost to
                         yourself to go out and vote. Yet, it’s possible that even a selfish person should go out
                         and vote. Why might this be?
                         (<a
@@ -239,33 +268,43 @@ style: usreferral.css
                 </p>
             </details>
             <details>
-                <summary>Why are you qualified to teach this?</summary>
+                <summary>Is transportation included?</summary>
                 <p>
-                    We are a team of Stanford students with experience in computer science, economics, machine
-                    learning, and public policy. We have combined our own knowledge and experiences with select
+                    Yes. Students will not pay for their flights and additional transportation. 
+                </p>
+            </details>
+            <details>
+                <summary>Who are the instructors?</summary>
+                <p>
+                    We are a team of Stanford, MIT, and Carnegie Mellon students with experience in computer science,
+                    economics, machine
+                    learning, and public policy. We have combined our knowledge and experiences with select
                     ideas from cognitive science, economics, psychology, philosophy, computer science, and forecasting,
-                    game theory, statistics, and many other fields. (These various disciplines may all seem disparate,
-                    but they all provide useful tools that help instill what it means to think critically.) We
-                    regularly
-                    run programs to teach these concepts to Stanford students, and we developed our curriculum with
-                    advice from people who have run workshops, summer camps, and seminars aimed at teaching critical
-                    thinking techniques to professionals, high schoolers, and students at top universities.
+                    game theory, statistics, and many other fields. While these various disciplines may all seem
+                    disparate,
+                    they all provide useful tools that help instill what it means to think critically.
+                    At Stanford, we regularly run programs to teach these concepts to peers; through this we have
+                    developed our curriculum
+                    with the guidance of those who have run workshops, summer camps, and seminars aimed at teaching
+                    critical
+                    thinking techniques to professionals, students at top universities, and high school students.
                 </p>
                 <p>
-                    But at the end of the day, we don’t claim to be more rational or correct than anyone else. We think
-                    we have some ideas people might find useful, ideas we’ve thought about and some ideas we’ve adapted
-                    from organizations like <a href="https://www.rationality.org/">CFAR</a> (though we are not
-                    affiliated
-                    with them). We regularly try new teaching methods and are constantly and iterating, learning, and
-                    improving. It seems like students in our programs agree, as does preliminary data we’ve been
-                    collecting
-                    about the efficacy of our program (though our sample size is small and we can’t implement a RCT).
-                    We encourage you to be skeptical of everything we say and call us out if you think we’re wrong about
-                    something.
+                    But at the end of the day, we don’t claim to be more rational or correct than anyone else. But we do
+                    think
+                    we have some ideas that others might find useful. We have adapted ideas
+                    from organizations like <a href="https://www.rationality.org/">The Center for Applied
+                        Rationality</a> (no affiliation), for example.
+                    We regularly try new teaching methods and are constantly and iterating, learning, and
+                    improving. It seems that the students in our previous programs agree—as does the preliminary data
+                    we’ve been
+                    collecting about the efficacy of our program (although our sample size is small and we can’t
+                    implement a RCT).
+                    We encourage students to be skeptical of all that we say, and call us out when we may be wrong.
                 </p>
                 <p>
-                    We’d love for you to apply and test the program out! If it’s not useful, you’re free to leave
-                    (and maybe give us some feedback!)
+                    <!--We’d love for you to apply and test the program out! If it’s not useful, you’re free to leave
+                    (and maybe give us some feedback!)-->
                 </p>
             </details>
             <details>
@@ -278,26 +317,27 @@ style: usreferral.css
                 </p>
             </details>
             <details>
-                <summary>What does a typical meeting look like?</summary>
+                <summary>What does a typical day during the program look like?</summary>
                 <p>
-                    Students start each day with a five-minute <a href="https://en.wikipedia.org/wiki/Fermi_problem">
-                        Fermi problem</a> warm-up. Then, we dive into the day’s concept. Each week focuses on adding
-                    a different tool to students’ repertoire, and weeks are grouped into monthly themes like “statistics”
-                    and “ethical frameworks.” Often, the week’s focus is determined by what students want to learn
-                    more about. Examples of weekly topics include: Game Theory as a Dark Art, Cognitive Biases
-                    Speedround, Intro to Forecasting, The Economics of Your Career Choice, and How to Read a
-                    Scientific Study. Meetings typically include at least ten minutes of discussions in small groups
-                    as well about twenty minutes dedicated to activities that explore a concept in-depth. Some sample
-                    discussion questions: How Do you think equality is a terminal or instrumental goal?
+                    Students start each day with a morning meeting and breakfast. Then, we dive into the day’s concept.
+                    Each
+                    day focuses on adding
+                    a different tool to students’ repertoire, and weeks are grouped into monthly themes like
+                    “statistics”
+                    and “ethical frameworks.” There will be 1-2 discussions each day, 1-2 activities, and plenty of fun
+                    and social events. There will also be time to work on projects or explore a concept from the day in
+                    smaller groups.
+                    Examples of discussion topics include: Game Theory as a Dark Art, Cognitive Biases
+                    Speed-round, Intro to Forecasting, The Economics of Your Career Choice, and How to Read a
+                    Scientific Study.
                 </p>
                 <p>
                     Activities include: a cold war nuclear simulation,
                     <a href="https://en.wikipedia.org/wiki/Stag_hunt">stag hunts</a>, a walk through a map of moral
-                    philosophies, a lottery with varying odds, and a chance to forecast when at least 10 million
-                    Americans will receive a COVID-19 vaccine.
+                    philosophies, a lottery with varying odds, and a chance to forecast when the U.S. will reach herd immunity with COVID.
                 </p>
             </details>
-            <details>
+            <!--<details>
                 <summary>Why should I sign up for this?</summary>
                 <p>
                     If you love to poke, prod, and question this complicated thing called “reality” and figure out
@@ -305,76 +345,232 @@ style: usreferral.css
                     or something else), and if you want to join a community of people who strive to become sharper
                     and stronger and better informed, then this is the place for you.
                 </p>
+            </details>-->
+            <details>
+                <summary>What do you mean by "beliefs"?</summary>
+                <p>
+                    When we say “belief,” we mean anything you think is true about the world. Something as simple as
+                    “the
+                    sky is blue” is a belief. So is something as controversial as “GMOs are safe to eat.” Beliefs are
+                    not
+                    indisputable truths about the world--you can be very confident in some beliefs, but you should still
+                    be
+                    willing to change your mind about them based on evidence. If I go outside and see that the sky is
+                    purple,
+                    I might change my mind about believing the sky is blue.
+                    If I read a study that says many GMOs have
+                        been
+                        linked to cancer, I might change my mind about the safety of GMOs.
+                </p>
+                <p>
+                    Many people think their beliefs are infallible. They spend most of their time trying to persuade
+                    other
+                    people of their beliefs and very little of their time seeing if other people's beliefs persuade them
+                    to
+                    change their own opinions. But most people also fiercely disagree with each other about many of
+                    their
+                    core beliefs (X political party is best, Y religion is true, Z is the most important issue facing
+                    humanity right now). So it stands to reason that many of them are simply wrong and unwilling to even
+                    entertain this possibility. Uncommon Sense is for the people who think they could be wrong about
+                    their
+                    beliefs, people who seek out contrasting viewpoints to test their beliefs, people who see changing
+                    their
+                    beliefs as an opportunity to learn rather than as a personal attack.
+                </p>
             </details>
+            <!--
             <details>
                 <summary>What if I have more questions?</summary>
-                <p>We would love to hear from you! Email us at <a
-                        href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>.</p>
+                <p>We would love to hear from you! .</p>
+            </details>-->
+            <details>
+                <summary>Is it really free/what's the catch?</summary>
+                <p>
+                    Everything is 100% free, no strings attached! We simply want the world to be a better place, and we
+                    feel that one of the best ways to do that is by empowering high school students to tackle the
+                    world's
+                    most pressing problems.
+                </p>
             </details>
             <details>
                 <summary>What’s the difference between this program and the school-year program you offer?</summary>
                 <p>
-                    The summer seminar is a much more intense, interactive, and rigorous program than our extracurricular offering. The summer program demands a much deeper level of intellectual engagement that includes projects, write-ups, and readings. We feel these aspects are necessary to prepare students to fully understand, utilize, and build off of the tools and concepts we teach. The summer program also fosters a community of talented students who see eachother every day for discussions, games, and collaborative projects. This kind of environment isn’t possible with a school-year program that only meets for an hour a week.
+                    The summer seminar is a much more intense, interactive, and rigorous program than our
+                    extracurricular offering. The summer program demands a much deeper level of intellectual engagement
+                    that includes projects, write-ups, and readings. We feel these aspects are necessary to prepare
+                    students to fully understand, utilize, and build off of the tools and concepts we teach. The summer
+                    program also fosters a community of talented students who see each other every day for discussions,
+                    games, and collaborative projects. This kind of environment isn’t possible with a school-year
+                    program that only meets for an hour a week.
+                </p>
+            </details>
+
+            <!-- <details>
+                <summary>How does the schedule work?</summary>
+                <p>
+                    We expect students to carve out plenty of time for or program during the weeks where it runs. The
+                    full schedule will be announced soon, but in general, there will be several meetings lasting 30-120
+                    minutes throughout the day. The hope is that this model will minimize “Zoom fatigue.” Some
+                    activities will be mandatory, while others will be optional. There will also be asynchronous
+                    activities like meetings with groups of other students to work on projects, independent readings,
+                    time to write and think independently, and other challenges. We expect there to be about 1 hour of
+                    required real-time activities, 2 hours of optional real-time activities, and 2 hours of asynchronous
+                    work each weekday.
+                </p>
+            </details> -->
+            <br>
+            <h4 class="noslashes">COVID-19</h4>
+
+            <details>
+                <summary>How are you taking COVID precautions?</summary>
+                <p>
+                    We take COVID-19 very seriously. All instructors and guests who attend in-person will be vaccinated,
+                    while other speakers will be virtual to limit risks of transmission.
+                    Most participants will need to be vaccinated, and regular testing will be done during the program.
+                    We will provide N-95s to all participants for their air travel, and will offer masks throughout the
+                    program. Non-vaccinated students will not share rooms with each other, and will be asked to social
+                    distance throughout the program.
+                    All participants will track their <a
+                        href="https://www.microcovid.org/?distance=sixFt&duration=360&interaction=oneTime&personCount=20&riskProfile=average&setting=plane&subLocation=US_41029&theirMask=basic&topLocation=US_41&voice=silent&yourMask=basic">COVID
+                        risk</a>
+                    in the weeks leading up to the program.
                 </p>
             </details>
             <details>
-                <summary>How does the schedule work?</summary>
+                <summary>Who will be vaccinated?</summary>
                 <p>
-                    We expect students to carve out plenty of time for or program during the weeks where it runs. The full schedule will be announced soon, but in general, there will be several meetings lasting 30-120 minutes throughout the day. The hope is that this model will minimize “Zoom fatigue.” Some activities will be mandatory, while others will be optional. There will also be asynchronous activities like meetings with groups of other students to work on projects, independent readings, time to write and think independently, and other challenges. We expect there to be about 1 hour of required real-time activities, 2 hours of optional real-time activities, and 2 hours of asynchronous work each weekday.
+                    All instructors and guests will be vaccinated. While California
+                    speakers will visit in-person, other speakers will be virtual to limit risks of transmission from
+                    flights. All people over the age of 16 must be vaccinated if it is safe for them to do so. Those who are unvaccinated will be staying in their own cabins.
+                </p>
+            </details>
+            <details>
+                <summary>What precautions will be taken after students arrive at the program?</summary>
+                <p>
+                    Aside from vaccinations, rapid tests will be required every other day, including 3 days before the program begins. Free p100 masks will be provided. Temperature checks will be performed daily. 
                 </p>
             </details>
             <br>
             <h4 class="noslashes">About nominations</h4>
+
             <details>
-                <summary>What if I have no one to nominate me?</summary>
+                <summary id="nominate">As a teacher, what kind of students should I nominate?</summary>
+                <!-- MOVE THIS TO APPLICATION FORM-->
                 <p>
-                    If you do not know anyone suitable to nominate you (ie if you are homeschooled), please email <a href="mailto:{{site.contact.email}}">info@bitbybitcoding.org</a> explaining your situation.
-                </p>
-            </details>
-            <details>
-                <summary>What if I want to nominate more than 10 students?</summary>
-                <p>
-                    We recognize some instructors may know an unusual number of good candidates for our program (for example if they run a class on critical thinking). If you feel confident that more than 10 of your students would  be an excellent fit for Uncommon Sense, email <a href="mailto:{{site.contact.email}}">info@bitbybitcoding.org</a> briefly explaining your circumstances.
-                </p>
-            </details>
-            <details>
-                <summary>What kind of students should I nominate?</summary>
-                <p>
-                    Things that might make students a good fit for Uncommon Sense include:
+                    We expect that students who possess at least a few of the traits and inclinations below will be
+                    great fits for Uncommon Sense.
                 </p>
                 <ul>
-                    <li>Having agency: when faced with a challenge, do they come up with and pursue their own solutions without being prompted or told to do so? Do they work on ambitious projects on their own?</li>
-                    <li>Carefully thinking through their values and actions: when they make important decisions, do they know precisely why they are making them?</li>
-                    <li>A tendency to optimize for important goals: when they want to do something, do they plan out their actions and consider many options? When shown a better way to do a difficult task, do they adopt the new method? When they decide how to use their time or resources, do they think about the alternative ways they could use these resources?</li>
-                    <li>An affinity for truth: do they seek out ideas that challenge their opinions? If they find evidence that contradicts their opinions, do they eagerly change their mind? Do they enjoy learning end exploration?</li>
-                    <li>Interest in rationality and cognition: do they want to improve their thinking? Do they enjoy talking about cognitive biases, or reading about psychology, economics, AI, cognitive science, philosophy, or a related subject?</li>
-                    <li>A desire to make the world better: do they have a drive to achieve some lofty goal to improve the world? Do they care about the details of this plan and are they taking steps to achieve it?</li>
+                    <li>Having agency: when faced with a challenge, does the student invent and pursue their own
+                        solutions
+                        without being prompted or told to do so? Do they work on ambitious projects on their own?</li>
+                    <li>Carefully thinking through their values and actions: when they make important decisions, do they
+                        know the precise reasons behind their decisions?</li>
+                    <li>A tendency to optimize for important goals: when the student wants to do something, do they plan
+                        out
+                        their actions and consider many options? When shown a better way to do a difficult task, do they
+                        adopt the new method? When they decide how to use their time or resources, do they think about
+                        the alternative ways they could use these resources?</li>
+                    <li>An affinity for truth: does this student seek out ideas that challenge their opinions? If they
+                        find
+                        evidence that contradicts their opinions, do they eagerly change their mind? Do they enjoy
+                        learning and exploring?</li>
+                    <li>Interest in rationality and cognition: has this student demonstrated a desire to improve their
+                        thinking? Do they enjoy
+                        talking about cognitive biases, or reading about psychology, economics, AI, cognitive science,
+                        philosophy, or a related subject?</li>
+                    <li>A desire to make the world better: does this student have a drive to achieve some lofty goal to
+                        improve
+                        the world? Do they care about the details of this plan and are they taking steps to achieve it?
+                    </li>
+                    <!-- old summary 
+                    We expect that students who possess at least a few of the following traits and inclinations will be great fits for Uncommon Sense:
+
+                    - possesses agency and independent ambition. (When faced with a challenge, does the student invent and pursue their own solutions without being prompted or told to do so?)
+
+                    - carefully thinks through their decisions with reason and evidence
+
+                    - creates effective plans for achieving their important goals
+
+                    - possessing an affinity for truth, especially when it contradicts their current beliefs
+
+                    - desires to make the world a better place, has a plan to do this, and has taken steps towards their plan
+
+                    - has an interest in rationality and cognition topics such as cognitive biases, psychology, economics, AI, and philosophy.
+
+
+                    A good applicant probably possesses at least three of these traits, though there are sure to be plenty of exceptions. For more details, please see the end of the FAQ section at bitbybitcoding.org/uncommonsenseseminar#faqs-->
                 </ul>
                 <p>
-                    A good applicant probably possesses at least three of these traits, though there are sure to be plenty of exceptions. These are merely guidelines.
+                    A good applicant probably possesses at least three of these traits, though there are sure to be
+                    plenty of exceptions. These are merely guidelines.
                 </p>
             </details>
             <details>
-                <summary>Why do you require teacher nominations to apply?</summary>
+                <summary>As a student, what if I don’t have anyone to nominate me?</summary>
                 <p>
-                    Our program is not suitable for all students. The pace is fast, the questions are tough, and the work is demanding. We need students who thrive in tackling difficult questions, who value science and knowledge, and who actually want to learn the material we offer rather than to collect a name for their resume.
+                    If you do not know anyone suitable to nominate you (ie if you are homeschooled), please email <a
+                        href="mailto:{{site.contact.email}}">info@bitbybitcoding.org</a> explaining your situation.
+                </p>
+            </details>
+            <details>
+                <summary>As a teacher, what if I want to nominate more than 10 students?</summary>
+                <p>
+                    We recognize some instructors may know an unusual number of good candidates for our program (for
+                    example if they run a class on critical thinking). If you feel confident that more than 10 of your
+                    students would be an excellent fit for Uncommon Sense, please email us at <a
+                        href="mailto:{{site.contact.email}}">info@bitbybitcoding.org</a>.
+                </p>
+            </details>
+            <details>
+                <summary>Why is a teacher nomination required before I can apply?</summary>
+                <p>
+                    Our program is only suitable for a unique kind of student. The pace is fast, the questions are
+                    tough, and the
+                    work is demanding. We need students who thrive in tackling difficult questions, who value science
+                    and knowledge, and who actually want to learn the material we offer rather than to collect a name
+                    for their resume.
                 </p>
                 <p>
                     Unfortunately, trying to figure out which students will thrive in our program is a difficult task.
                 </p>
                 <p>
-                    We could require students to write long essays and wax poetical about bayesian reasoning, but high school students are already inundated with application essays to write, and the best essays tend to only be a sign of good writing ability (and access to good education, familiarity with Standard American English rather than African American Vernacular English, etc). Not of the holistic kind of student we seek.
+                    We could require students to write long essays and wax poetic about bayesian reasoning, but high
+                    school students are already inundated with application essays to write, and the best essays tend to
+                    only be a sign of good writing ability (and access to good education, familiarity with Standard
+                    American English rather than African American Vernacular English, etc). This would not work for the
+                    holistic kind of
+                    student we seek.
                 </p>
                 <p>
-                    We could look at test scores, but these measure privilege and test-taking ability as much as they measure academic prowess or intellect. Moreover, many students haven’t taken these exams, and they don’t capture the traits we’re looking for very well.
+                    We could look at test scores, but these measure privilege and test-taking ability as much as they
+                    <!-- well sort of -->
+                    measure academic prowess or intellect. Moreover, many students haven’t taken these exams, and they
+                    don’t capture the traits we’re looking for very well.
                 </p>
                 <p>
-                    We could look at grades, but these can vary widely between schools, and again might reflect access to tutors and other resources more than inherent ability. Plus, grades also don’t encompass the traits we are looking for too well.
+                    We could look at grades, these can vary widely between schools, and again might reflect access
+                    to tutors and other resources more than inherent ability. Additionally, grades also don’t encompass the
+                    traits we are looking for too well.
                 </p>
                 <p>
-                    Instructors already have a holistic view of their students, and we trust their judgement much more than any other metric. Applying this simple filter prevents students who aren’t a good fit from needlessly filling out the application, and might encourage students who are a good fit but feel insecure about their talents to apply. Obviously instructor nominations are not a perfect metric, but they’re the best we have at the moment.
+                    However, instructors already have a holistic view of their students, so we trust their judgment
+                    much more
+                    than any other metric. Applying this simple filter prevents students who aren’t a good fit from
+                    needlessly filling out the application, and encourages students who are a good fit but feel
+                    insecure about their talents to apply. Obviously instructor nominations are not a perfect metric,
+                    but they’re the best we have right now.
                 </p>
             </details>
         </section>
+        <br>
+        <div class="section">
+            <section class="faqs" id="faqs">
+                <h3 class="noslashes">Have more questions?</h3>
+                <p>If you have any questions not addressed above, you may email us at <a
+                        href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>.</p>
+                <br>
+            </section>
+        </div>
     </div>
 </div>

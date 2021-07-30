@@ -13,6 +13,14 @@
   margin-bottom: 0;
 }
 
+.no-above {
+  margin-top: 0;
+}
+
+.no-above2 {
+  margin-top: -1em;
+}
+
 #uncommonsense {
   * {
       font-family: 'Duru Sans', sans-serif;
@@ -243,4 +251,90 @@ em {
 }
 #beachbot {
   height: 200px;
+}
+
+//Hello World
+.larger-text {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.medium-text{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.middle-button{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.largebutton{
+  background-image: none;
+  background-color: $lightblue;
+}
+
+.details-item{
+  margin: 0;
+}
+
+.space {
+  margin-right: 45px;
+}
+
+.blue-box{
+  align-items: center;
+  color: #fff;
+  margin: 30px -100px;
+  padding: 10px 100px;
+  background: $dark;
+  overflow: hidden;
+
+  a{
+    color: $lightblue;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 50px;
+    margin: 30px -35px;
+  }
+}
+
+#hw-image{
+  width: 25vw;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  #javascript-week{
+    padding-bottom: 30px;
+  }
+
+  #project-links{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+	#hw-image {
+		display: none;
+	}
+
+  #ff-image {
+    display: none;
+  }
+
+  .details-item{
+    margin: 10px 0;
+  }
+}
+
+//Form and Function
+#ff-image {
+  width: 20vw;
+  max-width: 350px;
+  margin: 15px;
+  margin-right: 35px;
+  padding: 0 20px;
 }
