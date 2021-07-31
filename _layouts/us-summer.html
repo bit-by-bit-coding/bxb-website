@@ -3,11 +3,11 @@
 <head>
 	<title>{{page.title}}</title>
 	{% include head.html %}
-	
+
 	{% if page.style %}
 	<link rel="stylesheet" href="styles/{{page.style}}">
 	{% endif %}
-
+	
 	{%- comment -%} this will only put the google analytics on the page when github pages builds it {%- endcomment -%}
 	{% if jekyll.environment == "production" %}
 	
@@ -17,7 +17,7 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
+	
 		gtag('config', 'UA-167759946-1');
 		//Google Ad Tag
 		gtag('config', 'AW-458476450');
@@ -47,6 +47,8 @@
 					<button class="navbutton">FAQs</button></a></li>
 				<li><a href="https://forms.gle/dF2fzhvuGbaNYokb6">
 					<button class="navbutton">Nominate a Student</button></a></li>
+				<li><a href="{{ 'uncommonsenseteam.html' | relative_url | remove: '.html' }}">
+					<button class="navbutton">Our Team</button></a></li>
 				<li><a href="{{ 'index.html' | relative_url | remove: '.html' }}">
 					<button class="navbutton">About Bit by Bit</button></a></li>
             </ul>
@@ -61,16 +63,18 @@
 			<h1 id="logoText">{{page.banner-title}}</h1>	
 		</div>
 	</div>
-	
+
 
 	<div class="content">
 		{{ content }}
 	</div>
-
+	<!-- <div id="alert">
+		<img id="alertbot" src="imgs/alertbot.PNG">
+	</div> -->
 	<!--Footer-->
 	{% include footer.html %}
-
+	
 	<!--Javascript includes-->
 	{% include script.html %}
-	
+
 </body>
