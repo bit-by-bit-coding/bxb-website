@@ -4,13 +4,25 @@
 @import "variables";
 
 .title-text{
-  font-size: 1.2em;
+  font-size: 1rem;
   display: block;
   text-align: center;
 }
 
 .no-below{
   margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  position: relative;
+  margin-bottom: 6rem;
+  margin-left: 40%;
+  margin-top: 3rem;
+  border: solid 0.5px #FFA452;
+  padding: 3rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  color:rgb(101, 105, 107)
 }
 
 .no-above {
@@ -27,7 +39,33 @@
   }
   button {
       background: $dark;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      background-color: #FFA452;
   }
+}
+
+#orange-box {
+  margin-left: 30px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #FFA640 0%, #FFE266 100%);
+  .neural-background{
+    position: absolute;
+    width: 100%;
+    bottom: 13px;
+    right: 19px;
+  }
+}
+
+#white-box {
+  background: #fff;
+  height: 210px;
+  padding: 20px 50px 20px 20px;
+  border-radius: 10px;
 }
 
 /// staggard bars ///
@@ -61,13 +99,23 @@
 }
 
 .bot {
-  max-height: 20vw;
-  padding-left: 25%;
-  padding-top: 5vh;
+  max-height: 15vw;
+  margin-top: 12rem;
+  position: absolute;
+  margin-left: 6rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  
 }
 
 .item {
-  flex: 1 1 10vw;
+  // flex: 1 1 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  font-size: 1rem;
+  position:relative;
+  margin-right: 65%;
 }
 
 .buttons {
@@ -92,7 +140,63 @@
   width: 40vw;
 }
 
-@media (max-width: 770px) {
+@media (min-width: 310px) and (max-width: 770px) {
+  #top-image {
+    width: 100%;
+  }
+  .no-below{
+    position: relative;
+    margin-left: -0.5rem;
+    text-align: left;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color:rgb(101, 105, 107)
+  }
+  .item {
+    // flex: 1 1 10vw;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-align: left;
+    
+  }
+
+  .remove-flex{
+    display: block;
+  }
+  .neural-background{
+    display: none;
+  }
+  #orange-box {
+    height: 100%;
+    #white-box {
+      height: 100%;
+      padding: 10px;
+    }
+  }
+  
+  #uncommonsense {
+      button{
+      font-size: 1.5rem;
+      padding: 15px;
+
+    }
+    .bot {
+      display: none;
+      // max-height: 30vw;
+      // margin-top: 150rem;
+      // position: absolute;
+      // margin-left: 1.3rem;
+      
+    }
+  }
+}
+
+@media ( min-width: 771px) and (max-width: 1024px) {
   #top-image {
     width: 100%;
   }
@@ -102,6 +206,25 @@
   .remove-flex{
     display: block;
   }
+  .bot {
+    max-height: 33vw;
+    margin-top: 14rem;
+    position: absolute;
+    margin-left: -1rem;
+  }
+}
+
+@media (width: 800px){
+  #uncommonsense{
+    padding: 10px;
+  }
+  .bot {
+    max-height: 35vw;
+    margin-top: 14rem;
+    position: absolute;
+    margin-left: 0.1rem;
+  }
+
 }
 
 @media screen and (min-width: 1500px){
