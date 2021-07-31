@@ -46,11 +46,25 @@
   }
 }
 
-.neural-background{
-  position: absolute;
-  width: 90vw;
-  margin-top: -48.6rem;
-  margin-left: -3.5rem;
+#orange-box {
+  margin-left: 30px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, #FFA640 0%, #FFE266 100%);
+  .neural-background{
+    position: absolute;
+    width: 100%;
+    bottom: 13px;
+    right: 19px;
+  }
+}
+
+#white-box {
+  background: #fff;
+  height: 210px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /// staggard bars ///
@@ -155,10 +169,13 @@
   }
   .neural-background{
     display: none;
-    // position: absolute;
-    // width: 90vw;
-    // margin-top: 16.6rem;
-    // margin-left: 3rem;
+  }
+  #orange-box {
+    height: 100%;
+    #white-box {
+      height: 100%;
+
+    }
   }
   
   #uncommonsense {
@@ -188,11 +205,6 @@
   .remove-flex{
     display: block;
   }
-  .neural-background{
-    position: absolute;
-    width: 95.7vw;
-    margin-top: -6.8rem;
-  }
   .bot {
     max-height: 33vw;
     margin-top: 14rem;
@@ -204,12 +216,6 @@
 @media (width: 800px){
   #uncommonsense{
     padding: 10px;
-  }
-  .neural-background{
-    position: absolute;
-    width: 95.4vw;
-    margin-top: 9rem;
-    margin-left: -0.07rem;
   }
   .bot {
     max-height: 35vw;
