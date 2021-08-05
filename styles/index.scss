@@ -2,15 +2,6 @@
 --- 
 @import 'variables';
 
-.bot {
-	margin-top: 20px;
-}
-
-.section img {
-	height: 200px;
-	padding-left: 75px;
-}
-
 #righttext {
 	flex-grow: 10;
 }
@@ -24,27 +15,72 @@
 	}
 }
 
-#pumpkin {
+.box {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-img {
+	height: 150px;
+	padding-top: 10px;
+}
+
+#seasonal {
 	width: 225px;
-	height: auto;
 }
 
 @media screen and (min-width: 992px) {
-	#pumpkin {
+	#seasonal {
 		width: 175px;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.computerbot {
-		display: none;
+	#seasonal {
+		width: 100px;
 	}
-	#pumpkin {
-	padding: 0;
-	}
-	.bot {
+	.box-img {
 		display: block;
-		margin: auto;
 		padding-left: 0 !important;
 	}
 }
+
+.plain {
+	text-decoration: none;
+	h3 {
+		text-decoration: underline;
+	}
+	p {
+		color: $body-color;
+	}
+	&:hover {
+        color: $dark;
+    }
+}
+
+#fundraising-banner {
+	background:linear-gradient(-45deg, #ffc0799d 0%, #48afce83 100%) ;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+#bannertop {
+	padding: 19px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.link-column {
+	padding: 15px;
+	margin-top: -20px;
+	background-color: rgba(105, 206, 236, 0.20);
+	// box-shadow: 1px 1px 5px $dark;
+	border-radius: 20px;
+	transition: 0.2s;
+	&:hover {
+		box-shadow: 1px 1px 8px rgba(86, 162, 185, 0.705);
+	}
+  }
+
