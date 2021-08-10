@@ -461,3 +461,14 @@ em {
   margin-right: 35px;
   padding: 0 20px;
 }
+
+//Competition
+.buttons-container{
+  justify-content: center;
+  align-items: center;
+
+  .details-item{
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
