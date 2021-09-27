@@ -3,6 +3,24 @@
 
 @import 'variables';
 
+.co-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.co-founder{
+  flex: 1 1 350px;
+}
+
+.history{
+  flex: 1 1 60vw;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  margin-left: 20px;
+  min-width: 500px;
+}
+
 #topbuttons .details-container{
   margin-right: 20px;
   flex-wrap: nowrap;
@@ -108,6 +126,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .co-container {
+    display: block;
+
+    .co-founder{
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
   .flexcontain {
     flex-direction: column;
   }
