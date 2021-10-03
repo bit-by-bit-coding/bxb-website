@@ -29,13 +29,13 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .instructors-item {
   display: inline-flex;
   flex-flow: column;
-  flex: 1 400px;
+  flex: 1 300px;
   max-width: 500px;
   margin: 10px 20px;
 
