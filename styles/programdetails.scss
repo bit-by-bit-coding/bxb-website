@@ -3,6 +3,10 @@
 
 @import "variables";
 
+.no-indented-list{
+margin-left:10px;
+}
+
 .title-text{
   font-size: 1rem;
   display: block;
@@ -456,7 +460,7 @@ em {
 //Form and Function
 #ff-image {
   width: 20vw;
-  max-width: 350px;
+  max-width: 250px;
   margin: 15px;
   margin-right: 35px;
   padding: 0 20px;
