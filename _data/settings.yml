@@ -20,4 +20,4 @@ menu:
       - {name: Our Team, url: "ourteam"}
   - {name: Resources, url: "resources"}
   - {name: Volunteer, url: "volunteer"}
-  #- {name: Donate, url: "donate"}
+  - {name: Donate, url: "donate"}
