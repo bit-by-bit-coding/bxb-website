@@ -11,7 +11,7 @@ menu:
       - name: School Year
         url: "#"
         subsubmenu:
-          #- {name: Uncommon Sense, url: "uncommonsense"}
+          {name: Uncommon Sense, url: "uncommonsense"}
           - {name: Form & Function, url: "formfunction"}
   - {name: Competition, url: "competition"}
   - name: About
