@@ -11,12 +11,13 @@ menu:
       - name: School Year
         url: "#"
         subsubmenu:
-          - {name: Uncommon Sense, url: "uncommonsense"}
+          #- {name: Uncommon Sense, url: "uncommonsense"}
           - {name: Form & Function, url: "formfunction"}
+  - {name: Competition, url: "competition"}
   - name: About
     submenu:
       - {name: About Us, url: "aboutus"}
       - {name: Our Team, url: "ourteam"}
   - {name: Resources, url: "resources"}
   - {name: Volunteer, url: "volunteer"}
-  - {name: Donate, url: "donate"}
+  #- {name: Donate, url: "donate"}
