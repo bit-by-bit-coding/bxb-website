@@ -8,7 +8,7 @@ menu:
           - {name: Uncommon Sense, url: "uncommonsenseseminar"}
           - {name: Hello World, url: "helloworld"}
           - {name: Neural Logical, url: "neurallogical"}
-  - name: School Year
+      - name: School Year
         url: "#"
         subsubmenu:
           - {name: Uncommon Sense, url: "uncommonsense"}
