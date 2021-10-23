@@ -1,24 +1,36 @@
 ---
 ---
 @import 'variables';
-
 #bigLogo, #logoText {
     will-change: opacity;
     mix-blend-mode: multiply;
 }
 
+#bluebox {
+    background-color: rgba(105, 206, 236, 0.20);
+    border-radius: 15px;
+    padding: 25px; 
+    border-left: 5px solid $main;
+    border-bottom: 5px solid $main;
 
+    p {
+        font-family: $heading-font;
+        color: $dark;
+        text-align: center;
+        font-size: 1.25em;
+    }
+}
 
 #donatewidget {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%
+    margin-right: 15px;
 }
+.sponsorlogo {
+    width: 250px;
+}
+
 #logoContainer {
     background-color: #fff;
+    height: 70%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -32,15 +44,23 @@
     transform: translateY(-30%);
     width: 100%
     }
-}
-
-@media only screen and (max-width: 768px) {
+    #bluebox {
+        margin: 0;
+        p {
+            font-size: 1em;
+        }
+    }
     #donatewidget {
         display: none;
     }
+    #fallback-button {
+        display: block;
+    }
+    
 }
+
 @media (min-width: 769px) {
-    #fallbackbutton {
+    #fallback-button {
         display: none;
     }
 }
