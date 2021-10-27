@@ -13,7 +13,7 @@ menu:
         subsubmenu:
           #- {name: Uncommon Sense, url: "uncommonsense"}
           - {name: Form & Function, url: "formfunction"}
-  - {name: Competition, url: "competition"}
+  # - {name: Competition, url: "competition"}
   - name: About
     submenu:
       - {name: About Us, url: "aboutus"}
