@@ -1,6 +1,16 @@
 --- 
 --- 
 @import 'variables';
+//logo
+#bigLogo {
+    margin-left: 40px;
+}
+
+#logoText {
+    text-align: center;
+    font-size: 2em;
+    width: 75%;
+}
 
 .bot {
 	margin-top: 20px;
@@ -47,4 +57,27 @@
 		margin: auto;
 		padding-left: 0 !important;
 	}
+
+	#logoText {
+		text-align: center;
+		font-size: 1.3em;
+		width: 75%;
+	}
 }
+
+.blue-box{
+	align-items: center;
+	margin: 30px -100px;
+	padding: 10px 100px;
+	background: #69cdec25;
+	overflow: hidden;
+  
+	a{
+	  color: $dark;
+	}
+  
+	@media screen and (max-width: 767px) {
+	  padding: 10px 50px;
+	  margin: 30px -35px;
+	}
+  }
