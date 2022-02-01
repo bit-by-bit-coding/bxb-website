@@ -373,7 +373,10 @@ canvas {
 }*/
 
 #beachbot {
-  height: 200px;
+  object-fit: cover;
+  width: 30vw;
+  max-width: 300px;
+  height: 250px;
 }
 
 //Hello World
@@ -455,8 +458,10 @@ canvas {
 
 //Form and Function
 #ff-image {
+  object-fit: cover;
   width: 30vw;
-  max-width: 250px;
+  max-width: 300px;
+  height: 250px;
   margin: 15px;
 }
 
