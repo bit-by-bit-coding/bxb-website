@@ -6,16 +6,121 @@
     margin-left: 40px;
 }
 
-#logoText {
-    text-align: center;
-    font-size: 2em;
-    width: 75%;
+#testimonial-video{
+	width: 40vw;
+	height: 300px;
+	border: $dark 5px solid;
+	background-color: $dark;
+}
+
+#mission {
+    // text-align: center;
+    font-size: 1.8em;
+	line-height: 1.6em;
+	// margin-left: 35px;
+    // width: 60%;
+}
+
+#logoContainer{
+	display: flex;
+	max-width: 80%;
+	justify-content: center;
+}
+
+#action-statement{
+	// font-family: $heading-font;
+	font-size: 1.4em;
+	color: white;
+	text-align: center;
+	line-height: 2em;
+	padding: 50px;
+	margin-left: 30px;
+}
+
+#main-photo{
+	margin-right: 30px;
+	width: 35vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: 00% 40%;
 }
 
 .bot {
 	margin-top: 20px;
 }
 
+#programs-text{
+	// text-align: center;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	margin: 0 45px 35px 35px;
+	width: 330px;
+}
+
+#programs{
+	justify-content: space-evenly;
+	align-items: center;
+	width: 85vw;
+}
+
+
+.program-info{
+	max-width: 425px;
+	margin: 0 20px;
+}
+
+.buttons{
+    background-color:$main;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 15vw;
+    min-width: 250px;
+    border: none;
+    font-size: 1.1em;
+    font-family: $heading-font;
+    cursor: pointer;
+    padding: 5px 10px;
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+h3{
+	margin-top: 0;
+}
+
+#stats{
+	justify-content: space-evenly;
+	color: white;
+	text-align: center;
+}
+
+
+.stats-numbers{
+	font-size: 4em;
+	margin-bottom: 0;
+}
+.stats-words{
+	font-size: 2em;
+}
+
+#testimonial-photo{
+	// margin-right: 30px;
+	width: 35vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: 00% 75%;
+}
+
+#testimonial-text{
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+
+.section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
 
 #righttext {
 	flex-grow: 10;
@@ -63,9 +168,11 @@
 
 .blue-box{
 	align-items: center;
+	width: 100%;
 	margin: 30px -100px;
 	padding: 10px 100px;
-	background: #69cdec25;
+	// background: #69cdec25;
+	background: $dark;
 	overflow: hidden;
   
 	a{
