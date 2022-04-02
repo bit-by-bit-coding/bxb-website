@@ -1,102 +1,170 @@
 --- 
 --- 
 @import 'variables';
-//logo
-#bigLogo {
-    margin-left: 40px;
-}
 
-#testimonial-video{
-	width: 40vw;
-	height: 300px;
-	border: $dark 5px solid;
-	background-color: $dark;
-}
-
-#mission {
-    font-size: 1.8em;
-	line-height: 1.6em;
-	margin-left: 35px;
-    // width: 60%;
-}
-
-#logoContainer{
-	display: flex;
-	max-width: 80%;
-	justify-content: center;
-}
-
-#action-statement{
-	// font-family: $heading-font;
-	font-size: 1.4em;
-	color: white;
-	text-align: center;
-	line-height: 2em;
-	padding: 50px;
-	margin-left: 30px;
-}
-
-#main-photo{
-	margin-right: 30px;
-	width: 35vw;
-    height: 300px;
-    object-fit: cover;
-    object-position: 00% 40%;
-}
-
-.bot {
-	margin-top: 20px;
-}
-
-#programs-text{
-	// text-align: center;
-	font-size: 1.4em;
-	line-height: 1.8em;
-	margin: 0 45px 35px 35px;
-	width: 330px;
-}
-
-#programs{
-	justify-content: space-evenly;
-	align-items: center;
-	width: 85vw;
-}
-
-
-.program-info{
-	max-width: 425px;
-	margin: 0 20px;
-}
-
-.buttons{
-    background-color:$main;
-    color: #ffffff;
-    border-radius: 10px;
-    width: 15vw;
-    min-width: 250px;
-    border: none;
-    font-size: 1.1em;
-    font-family: $heading-font;
-    cursor: pointer;
-    padding: 5px 10px;
-    &:hover {
-        opacity: 0.85;
-    }
+//Whole Page
+h1{
+	color: $dark;
+	margin: 25px 0 0 0;
 }
 
 h3{
 	margin-top: 0;
 }
 
-#stats{
-	justify-content: space-evenly;
-	color: white;
-	text-align: center;
+.section{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.no-margin {
+	padding: 0;
+
+	.details-item {
+		margin: 0;
+
+	}
+}
+
+.blue-box{
+	align-items: center;
+	width: 100%;
+	margin: 0 -100px 30px -100px;
+	padding: 10px 100px;
+	// background: #69cdec25;
+	// 38BFE7
+	background: rgba(56, 191, 231, 0.3);
+	overflow: hidden;
+  
+	a{
+	  color: $dark;
+	}
+  
+	@media screen and (max-width: 767px) {
+	  padding: 10px 50px;
+	  margin: 30px -35px;
+	}
+}
+
+// .buttons{
+//     background-color:$main;
+//     color: #ffffff;
+//     border-radius: 10px;
+//     width: 15vw;
+//     min-width: 250px;
+//     border: none;
+//     font-size: 1.1em;
+//     font-family: $heading-font;
+//     cursor: pointer;
+//     padding: 5px 10px;
+//     &:hover {
+//         opacity: 0.85;
+//     }
+// }
+
+
+//Banner
+#logoContainer{
+	position: absolute;
+	display: flex;
+	max-width: 80%;
+	justify-content: center;
+
+	#logoText{
+		color: $dark;
+		font-size: 3em;
+	}
+}
+
+#home-banner{
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 30%;
+	z-index: -1;
+	opacity: 50%;
+}
+
+#bigLogo {
+    margin-left: 40px;
+}
+
+.nomargin-top{
+	margin-top: 0;
 }
 
 
+//What we do
+#testimonial-video{
+	width: 35vw;
+	max-width: 750px;
+	height: 275px;
+	border: $dark 5px solid;
+	background-color: $dark;
+}
+
+#action-statement{
+	color: black;
+	font-size: 1.5em;
+	line-height: 2em;
+	padding-right: 50px;
+	// margin-left: 30px;
+}
+
+#righttext {
+	flex-grow: 10;
+}
+
+//Open programs
+#programs-text{
+	font-size: 1.4em;
+	line-height: 1.8em;
+	margin-bottom: 0;
+}
+
+#programs{
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 85vw; 
+}
+
+.program-info{
+	max-width: 425px;
+	margin: 0; 
+
+	p{
+		height: 100px;
+	}
+}
+
+#middle-box{
+	margin: 0 40px;
+}
+
+.program-photo{
+	width: 100%;
+	height: 200px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+    object-fit: cover;
+    object-position: 00% 40%;
+}
+
+//Our Impact
+#stats{
+	justify-content: space-evenly;
+	color: $dark;
+	text-align: center;
+
+	.details-item{
+		flex: none;
+	}
+}
+
 .stats-numbers{
 	font-size: 6em;
+	font-weight: 700;
 	margin-bottom: 6px;
 	font-family: $heading-font;
 }
@@ -105,6 +173,7 @@ h3{
 	padding: 30px;
 }
 
+//Testimonial section
 #testimonial-photo{
 	// margin-right: 30px;
 	width: 35vw;
@@ -118,29 +187,7 @@ h3{
 	line-height: 1.6em;
 }
 
-.section{
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-#righttext {
-	flex-grow: 10;
-}
-
-.no-margin {
-	padding: 0;
-
-	.details-item {
-		margin: 0;
-
-	}
-}
-
-#pumpkin {
-	width: 225px;
-	height: auto;
-}
-
+//Screen size code
 @media screen and (min-width: 992px) {
 	#pumpkin {
 		width: 175px;
@@ -167,21 +214,8 @@ h3{
 	}
 }
 
-.blue-box{
-	align-items: center;
-	width: 100%;
-	margin: 30px -100px;
-	padding: 10px 100px;
-	// background: #69cdec25;
-	background: $dark;
-	overflow: hidden;
-  
-	a{
-	  color: $dark;
-	}
-  
-	@media screen and (max-width: 767px) {
-	  padding: 10px 50px;
-	  margin: 30px -35px;
-	}
-  }
+@media screen and (min-width: 1500px) {
+    .content {
+        max-width: 2000px;
+    }
+}

@@ -1,95 +1,100 @@
 ---
-layout: default
+layout: homepage
 title: "Bit by Bit"
-banner-title: "bit by bit" 
+banner-title: "Diversifying the next generation of thinkers/coders/leaders" 
 scripts:
 - "particles.js"
 - "app.js"
 style: index.css
----
-<div class="section">
-    <div class="details-container">
-        <div class="details-item">
-            <iframe id="testimonial-video" src="https://drive.google.com/file/d/1lmGSLxswJ3s73MTJ2NbWCwv9ZLz4PDAd/preview" allow="autoplay"></iframe>
-        </div>
-        <div class="details-item">
-            <p id="mission" class="noslashes">
-                To diversify the community of ponderers and creators by equipping the next generation with the tools of technology, thinking, and leadership to improve the world, bit by bit
-            </p>
-        </div>
-    </div>
-</div>
-    
-<div class="section blue-box">
+---  
+<div class="section blue-box" id="nomargin-top">
     <div class="details-container">
         <div class="details-item" id="righttext">
-            <!-- <h2> Mission </h2>
-            <p>Our mission is to equip the next generation with the tools of technology, thought, and leadership to improve the world, bit by bit.
-            </p> -->
+            <h1>What We Do</h1>
             <p id="action-statement">
                 We provide low-cost and no-cost programs that teach and encourage people, especially underrepresented
                 youths, to code, lead, and improve their understanding of the world.
             </p>
         </div>
         <div class="details-item">
-            <img  id="main-photo" src="imgs/Devin.jpg">
+            <iframe id="testimonial-video" src="https://drive.google.com/file/d/1lmGSLxswJ3s73MTJ2NbWCwv9ZLz4PDAd/preview" allow="autoplay"></iframe>
         </div>
     </div>
 </div>
+
 <div class="section">
-    <h1 style="margin-bottom: 0; margin-top: 0; color: #1BB1DE;">Open Programs</h1>
-    <div id="programs" class="details-container">
-        <div class="details-item program-info">
-            <p id="programs-text">
-                Free project based learning in a 3 : 1 student teacher ratio. <br>
-                Curriculum adapted to different levels and difficulty.
-            </p>
-        </div>
-        <div class="details-item program-info">
-            <h3 class="noslashes">Form and Function</h3>
-            <p>Form and Function gives middle schoolers the power to crack the “code” of web development! 
-                Our free weekly after-school program helps you transform the web into a canvas for your 
-                ideas. Interactive projects, demos, and individual help will teach you how to use HTML, 
-                CSS, and JavaScript to create your own unique website.
-            </p>
-            <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> 
-                <button class="buttons">Learn more</button>
-            </a>
-        </div>
-        <div class="details-item program-info">
-            <h3 class="noslashes">Hello World</h3>
-            <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
-                down-and-dirty with real code. Every camper will learn the principles of front-end web development 
-                and the heart of CSS, HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and 
-                passion to continue tinkering with code for the rest of her life!
-            </p>
-            <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                <button class="buttons">Learn more</button>
-            </a>
+    <h1>Open Programs</h1>
+    <p id="programs-text">
+        Free project based learning in a 3 : 1 student teacher ratio.
+    </p>
+    <div id="programs">
+        <div class="details-container">
+            <div class="details-item program-info">
+                <img class="program-photo" class="details-item" src="/imgs/something.png">
+                <h2 class="noslashes">Form and Function</h2>
+                <p> Form and Function gives middle schoolers the power to crack the “code” of web development 
+                    through HTML, CSS, and JavaScript in an online, weekly after-school program.
+                    <!-- Form and Function gives middle schoolers the power to crack the “code” of web development! 
+                    Our free weekly after-school program helps you transform the web into a canvas for your 
+                    ideas. Interactive projects, demos, and individual help will teach you how to use HTML, 
+                    CSS, and JavaScript to create your own unique website. -->
+                </p>
+                <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> 
+                    Learn more →
+                </a> 
+            </div>
+            <div class="details-item program-info" id="middle-box">
+                <img class="program-photo" class="details-item" src="/imgs/BunnyEars.jpg">
+                <h2 class="noslashes">Hello World</h2>
+                <p> Hello World is an online, two-week long summer camp for motivated girls to learn to build their own 
+                    websites, getting down-and-dirty with real code.
+                    <!-- Hello World is a summer camp for motivated girls to learn to build their own websites, getting
+                    down-and-dirty with real code. Every camper will learn the principles of front-end web development 
+                    and the heart of CSS, HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and 
+                    passion to continue tinkering with code for the rest of her life! -->
+                </p>
+                <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
+                    Learn more →
+                </a>
+            </div>
+            <div class="details-item program-info">
+                <img class="program-photo" class="details-item" src="/imgs/momentum.jpg">
+                <h2 class="noslashes">Momentum</h2>
+                <p>
+                    Momentum is a free, project-based deep-dive into the technical fundamentals of AI. 
+                    Each student will walk away having built their own neural network with guidance from 
+                    MIT mentors on MIT campus.
+                </p>
+                <a href="https://www.mitmomentum.org/">
+                    Learn more →
+                </a>
+            </div>
         </div>
     </div>
 </div>
+
 <div class="section blue-box">
-    <h1 style="margin-bottom: 0; margin-top: 25px; color: white;">We've Taught Across</h1>
+    <h1>Our Impact</h1>
     <div id="stats" class="details-container">
         <div class="details-item">
             <p class="stats-numbers">1000+</p> 
-            <p class="stats-words">Students</p>
+            <p class="stats-words">students</p>
         </div>
         <div class="details-item">
-            <p class="stats-numbers">4</p> 
-            <p class="stats-words">Continents</p>
+            <p class="stats-numbers">120</p> 
+            <p class="stats-words">volunteers</p>
         </div>
         <div class="details-item">
             <p class="stats-numbers">8</p> 
-            <p class="stats-words">Countries</p>
+            <p class="stats-words">countries</p>
         </div>
         <div class="details-item">
             <p class="stats-numbers">21</p> 
-            <p class="stats-words">States</p>
+            <p class="stats-words">states</p>
         </div>
     </div>
 </div>
+
 <div class="section">
     <div class="details-container">
         <div class="details-item">
@@ -106,90 +111,3 @@ style: index.css
         </div>
     </div>
 </div>
-<!-- <div class="section">
-    <div class="details-item">
-        <h2>High School Programs</h3>
-        </h3>
-        <p>Uncommon Sense is a free weekly program launched in partnership with <a
-                href="https://web.stanford.edu/group/ea/">Stanford Effective Altruism</a> for curious
-            highschoolers interested in learning ways to
-            form hypotheses about the world and make decisions that effectively accomplish their goals.
-            Students will match wits with AIs, instructors, and each other as they explore topics like cognitive
-            psychology,
-            game theory, prediction markets, and so much more!
-        </p>
-        <a href="{{ 'uncommonsense.html' | relative_url | remove: '.html' }}"> Click here to learn more and
-            sign up!
-        </a>
-    </div>
-    <div class="details-item">
-        <h3 class="noslashes">
-            <a href="{{ 'neurallogical.html' | relative_url | remove: '.html' }}">
-                Neural Logical
-            </a>
-        </h3>
-        <p>
-            Neural Logical is a free two-week summer camp that teaches highschoolers to use AI to solve real world problems
-            such as identifying tumors in MRI scans. Students will use their knowledge of Python to create their own neural 
-            networks (the most popular machine learning technique) in the Keras framework. By the end of the camp, students 
-            will understand how a neural network works, the math behind it, and how to build one of their very own!
-        </p>
-        <a href="{{ 'neurallogical.html' | relative_url | remove: '.html' }}"> Click here to learn more!
-        </a>
-    </div>
-</div> -->
-
-<!-- <div class="section">
-    <div class="details-item">
-        <h2 class="nomargin-below">Middle School Programs</h2>
-        <div class="details-container">
-            <div class="details-item" id="righttext">
-                <h3 class="noslashes">
-                    <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}">
-                        Form and Function
-                    </a>
-                </h3>
-                <p>Form and Function gives middle schoolers the power to crack the “code” of web development! Our free
-                    weekly
-                    after-school program helps you transform the web into a canvas for your ideas. Interactive projects,
-                    demos,
-                    and individual help will teach you how to use HTML, CSS, and JavaScript to create your own unique
-                    website.
-                </p>
-                <a href="{{ 'formfunction.html' | relative_url| remove: '.html' }}"> Click here to learn more and sign
-                    up!</a>
-
-            </div>
-
-            <div class="details-item computerbot">
-                <img class="bot" src="imgs/BitbyBot Images/computerbot.svg">
-            </div>
-
-            <div class="details-container">
-
-                <div class="details-item">
-                    <img class="bot" src="imgs/BitbyBot Images/thinkingbot.svg">
-                </div>
-                <div class="details-item" id="righttext">
-                    <h3 class="noslashes">
-                        <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}">
-                            Hello World
-                        </a>
-                    </h3>
-                    <p>Hello World is a summer camp for motivated girls to learn to build their own websites, getting
-                        down-and-dirty
-                        with real code. Every camper will learn the principles of front-end web development and the
-                        heart of
-                        CSS,
-                        HTML, and JavaScript. Moreover, she’ll get the techniques, resources, and passion to continue
-                        tinkering
-                        with
-                        code for the rest of her life!
-                    </p>
-                    <a href="{{ 'helloworld.html' | relative_url | remove: '.html' }}"> Click here to learn more!</a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
