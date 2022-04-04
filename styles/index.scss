@@ -30,7 +30,7 @@ h3{
 	align-items: center;
 	width: 100%;
 	margin: 0 -100px 30px -100px;
-	padding: 10px 100px;
+	padding: 0 100px;
 	// background: #69cdec25;
 	// 38BFE7
 	background: rgba(56, 191, 231, 0.3);
@@ -95,24 +95,32 @@ h3{
 
 
 //What we do
+#remove-space{
+	padding: 0;
+	margin: 0;
+}
+
 #testimonial-video{
 	width: 35vw;
 	max-width: 750px;
-	height: 275px;
-	border: $dark 5px solid;
+	height: 100%;
+	border: none;
+	// border: $dark 5px solid;
 	background-color: $dark;
 }
 
 #action-statement{
 	color: black;
 	font-size: 1.5em;
-	line-height: 2em;
+	line-height: 1.5em;
 	padding-right: 50px;
+	margin: 20px 30px 10px 30px;
 	// margin-left: 30px;
 }
 
 #righttext {
 	flex-grow: 10;
+	margin: 20px 0;
 }
 
 //Open programs
