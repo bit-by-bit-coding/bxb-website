@@ -40,8 +40,8 @@ h3{
 	  color: $dark;
 	}
   
-	@media screen and (max-width: 767px) {
-	  padding: 10px 50px;
+	@media screen and (max-width: 769px) {
+	  padding: 10px 32.5px;
 	  margin: 30px -35px;
 	}
 }
@@ -182,6 +182,10 @@ h3{
 }
 
 //Testimonial section
+#testimonial{
+	align-items: center;
+}
+
 #testimonial-photo{
 	// margin-right: 30px;
 	width: 35vw;
@@ -202,23 +206,106 @@ h3{
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 913px){
+	.program-info p{
+		height: max-content;
+	}
+	#middle-box{
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	#programs{
+		width: 100%;
+	}
+
+	.blue-box{
+		padding: 0 30px 0 100px;
+	}
+
+	#remove-space{
+		width: 300px;
+		margin: auto;
+		flex: none;
+		#testimonial-video{
+			width: max-content;
+		}
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.details-container {
+		flex-direction: row; 
+	}
+
 	.computerbot {
 		display: none;
 	}
+
 	#pumpkin {
 	padding: 0;
 	}
+
 	.bot {
 		display: block;
 		margin: auto;
 		padding-left: 0 !important;
 	}
 
+	#logoContainer{
+		margin-top: 100px;
+	}
+
+	#bigLogo{
+		margin-left: 10px;
+	}
+
 	#logoText {
 		text-align: center;
-		font-size: 1.3em;
-		width: 75%;
+		font-size: 1.3em !important;
+		margin: auto 10px;
+		// padding-right: 30px;
+		// width: 75%;
+	}
+
+	#action-statement{
+		padding-right: 0;
+	}
+
+	.blue-box{
+		padding: 10px 32.5px;
+	  	margin: 30px -35px;
+	}
+
+	#testimonial-video{
+		width: max-content;
+		margin: auto;
+	}
+
+	#middle-box{
+		margin: 0 0;
+	}
+
+	.program-info p{
+		height: max-content;
+	}
+
+	#testimonial-photo{
+		width: 100%;
+	}
+
+	#stats{
+		.details-item{
+			flex-basis: 300px;
+		}
+	}
+
+	.stats-words{
+		padding-bottom: 5px;
+		margin: 10px 0;
+	}
+	
+	.stats-numbers{
+		font-size: 4em;
 	}
 }
 
