@@ -13,7 +13,7 @@ $translucent-white: rgba(255, 255, 255, 0.9);
 body {
     color: #4a4746;
     line-height: 1.5em;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 0;
     margin: 0;
     display: flex;
@@ -746,6 +746,16 @@ nav #nav-ul {
     padding: 0;
 }
 
+#puppetwhitebox {
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+#puppetlogo {
+    height: 30px;
+    padding: 10px;
+}
+
 .footer-info {
     min-width: 150px;
 }
@@ -1092,4 +1102,11 @@ button.largebutton {
 
 .centertext {
     text-align: center;
+}
+
+.bot {
+    object-fit: cover;
+    width: 30vw;
+    max-width: 300px;
+    height: 250px;
 }

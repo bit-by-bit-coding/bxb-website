@@ -7,12 +7,14 @@ menu:
         subsubmenu:
           - {name: Uncommon Sense, url: "uncommonsenseseminar"}
           - {name: Hello World, url: "helloworld"}
-          - {name: Neural Logical, url: "neurallogical"}
+          - {name: Momentum, url: "momentum"}
+          # - {name: Neural Logical, url: "neurallogical"}
       - name: School Year
         url: "#"
         subsubmenu:
-          - {name: Uncommon Sense, url: "uncommonsense"}
+          #- {name: Uncommon Sense, url: "uncommonsense"}
           - {name: Form & Function, url: "formfunction"}
+  # - {name: Competition, url: "competition"}
   - name: About
     submenu:
       - {name: About Us, url: "aboutus"}
