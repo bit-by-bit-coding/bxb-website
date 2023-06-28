@@ -10,7 +10,12 @@ scripts:
 - "signup.js"
 - "us.js"
 style: usreferral.css
+noindex: true
 ---
+{% if page.noindex %}
+<meta name="robots" content="noindex">
+{% endif %}
+
 <div id="uncommonsense">
     <div class="details-container">
         <div class="details-item">

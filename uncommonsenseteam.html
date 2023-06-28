@@ -6,9 +6,14 @@ scripts:
 - "signup.js"
 - "us.js"
 style: about.css
+noindex: true
 ---
-<h1 class="noslashes">Our Team</h1>
+{% if page.noindex %}
+<meta name="robots" content="noindex">
+{% endif %}
+
 <!--
+<h1 class="noslashes">Our Team</h1>
 <div class="section" id="topbuttons">
   <div class="details-container">
     <div class="details-item">
@@ -106,5 +111,5 @@ style: about.css
                 Fundraising Lead
             </p>
         </span>
-        -->
-</div>
+        
+</div>-->
